@@ -3,11 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How to Pray — The stages of salah</title>
+<title>How to Pray: the stages of salah</title>
 <meta name="description" content="The eight positions of salah in the order they happen, with the words said in each one, transliteration and audio.">
-<meta property="og:title" content="How to Pray — The stages of salah">
+<meta property="og:title" content="How to Pray: the stages of salah">
 <meta property="og:description" content="The eight positions of salah in the order they happen, with the words said in each one, transliteration and audio.">
 <meta property="og:type" content="website">
+<meta name="theme-color" content="#0b0f0e">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#x1F54C;</text></svg>">
 <script src="./support.js"></script>
 </head>
@@ -16,461 +17,724 @@
 <helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  body { margin: 0; background: #f6f1e7; }
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: #0b0f0e;
+  }
+
+  .page {
+    background: #0b0f0e;
+    background-image: radial-gradient(1100px 620px at 50% -260px, #16231f 0%, rgba(11,15,14,0) 72%);
+    color: #e9e5d9;
+    font-family: 'Inter Tight', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    padding: 0 30px 140px;
+    text-rendering: optimizeLegibility;
+  }
+
+  .wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+
+  .rule { border: 0; border-top: 1px solid #1d2b28; margin: 0; }
+
+  .hero { padding: 116px 0 66px; }
+
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: .34em;
+    text-transform: uppercase;
+    color: #c8983f;
+    font-weight: 500;
+  }
+
+  .title {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-size: clamp(54px, 9.4vw, 108px);
+    line-height: .92;
+    letter-spacing: -.015em;
+    margin: 24px 0 0;
+  }
+
+  .titleAr {
+    font-family: 'Noto Naskh Arabic', serif;
+    font-size: clamp(26px, 4vw, 40px);
+    color: #6f9d8b;
+    direction: rtl;
+    margin-top: 18px;
+    line-height: 1.8;
+  }
+
+  .lede {
+    margin: 30px 0 0;
+    max-width: 58ch;
+    font-size: 18px;
+    color: #9aa8a2;
+  }
+
+  .lede em { color: #e2bd74; font-style: italic; }
+
+  .flow {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 26px 0;
+    font-size: 11px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #8d9b95;
+  }
+
+  .flowLabel { color: #c8983f; }
+  .chev { color: #3a4a46; }
+  .flowEnd { color: #0b0f0e; background: #c8983f; padding: 5px 12px; }
+
+  .step {
+    display: grid;
+    grid-template-columns: 78px 200px minmax(0, 1fr);
+    grid-template-areas: "num fig main";
+    gap: 40px;
+    padding: 66px 0;
+    border-top: 1px solid #1d2b28;
+    align-items: start;
+  }
+
+  .num {
+    grid-area: num;
+    font-family: 'Instrument Serif', serif;
+    font-size: 58px;
+    line-height: .78;
+    color: #c8983f;
+  }
+
+  .figure {
+    grid-area: fig;
+    position: sticky;
+    top: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .figure svg { width: 100%; max-width: 200px; height: auto; }
+
+  .cap {
+    font-size: 10.5px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: #64736e;
+    text-align: center;
+    line-height: 1.7;
+  }
+
+  .main { grid-area: main; }
+
+  .head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  .h2 {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-size: 38px;
+    letter-spacing: -.01em;
+    margin: 0;
+  }
+
+  .ar { font-family: 'Noto Naskh Arabic', serif; font-size: 24px; color: #6f9d8b; }
+
+  .body { margin: 0; max-width: 62ch; color: #9aa8a2; }
+
+  .aside { margin-top: 18px; font-size: 14px; color: #7f8e88; max-width: 60ch; }
+
+  .duaRow { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 26px; }
+  .duaRow .dua { flex: 1 1 280px; margin-top: 0; }
+
+  .dua {
+    margin-top: 26px;
+    background: #111917;
+    border: 1px solid #1d2b28;
+    border-top: 2px solid #c8983f;
+    padding: 22px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .duaAlt { border-top-color: #6f9d8b; }
+
+  .duaAr {
+    font-family: 'Noto Naskh Arabic', serif;
+    font-size: 25px;
+    line-height: 2.05;
+    direction: rtl;
+    text-align: right;
+    color: #f2eee3;
+    align-self: stretch;
+  }
+
+  .duaArSm { font-size: 21px; }
+
+  .tr { font-size: 15px; font-weight: 500; line-height: 1.7; color: #e9e5d9; }
+  .gloss { font-size: 14px; font-style: italic; line-height: 1.7; color: #7f8e88; }
+  .note { font-size: 14px; color: #8d9b95; }
+  .note strong { color: #e2bd74; font-weight: 500; }
+
+  .tag {
+    font-size: 10.5px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #64736e;
+  }
+
+  .row { display: flex; flex-wrap: wrap; gap: 10px; }
+
+  .more {
+    align-self: stretch;
+    border-top: 1px solid #1d2b28;
+    padding-top: 18px;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .verse { display: flex; flex-direction: column; gap: 4px; }
+
+  .btn {
+    appearance: none;
+    background: none;
+    border: 1px solid #2b3c38;
+    border-radius: 2px;
+    color: #cdd7d3;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    padding: 9px 16px;
+    cursor: pointer;
+    transition: background .15s, color .15s, border-color .15s;
+  }
+
+  .btn:hover { background: #1a2624; color: #e9e5d9; border-color: #3d524d; }
+
+  .btnPlay { border-color: #6d5426; color: #e2bd74; }
+  .btnPlay:hover { background: #c8983f; border-color: #c8983f; color: #0b0f0e; }
+
+  .stepFinal { background: linear-gradient(180deg, rgba(200,152,63,.05), rgba(11,15,14,0)); }
+  .stepFinal .dua { background: #14201c; }
+
+  .counts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(154px, 1fr));
+    margin-top: 26px;
+  }
+
+  .count { padding: 4px 20px 26px; border-left: 1px solid #1d2b28; }
+  .count:first-child { padding-left: 0; border-left: 0; }
+  .countName { font-family: 'Instrument Serif', serif; font-size: 23px; }
+  .countNum {
+    font-family: 'Instrument Serif', serif;
+    font-size: 58px;
+    line-height: 1;
+    color: #c8983f;
+    margin: 6px 0 10px;
+  }
+  .countNote { font-size: 13px; line-height: 1.55; color: #7f8e88; }
+
+  .section { padding: 70px 0 0; border-top: 1px solid #1d2b28; }
+  .sectionTitle { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 38px; margin: 0; }
+
+  .foot {
+    margin-top: 76px;
+    padding-top: 28px;
+    border-top: 1px solid #1d2b28;
+    max-width: 64ch;
+    font-size: 14px;
+    line-height: 1.75;
+    color: #64736e;
+  }
+
+  @media (max-width: 900px) {
+    .page { padding: 0 22px 100px; }
+    .hero { padding: 76px 0 48px; }
+    .step {
+      grid-template-columns: 54px minmax(0, 1fr);
+      grid-template-areas: "num fig" "main main";
+      gap: 20px 22px;
+      padding: 48px 0;
+    }
+    .num { font-size: 40px; }
+    .figure { position: static; align-items: flex-start; max-width: 190px; }
+    .cap { text-align: left; }
+    .h2, .sectionTitle { font-size: 30px; }
+    .count { padding: 4px 0 24px; border-left: 0; border-top: 1px solid #1d2b28; }
+    .count:first-child { border-top: 1px solid #1d2b28; }
+  }
 </style>
 </helmet>
 
-<div style="background:#f6f1e7; color:#12332d; font-family:'IBM Plex Sans',system-ui,sans-serif; padding:64px 32px 96px; display:flex; flex-direction:column; align-items:center; gap:56px">
+<div class="page">
+<div class="wrap">
 
-  <header style="max-width:760px; display:flex; flex-direction:column; gap:16px; text-align:center; align-items:center">
-    <div style="font-size:13px; letter-spacing:.22em; text-transform:uppercase; color:#b08128; font-weight:600">Your five daily prayers</div>
-    <h1 style="font-family:Marcellus,serif; font-size:52px; line-height:1.05; margin:0; font-weight:400">How to pray salah</h1>
-    <p style="margin:0; font-size:17px; line-height:1.65; color:#4a5f59; max-width:600px; text-wrap:pretty">Here are the eight positions of salah, in the order you'll do them. Each one shows what your body should be doing and what to say while you're there. Going through all eight makes one <em>rak'ah</em>.</p>
+  <header class="hero">
+    <div class="eyebrow">Your five daily prayers</div>
+    <h1 class="title">How to pray salah</h1>
+    <div class="titleAr">كَيْفِيَّةُ الصَّلَاة</div>
+    <p class="lede">Here are the eight positions of salah, in the order you'll do them. Each one shows what your body should be doing and what to say while you're there. Going through all eight makes one <em>rak'ah</em>.</p>
   </header>
 
-  <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:center; max-width:900px">
-    <div style="font-size:13px; color:#8a9a95; letter-spacing:.06em">ONE RAK'AH:</div>
-    <div style="display:flex; gap:6px; align-items:center; flex-wrap:wrap; font-size:13px; color:#12332d">
-      <span style="background:#fff; border:1px solid #e2d9c6; border-radius:999px; padding:6px 12px">Stand</span><span style="color:#c9bfa8">→</span>
-      <span style="background:#fff; border:1px solid #e2d9c6; border-radius:999px; padding:6px 12px">Bow</span><span style="color:#c9bfa8">→</span>
-      <span style="background:#fff; border:1px solid #e2d9c6; border-radius:999px; padding:6px 12px">Stand</span><span style="color:#c9bfa8">→</span>
-      <span style="background:#fff; border:1px solid #e2d9c6; border-radius:999px; padding:6px 12px">Prostrate</span><span style="color:#c9bfa8">→</span>
-      <span style="background:#fff; border:1px solid #e2d9c6; border-radius:999px; padding:6px 12px">Sit</span><span style="color:#c9bfa8">→</span>
-      <span style="background:#fff; border:1px solid #e2d9c6; border-radius:999px; padding:6px 12px">Prostrate</span><span style="color:#c9bfa8">→</span>
-      <span style="background:#12332d; color:#f6f1e7; border-radius:999px; padding:6px 12px">next rak'ah</span>
+  <hr class="rule">
+
+  <div class="flow">
+    <span class="flowLabel">One rak'ah</span>
+    <span class="chev">›</span><span>Stand</span>
+    <span class="chev">›</span><span>Bow</span>
+    <span class="chev">›</span><span>Stand</span>
+    <span class="chev">›</span><span>Prostrate</span>
+    <span class="chev">›</span><span>Sit</span>
+    <span class="chev">›</span><span>Prostrate</span>
+    <span class="chev">›</span><span class="flowEnd">Next rak'ah</span>
+  </div>
+
+  <div class="step">
+    <div class="num">01</div>
+    <div class="figure">
+      <svg viewBox="0 0 200 170">
+        <line x1="14" y1="152" x2="186" y2="152" stroke="#253431" stroke-width="4" stroke-linecap="round"></line>
+        <g stroke="#e6e1d5" stroke-width="10" stroke-linecap="round" fill="none">
+          <line x1="100" y1="44" x2="100" y2="96"></line>
+          <line x1="100" y1="96" x2="92" y2="150"></line>
+          <line x1="100" y1="96" x2="110" y2="150"></line>
+        </g>
+        <g stroke="#c8983f" stroke-width="8" stroke-linecap="round" fill="none">
+          <polyline points="100,52 78,66 100,80"></polyline>
+        </g>
+        <circle cx="100" cy="30" r="13" fill="#e6e1d5"></circle>
+        <g stroke="#c8983f" stroke-width="6" stroke-linecap="round">
+          <line x1="126" y1="34" x2="140" y2="26"></line>
+          <line x1="74" y1="34" x2="60" y2="26"></line>
+        </g>
+      </svg>
+      <div class="cap">Hands raised, then folded</div>
+    </div>
+    <div class="main">
+      <div class="head">
+        <h2 class="h2">Standing: takbir</h2>
+        <span class="ar">تكبيرة الإحرام</span>
+      </div>
+      <p class="body">Stand facing the qiblah. Raise your hands to shoulder height or ear level, say the takbir, then fold your hands on your chest or stomach. From here, you're in prayer.</p>
+      <div class="dua">
+        <div class="duaAr">اللهُ أَكْبَر</div>
+        <div class="tr">Allahu akbar</div>
+        <div class="gloss">"Allah is the greatest." Once, aloud.</div>
+      </div>
     </div>
   </div>
 
-  <div style="display:flex; flex-direction:column; gap:20px; width:100%; max-width:900px">
-
-    <!-- 1 -->
-    <div style="display:grid; grid-template-columns:210px 1fr; gap:32px; background:#fffdf8; border:1px solid #e8dfcc; border-radius:4px; padding:28px 32px; align-items:center">
-      <div style="display:flex; flex-direction:column; align-items:center; gap:10px">
-        <svg viewBox="0 0 200 170" style="width:190px; height:auto">
-          <line x1="14" y1="152" x2="186" y2="152" stroke="#e2d9c6" stroke-width="4" stroke-linecap="round"></line>
-          <g stroke="#12332d" stroke-width="10" stroke-linecap="round" fill="none">
-            <line x1="100" y1="44" x2="100" y2="96"></line>
-            <line x1="100" y1="96" x2="92" y2="150"></line>
-            <line x1="100" y1="96" x2="110" y2="150"></line>
-          </g>
-          <g stroke="#b08128" stroke-width="8" stroke-linecap="round" fill="none">
-            <polyline points="100,52 78,66 100,80"></polyline>
-          </g>
-          <circle cx="100" cy="30" r="13" fill="#12332d"></circle>
-          <g stroke="#b08128" stroke-width="6" stroke-linecap="round">
-            <line x1="126" y1="34" x2="140" y2="26"></line>
-            <line x1="74" y1="34" x2="60" y2="26"></line>
-          </g>
-        </svg>
-        <div style="font-size:11px; letter-spacing:.12em; color:#8a9a95; text-transform:uppercase">Hands raised, then folded</div>
-      </div>
-      <div style="display:flex; flex-direction:column; gap:12px">
-        <div style="display:flex; align-items:baseline; gap:12px; flex-wrap:wrap">
-          <span style="font-family:Marcellus,serif; font-size:15px; color:#b08128">01</span>
-          <h2 style="font-family:Marcellus,serif; font-size:30px; margin:0; font-weight:400">Standing — takbir</h2>
-          <span style="font-family:'Noto Naskh Arabic',serif; font-size:22px; color:#4a5f59">تكبيرة الإحرام</span>
-        </div>
-        <p style="margin:0; font-size:16px; line-height:1.6; color:#4a5f59">Stand facing the qiblah. Raise your hands to shoulder height or ear level, say the takbir, then fold your hands on your chest or stomach. From here, you're in prayer.</p>
-        <div style="background:#f2ede1; border-left:3px solid #b08128; padding:12px 16px; display:flex; flex-direction:column; gap:6px">
-          <div style="font-family:'Noto Naskh Arabic',serif; font-size:22px; direction:rtl">اللهُ أَكْبَر</div>
-          <div style="font-size:15px; font-weight:600">Allahu akbar</div>
-          <div style="font-size:14px; color:#6b7d78; font-style:italic">"Allah is the greatest." — once, aloud</div>
-        </div>
-      </div>
+  <div class="step">
+    <div class="num">02</div>
+    <div class="figure">
+      <svg viewBox="0 0 200 170">
+        <line x1="14" y1="152" x2="186" y2="152" stroke="#253431" stroke-width="4" stroke-linecap="round"></line>
+        <g stroke="#e6e1d5" stroke-width="10" stroke-linecap="round" fill="none">
+          <line x1="100" y1="44" x2="100" y2="96"></line>
+          <line x1="100" y1="96" x2="92" y2="150"></line>
+          <line x1="100" y1="96" x2="110" y2="150"></line>
+        </g>
+        <g stroke="#c8983f" stroke-width="8" stroke-linecap="round" fill="none">
+          <polyline points="100,52 78,66 100,80"></polyline>
+        </g>
+        <circle cx="100" cy="30" r="13" fill="#e6e1d5"></circle>
+        <g fill="#c8983f">
+          <circle cx="136" cy="52" r="3"></circle>
+          <circle cx="146" cy="40" r="2.4"></circle>
+          <circle cx="152" cy="28" r="1.8"></circle>
+        </g>
+      </svg>
+      <div class="cap">Eyes to the place of sujud</div>
     </div>
-
-    <!-- 2 -->
-    <div style="display:grid; grid-template-columns:210px 1fr; gap:32px; background:#fffdf8; border:1px solid #e8dfcc; border-radius:4px; padding:28px 32px; align-items:center">
-      <div style="display:flex; flex-direction:column; align-items:center; gap:10px">
-        <svg viewBox="0 0 200 170" style="width:190px; height:auto">
-          <line x1="14" y1="152" x2="186" y2="152" stroke="#e2d9c6" stroke-width="4" stroke-linecap="round"></line>
-          <g stroke="#12332d" stroke-width="10" stroke-linecap="round" fill="none">
-            <line x1="100" y1="44" x2="100" y2="96"></line>
-            <line x1="100" y1="96" x2="92" y2="150"></line>
-            <line x1="100" y1="96" x2="110" y2="150"></line>
-          </g>
-          <g stroke="#b08128" stroke-width="8" stroke-linecap="round" fill="none">
-            <polyline points="100,52 78,66 100,80"></polyline>
-          </g>
-          <circle cx="100" cy="30" r="13" fill="#12332d"></circle>
-          <g fill="#b08128">
-            <circle cx="136" cy="52" r="3"></circle>
-            <circle cx="146" cy="40" r="2.4"></circle>
-            <circle cx="152" cy="28" r="1.8"></circle>
-          </g>
-        </svg>
-        <div style="font-size:11px; letter-spacing:.12em; color:#8a9a95; text-transform:uppercase">Eyes to the place of sujud</div>
+    <div class="main">
+      <div class="head">
+        <h2 class="h2">Standing: recitation</h2>
+        <span class="ar">القيام</span>
       </div>
-      <div style="display:flex; flex-direction:column; gap:12px">
-        <div style="display:flex; align-items:baseline; gap:12px; flex-wrap:wrap">
-          <span style="font-family:Marcellus,serif; font-size:15px; color:#b08128">02</span>
-          <h2 style="font-family:Marcellus,serif; font-size:30px; margin:0; font-weight:400">Standing — recitation</h2>
-          <span style="font-family:'Noto Naskh Arabic',serif; font-size:22px; color:#4a5f59">القيام</span>
-        </div>
-        <p style="margin:0; font-size:16px; line-height:1.6; color:#4a5f59">Keep standing with your hands folded. In the first rak'ah only, say the opening supplication quietly. Then seek refuge, say the basmalah, and recite Al-Fatihah — do this in every rak'ah, there's no substitute. In the first two rak'ahs, add a short surah after Al-Fatihah.</p>
-        <div style="display:flex; flex-wrap:wrap; gap:10px">
-          <div style="background:#f2ede1; border-left:3px solid #b08128; padding:12px 16px; flex:1 1 240px; display:flex; flex-direction:column; gap:8px; align-items:flex-start">
-            <div style="font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#8a9a95">First rak'ah only, silent</div>
-            <div style="font-size:15px; font-weight:600">Subhanaka Allahumma wa bihamdika…</div>
-            <div style="font-size:14px; color:#6b7d78">then <strong>A'udhu billahi mina-sh-shaytani-r-rajim</strong></div>
-            <div style="display:flex; gap:8px; flex-wrap:wrap">
-            <button type="button" onClick="{{ play_istiftah }}" style="background:#12332d; color:#f6f1e7; border:1px solid #12332d; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; cursor:pointer" style-hover="background:#b08128; border-color:#b08128">{{ plabel_istiftah }}</button>
-            <button type="button" onClick="{{ toggle_istiftah }}" style="background:none; border:1px solid #c9bfa8; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; color:#12332d; cursor:pointer" style-hover="background:#12332d; color:#f6f1e7; border-color:#12332d">{{ label_istiftah }}</button>
-            </div>
-            <sc-if value="{{ open_istiftah }}" hint-placeholder-val="{{ false }}">
-              <div style="display:flex; flex-direction:column; gap:14px; border-top:1px solid #e2d9c6; padding-top:12px">
-                <div style="display:flex; flex-direction:column; gap:5px">
-                  <div style="font-family:'Noto Naskh Arabic',serif; font-size:20px; direction:rtl; line-height:1.9">سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَٰهَ غَيْرُكَ</div>
-                  <div style="font-size:14px; font-weight:600; line-height:1.6">Subhanaka Allahumma wa bihamdika, wa tabaraka-smuka, wa ta'ala jadduka, wa la ilaha ghayruk.</div>
-                  <div style="font-size:13px; color:#6b7d78; font-style:italic; line-height:1.6">"Glory be to You, O Allah, and praise. Blessed is Your name, exalted is Your majesty, and there is no god but You."</div>
-                </div>
-                <div style="display:flex; flex-direction:column; gap:5px">
-                  <div style="font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#8a9a95">Then seeking refuge and the basmalah</div>
-                  <div style="font-family:'Noto Naskh Arabic',serif; font-size:20px; direction:rtl; line-height:1.9">أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ · بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-                  <div style="font-size:14px; font-weight:600; line-height:1.6">A'udhu billahi mina-sh-shaytani-r-rajim. Bismillahi-r-Rahmani-r-Rahim.</div>
-                  <div style="font-size:13px; color:#6b7d78; font-style:italic; line-height:1.6">"I seek refuge in Allah from Satan, the accursed. In the name of Allah, the Most Merciful, the Especially Merciful."</div>
-                </div>
+      <p class="body">Keep standing with your hands folded. In the first rak'ah only, say the opening supplication quietly. Then seek refuge, say the basmalah, and recite Al-Fatihah. You do this in every rak'ah, and nothing else takes its place. In the first two rak'ahs, add a short surah after Al-Fatihah.</p>
+      <div class="duaRow">
+        <div class="dua">
+          <div class="tag">First rak'ah only, silent</div>
+          <div class="tr">Subhanaka Allahumma wa bihamdika...</div>
+          <div class="note">then <strong>A'udhu billahi mina-sh-shaytani-r-rajim</strong></div>
+          <div class="row">
+            <button type="button" class="btn btnPlay" onClick="{{ play_istiftah }}">{{ plabel_istiftah }}</button>
+            <button type="button" class="btn" onClick="{{ toggle_istiftah }}">{{ label_istiftah }}</button>
+          </div>
+          <sc-if value="{{ open_istiftah }}" hint-placeholder-val="{{ false }}">
+            <div class="more">
+              <div class="verse">
+                <div class="duaAr duaArSm">سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَٰهَ غَيْرُكَ</div>
+                <div class="tr">Subhanaka Allahumma wa bihamdika, wa tabaraka-smuka, wa ta'ala jadduka, wa la ilaha ghayruk.</div>
+                <div class="gloss">"Glory be to You, O Allah, and praise. Blessed is Your name, exalted is Your majesty, and there is no god but You."</div>
               </div>
-            </sc-if>
-          </div>
-          <div style="background:#f2ede1; border-left:3px solid #12332d; padding:12px 16px; flex:1 1 240px; display:flex; flex-direction:column; gap:8px; align-items:flex-start">
-            <div style="font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#8a9a95">Every rak'ah</div>
-            <div style="font-family:'Noto Naskh Arabic',serif; font-size:20px; direction:rtl">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</div>
-            <div style="font-size:15px; font-weight:600">Al-Fatihah, then <em>Amin</em></div>
-            <div style="display:flex; gap:8px; flex-wrap:wrap">
-            <button type="button" onClick="{{ play_fatihah }}" style="background:#12332d; color:#f6f1e7; border:1px solid #12332d; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; cursor:pointer" style-hover="background:#b08128; border-color:#b08128">{{ plabel_fatihah }}</button>
-            <button type="button" onClick="{{ toggle_fatihah }}" style="background:none; border:1px solid #a9b5b1; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; color:#12332d; cursor:pointer" style-hover="background:#12332d; color:#f6f1e7; border-color:#12332d">{{ label_fatihah }}</button>
-            </div>
-            <sc-if value="{{ open_fatihah }}" hint-placeholder-val="{{ false }}">
-              <div style="display:flex; flex-direction:column; gap:10px; border-top:1px solid #d6cdb9; padding-top:12px">
-                <div style="display:flex; flex-direction:column; gap:3px"><div style="font-family:'Noto Naskh Arabic',serif; font-size:19px; direction:rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div><div style="font-size:14px; font-weight:600">Bismillahi-r-Rahmani-r-Rahim</div></div>
-                <div style="display:flex; flex-direction:column; gap:3px"><div style="font-family:'Noto Naskh Arabic',serif; font-size:19px; direction:rtl">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</div><div style="font-size:14px; font-weight:600">Al-hamdu lillahi Rabbi-l-'alamin</div></div>
-                <div style="display:flex; flex-direction:column; gap:3px"><div style="font-family:'Noto Naskh Arabic',serif; font-size:19px; direction:rtl">الرَّحْمَٰنِ الرَّحِيمِ</div><div style="font-size:14px; font-weight:600">Ar-Rahmani-r-Rahim</div></div>
-                <div style="display:flex; flex-direction:column; gap:3px"><div style="font-family:'Noto Naskh Arabic',serif; font-size:19px; direction:rtl">مَالِكِ يَوْمِ الدِّينِ</div><div style="font-size:14px; font-weight:600">Maliki yawmi-d-din</div></div>
-                <div style="display:flex; flex-direction:column; gap:3px"><div style="font-family:'Noto Naskh Arabic',serif; font-size:19px; direction:rtl">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</div><div style="font-size:14px; font-weight:600">Iyyaka na'budu wa iyyaka nasta'in</div></div>
-                <div style="display:flex; flex-direction:column; gap:3px"><div style="font-family:'Noto Naskh Arabic',serif; font-size:19px; direction:rtl">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</div><div style="font-size:14px; font-weight:600">Ihdina-s-sirata-l-mustaqim</div></div>
-                <div style="display:flex; flex-direction:column; gap:3px"><div style="font-family:'Noto Naskh Arabic',serif; font-size:19px; direction:rtl; line-height:1.9">صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</div><div style="font-size:14px; font-weight:600; line-height:1.6">Sirata-lladhina an'amta 'alayhim, ghayri-l-maghdubi 'alayhim wa la-d-dallin</div></div>
-                <div style="font-size:14px; font-weight:600">Then say: <span style="font-family:'Noto Naskh Arabic',serif; font-size:19px">آمِين</span> Amin</div>
-                <div style="font-size:13px; color:#6b7d78; font-style:italic; line-height:1.6">"All praise is for Allah, Lord of all worlds — the Most Merciful, the Especially Merciful — Master of the Day of Judgement. You alone we worship, and You alone we ask for help. Guide us to the straight path — the path of those You have blessed, not of those who earned anger, nor of those who went astray."</div>
-                <div style="border-top:1px solid #d6cdb9; padding-top:10px; display:flex; flex-direction:column; gap:3px">
-                  <div style="font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#8a9a95">First two rak'ahs — a short surah (Al-Ikhlas)</div>
-                  <div style="font-family:'Noto Naskh Arabic',serif; font-size:19px; direction:rtl; line-height:1.9">قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ</div>
-                  <div style="font-size:14px; font-weight:600; line-height:1.6">Qul huwa Allahu ahad. Allahu-s-samad. Lam yalid wa lam yulad. Wa lam yakun lahu kufuwan ahad.</div>
-                  <div style="font-size:13px; color:#6b7d78; font-style:italic; line-height:1.6">"Say: He is Allah, One. Allah, the Eternal Refuge. He neither begets nor is born, and there is none comparable to Him."</div>
-                  <div><button type="button" onClick="{{ play_ikhlas }}" style="background:#12332d; color:#f6f1e7; border:1px solid #12332d; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; cursor:pointer" style-hover="background:#b08128; border-color:#b08128">{{ plabel_ikhlas }}</button></div>
-                </div>
+              <div class="verse">
+                <div class="tag">Then seeking refuge and the basmalah</div>
+                <div class="duaAr duaArSm">أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ · بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+                <div class="tr">A'udhu billahi mina-sh-shaytani-r-rajim. Bismillahi-r-Rahmani-r-Rahim.</div>
+                <div class="gloss">"I seek refuge in Allah from Satan, the accursed. In the name of Allah, the Most Merciful, the Especially Merciful."</div>
               </div>
-            </sc-if>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 3 -->
-    <div style="display:grid; grid-template-columns:210px 1fr; gap:32px; background:#fffdf8; border:1px solid #e8dfcc; border-radius:4px; padding:28px 32px; align-items:center">
-      <div style="display:flex; flex-direction:column; align-items:center; gap:10px">
-        <svg viewBox="0 0 200 170" style="width:190px; height:auto">
-          <line x1="14" y1="152" x2="186" y2="152" stroke="#e2d9c6" stroke-width="4" stroke-linecap="round"></line>
-          <g stroke="#12332d" stroke-width="10" stroke-linecap="round" fill="none">
-            <line x1="128" y1="74" x2="74" y2="72"></line>
-            <line x1="128" y1="74" x2="126" y2="150"></line>
-          </g>
-          <g stroke="#b08128" stroke-width="8" stroke-linecap="round" fill="none">
-            <line x1="80" y1="76" x2="84" y2="112"></line>
-          </g>
-          <circle cx="58" cy="76" r="13" fill="#12332d"></circle>
-          <path d="M74 72 L128 74" stroke="#12332d" stroke-width="10" stroke-linecap="round"></path>
-          <line x1="70" y1="96" x2="132" y2="96" stroke="#c9bfa8" stroke-width="2" stroke-dasharray="4 5"></line>
-        </svg>
-        <div style="font-size:11px; letter-spacing:.12em; color:#8a9a95; text-transform:uppercase">Back flat, hands on knees</div>
-      </div>
-      <div style="display:flex; flex-direction:column; gap:12px">
-        <div style="display:flex; align-items:baseline; gap:12px; flex-wrap:wrap">
-          <span style="font-family:Marcellus,serif; font-size:15px; color:#b08128">03</span>
-          <h2 style="font-family:Marcellus,serif; font-size:30px; margin:0; font-weight:400">Bowing</h2>
-          <span style="font-family:'Noto Naskh Arabic',serif; font-size:22px; color:#4a5f59">الرُّكوع</span>
-        </div>
-        <p style="margin:0; font-size:16px; line-height:1.6; color:#4a5f59">Say the takbir and bow. Bend from your hips until your back is flat, with your head in line with it. Spread your fingers on your knees, keep your arms and back straight, and get still before you speak.</p>
-        <div style="background:#f2ede1; border-left:3px solid #b08128; padding:12px 16px; display:flex; flex-direction:column; gap:6px">
-          <div style="font-family:'Noto Naskh Arabic',serif; font-size:22px; direction:rtl">سُبْحَانَ رَبِّيَ الْعَظِيمِ</div>
-          <div style="font-size:15px; font-weight:600">Subhana Rabbiya-l-'Adhim</div>
-          <div style="font-size:14px; color:#6b7d78; font-style:italic">"Glory to my Lord, the Most Great." — three times, quietly</div>
-          <div><button type="button" onClick="{{ play_ruku }}" style="background:#12332d; color:#f6f1e7; border:1px solid #12332d; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; cursor:pointer" style-hover="background:#b08128; border-color:#b08128">{{ plabel_ruku }}</button></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 4 -->
-    <div style="display:grid; grid-template-columns:210px 1fr; gap:32px; background:#fffdf8; border:1px solid #e8dfcc; border-radius:4px; padding:28px 32px; align-items:center">
-      <div style="display:flex; flex-direction:column; align-items:center; gap:10px">
-        <svg viewBox="0 0 200 170" style="width:190px; height:auto">
-          <line x1="14" y1="152" x2="186" y2="152" stroke="#e2d9c6" stroke-width="4" stroke-linecap="round"></line>
-          <g stroke="#12332d" stroke-width="10" stroke-linecap="round" fill="none">
-            <line x1="100" y1="44" x2="100" y2="96"></line>
-            <line x1="100" y1="96" x2="92" y2="150"></line>
-            <line x1="100" y1="96" x2="110" y2="150"></line>
-          </g>
-          <g stroke="#b08128" stroke-width="8" stroke-linecap="round" fill="none">
-            <line x1="100" y1="52" x2="88" y2="92"></line>
-          </g>
-          <circle cx="100" cy="30" r="13" fill="#12332d"></circle>
-          <path d="M138 96 C138 72 138 66 138 52" stroke="#c9bfa8" stroke-width="2" fill="none" marker-end=""></path>
-          <polyline points="133,58 138,48 143,58" stroke="#c9bfa8" stroke-width="2" fill="none"></polyline>
-        </svg>
-        <div style="font-size:11px; letter-spacing:.12em; color:#8a9a95; text-transform:uppercase">Upright, arms at the sides</div>
-      </div>
-      <div style="display:flex; flex-direction:column; gap:12px">
-        <div style="display:flex; align-items:baseline; gap:12px; flex-wrap:wrap">
-          <span style="font-family:Marcellus,serif; font-size:15px; color:#b08128">04</span>
-          <h2 style="font-family:Marcellus,serif; font-size:30px; margin:0; font-weight:400">Rising from the bow</h2>
-          <span style="font-family:'Noto Naskh Arabic',serif; font-size:22px; color:#4a5f59">الاعتدال</span>
-        </div>
-        <p style="margin:0; font-size:16px; line-height:1.6; color:#4a5f59">Stand back up fully, saying the words as you rise. Pause here — this isn't just a movement, it's a position on its own.</p>
-        <div style="display:flex; flex-wrap:wrap; gap:10px">
-          <div style="background:#f2ede1; border-left:3px solid #b08128; padding:12px 16px; flex:1 1 220px; display:flex; flex-direction:column; gap:5px">
-            <div style="font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#8a9a95">While rising</div>
-            <div style="font-family:'Noto Naskh Arabic',serif; font-size:20px; direction:rtl">سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ</div>
-            <div style="font-size:15px; font-weight:600">Sami'a Allahu liman hamidah</div>
-            <div><button type="button" onClick="{{ play_rising }}" style="background:#12332d; color:#f6f1e7; border:1px solid #12332d; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; cursor:pointer" style-hover="background:#b08128; border-color:#b08128">{{ plabel_rising }}</button></div>
-          </div>
-          <div style="background:#f2ede1; border-left:3px solid #12332d; padding:12px 16px; flex:1 1 220px; display:flex; flex-direction:column; gap:8px; align-items:flex-start">
-            <div style="font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#8a9a95">Once upright</div>
-            <div style="font-family:'Noto Naskh Arabic',serif; font-size:20px; direction:rtl">رَبَّنَا وَلَكَ الْحَمْدُ</div>
-            <div style="font-size:15px; font-weight:600">Rabbana wa laka-l-hamd</div>
-            <div style="display:flex; gap:8px; flex-wrap:wrap">
-            <button type="button" onClick="{{ play_rabbana }}" style="background:#12332d; color:#f6f1e7; border:1px solid #12332d; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; cursor:pointer" style-hover="background:#b08128; border-color:#b08128">{{ plabel_rabbana }}</button>
-            <button type="button" onClick="{{ toggle_itidal }}" style="background:none; border:1px solid #a9b5b1; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; color:#12332d; cursor:pointer" style-hover="background:#12332d; color:#f6f1e7; border-color:#12332d">{{ label_itidal }}</button>
-            </div>
-            <sc-if value="{{ open_itidal }}" hint-placeholder-val="{{ false }}">
-              <div style="display:flex; flex-direction:column; gap:5px; border-top:1px solid #d6cdb9; padding-top:12px">
-                <div style="font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#8a9a95">Optional longer form</div>
-                <div style="font-size:14px; font-weight:600; line-height:1.6">Hamdan kathiran tayyiban mubarakan fih, mil'a-s-samawati wa mil'a-l-ardi wa mil'a ma shi'ta min shay'in ba'd.</div>
-                <div style="font-size:13px; color:#6b7d78; font-style:italic; line-height:1.6">"Abundant, pure, blessed praise — filling the heavens, filling the earth, and filling whatever else You will."</div>
-              </div>
-            </sc-if>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 5 -->
-    <div style="display:grid; grid-template-columns:210px 1fr; gap:32px; background:#fffdf8; border:1px solid #e8dfcc; border-radius:4px; padding:28px 32px; align-items:center">
-      <div style="display:flex; flex-direction:column; align-items:center; gap:10px">
-        <svg viewBox="0 0 200 170" style="width:190px; height:auto">
-          <line x1="14" y1="152" x2="186" y2="152" stroke="#e2d9c6" stroke-width="4" stroke-linecap="round"></line>
-          <g stroke="#12332d" stroke-width="10" stroke-linecap="round" fill="none">
-            <line x1="132" y1="100" x2="82" y2="132"></line>
-            <line x1="132" y1="100" x2="132" y2="146"></line>
-            <line x1="132" y1="146" x2="160" y2="150"></line>
-          </g>
-          <g stroke="#b08128" stroke-width="8" stroke-linecap="round" fill="none">
-            <polyline points="84,132 68,146 48,148"></polyline>
-          </g>
-          <circle cx="60" cy="136" r="12" fill="#12332d"></circle>
-        </svg>
-        <div style="font-size:11px; letter-spacing:.12em; color:#8a9a95; text-transform:uppercase">Seven points touch the ground</div>
-      </div>
-      <div style="display:flex; flex-direction:column; gap:12px">
-        <div style="display:flex; align-items:baseline; gap:12px; flex-wrap:wrap">
-          <span style="font-family:Marcellus,serif; font-size:15px; color:#b08128">05</span>
-          <h2 style="font-family:Marcellus,serif; font-size:30px; margin:0; font-weight:400">Prostration</h2>
-          <span style="font-family:'Noto Naskh Arabic',serif; font-size:22px; color:#4a5f59">السُّجود</span>
-        </div>
-        <p style="margin:0; font-size:16px; line-height:1.6; color:#4a5f59">Say the takbir and go down. Your forehead, nose, both palms, both knees, and the toes of both feet should all be on the ground — that's seven points. Keep your elbows off the floor and away from your sides.</p>
-        <div style="background:#f2ede1; border-left:3px solid #b08128; padding:12px 16px; display:flex; flex-direction:column; gap:8px; align-items:flex-start">
-          <div style="font-family:'Noto Naskh Arabic',serif; font-size:22px; direction:rtl">سُبْحَانَ رَبِّيَ الْأَعْلَى</div>
-          <div style="font-size:15px; font-weight:600">Subhana Rabbiya-l-A'la</div>
-          <div style="font-size:14px; color:#6b7d78; font-style:italic">"Glory to my Lord, the Most High." — three times, quietly</div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap">
-          <button type="button" onClick="{{ play_sujud }}" style="background:#12332d; color:#f6f1e7; border:1px solid #12332d; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; cursor:pointer" style-hover="background:#b08128; border-color:#b08128">{{ plabel_sujud }}</button>
-          <button type="button" onClick="{{ toggle_sujud }}" style="background:none; border:1px solid #c9bfa8; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; color:#12332d; cursor:pointer" style-hover="background:#12332d; color:#f6f1e7; border-color:#12332d">{{ label_sujud }}</button>
-          </div>
-          <sc-if value="{{ open_sujud }}" hint-placeholder-val="{{ false }}">
-            <div style="display:flex; flex-direction:column; gap:5px; border-top:1px solid #d6cdb9; padding-top:12px">
-              <div style="font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#8a9a95">Optional addition</div>
-              <div style="font-family:'Noto Naskh Arabic',serif; font-size:20px; direction:rtl; line-height:1.9">سُبُّوحٌ قُدُّوسٌ رَبُّ الْمَلَائِكَةِ وَالرُّوحِ</div>
-              <div style="font-size:14px; font-weight:600; line-height:1.6">Subbuhun Quddusun, Rabbu-l-mala'ikati wa-r-ruh.</div>
-              <div style="font-size:13px; color:#6b7d78; font-style:italic; line-height:1.6">"Perfect, Holy, Lord of the angels and the Spirit."</div>
             </div>
           </sc-if>
         </div>
-        <div style="font-size:14px; color:#6b7d78; line-height:1.55">After the required tasbih, this is the place to ask for whatever you want, in any language.</div>
-      </div>
-    </div>
-
-    <!-- 6 -->
-    <div style="display:grid; grid-template-columns:210px 1fr; gap:32px; background:#fffdf8; border:1px solid #e8dfcc; border-radius:4px; padding:28px 32px; align-items:center">
-      <div style="display:flex; flex-direction:column; align-items:center; gap:10px">
-        <svg viewBox="0 0 200 170" style="width:190px; height:auto">
-          <line x1="14" y1="152" x2="186" y2="152" stroke="#e2d9c6" stroke-width="4" stroke-linecap="round"></line>
-          <path d="M94 60 C90 72 88 86 90 98 L52 100 C46 101 44 108 44 116 L46 148 L52 150 L142 150 C142 132 138 114 130 100 C138 84 130 68 114 60 C107 56 98 57 94 60 Z" fill="#12332d"></path>
-          <circle cx="94" cy="44" r="13" fill="#12332d"></circle>
-          <path d="M102 72 C98 84 86 92 68 95" stroke="#b08128" stroke-width="8" stroke-linecap="round" fill="none"></path>
-        </svg>
-        <div style="font-size:11px; letter-spacing:.12em; color:#8a9a95; text-transform:uppercase">Sitting back on the folded feet</div>
-      </div>
-      <div style="display:flex; flex-direction:column; gap:12px">
-        <div style="display:flex; align-items:baseline; gap:12px; flex-wrap:wrap">
-          <span style="font-family:Marcellus,serif; font-size:15px; color:#b08128">06</span>
-          <h2 style="font-family:Marcellus,serif; font-size:30px; margin:0; font-weight:400">Sitting between prostrations</h2>
-          <span style="font-family:'Noto Naskh Arabic',serif; font-size:22px; color:#4a5f59">الجلسة</span>
-        </div>
-        <p style="margin:0; font-size:16px; line-height:1.6; color:#4a5f59">Say the takbir and sit up. Fold your left foot under you and sit on it, keep your right foot upright with toes pointing toward the qiblah, and rest your hands on your thighs. Get settled before moving on.</p>
-        <div style="background:#f2ede1; border-left:3px solid #b08128; padding:12px 16px; display:flex; flex-direction:column; gap:8px; align-items:flex-start">
-          <div style="font-family:'Noto Naskh Arabic',serif; font-size:22px; direction:rtl">رَبِّ اغْفِرْ لِي، وَارْحَمْنِي</div>
-          <div style="font-size:15px; font-weight:600">Rabbi-ghfir li, warhamni, wajburni, warfa'ni, warzuqni, wahdini, wa 'afini</div>
-          <div style="font-size:14px; color:#6b7d78; font-style:italic">Or simply: <strong>Rabbi-ghfir li, Rabbi-ghfir li</strong></div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap">
-          <button type="button" onClick="{{ play_jalsa }}" style="background:#12332d; color:#f6f1e7; border:1px solid #12332d; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; cursor:pointer" style-hover="background:#b08128; border-color:#b08128">{{ plabel_jalsa }}</button>
-          <button type="button" onClick="{{ toggle_jalsa }}" style="background:none; border:1px solid #c9bfa8; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; color:#12332d; cursor:pointer" style-hover="background:#12332d; color:#f6f1e7; border-color:#12332d">{{ label_jalsa }}</button>
+        <div class="dua duaAlt">
+          <div class="tag">Every rak'ah</div>
+          <div class="duaAr duaArSm">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</div>
+          <div class="tr">Al-Fatihah, then <em>Amin</em></div>
+          <div class="row">
+            <button type="button" class="btn btnPlay" onClick="{{ play_fatihah }}">{{ plabel_fatihah }}</button>
+            <button type="button" class="btn" onClick="{{ toggle_fatihah }}">{{ label_fatihah }}</button>
           </div>
-          <sc-if value="{{ open_jalsa }}" hint-placeholder-val="{{ false }}">
-            <div style="display:flex; flex-direction:column; gap:5px; border-top:1px solid #d6cdb9; padding-top:12px">
-              <div style="font-family:'Noto Naskh Arabic',serif; font-size:20px; direction:rtl; line-height:1.9">رَبِّ اغْفِرْ لِي، وَارْحَمْنِي، وَاجْبُرْنِي، وَارْفَعْنِي، وَارْزُقْنِي، وَاهْدِنِي، وَعَافِنِي</div>
-              <div style="font-size:13px; color:#6b7d78; font-style:italic; line-height:1.6">"My Lord, forgive me, have mercy on me, mend me, raise me, provide for me, guide me, and grant me wellbeing."</div>
+          <sc-if value="{{ open_fatihah }}" hint-placeholder-val="{{ false }}">
+            <div class="more">
+              <div class="verse"><div class="duaAr duaArSm">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div><div class="tr">Bismillahi-r-Rahmani-r-Rahim</div></div>
+              <div class="verse"><div class="duaAr duaArSm">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</div><div class="tr">Al-hamdu lillahi Rabbi-l-'alamin</div></div>
+              <div class="verse"><div class="duaAr duaArSm">الرَّحْمَٰنِ الرَّحِيمِ</div><div class="tr">Ar-Rahmani-r-Rahim</div></div>
+              <div class="verse"><div class="duaAr duaArSm">مَالِكِ يَوْمِ الدِّينِ</div><div class="tr">Maliki yawmi-d-din</div></div>
+              <div class="verse"><div class="duaAr duaArSm">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</div><div class="tr">Iyyaka na'budu wa iyyaka nasta'in</div></div>
+              <div class="verse"><div class="duaAr duaArSm">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</div><div class="tr">Ihdina-s-sirata-l-mustaqim</div></div>
+              <div class="verse"><div class="duaAr duaArSm">صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</div><div class="tr">Sirata-lladhina an'amta 'alayhim, ghayri-l-maghdubi 'alayhim wa la-d-dallin</div></div>
+              <div class="verse">
+                <div class="tr">Then say: <span class="ar">آمِين</span> Amin</div>
+                <div class="gloss">"All praise is for Allah, Lord of all worlds, the Most Merciful, the Especially Merciful, Master of the Day of Judgement. You alone we worship, and You alone we ask for help. Guide us to the straight path, the path of those You have blessed, not of those who earned anger, nor of those who went astray."</div>
+              </div>
+              <div class="verse">
+                <div class="tag">First two rak'ahs: a short surah (Al-Ikhlas)</div>
+                <div class="duaAr duaArSm">قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ</div>
+                <div class="tr">Qul huwa Allahu ahad. Allahu-s-samad. Lam yalid wa lam yulad. Wa lam yakun lahu kufuwan ahad.</div>
+                <div class="gloss">"Say: He is Allah, One. Allah, the Eternal Refuge. He neither begets nor is born, and there is none comparable to Him."</div>
+                <div class="row"><button type="button" class="btn btnPlay" onClick="{{ play_ikhlas }}">{{ plabel_ikhlas }}</button></div>
+              </div>
             </div>
           </sc-if>
         </div>
       </div>
     </div>
-
-    <!-- 7 -->
-    <div style="display:grid; grid-template-columns:210px 1fr; gap:32px; background:#fffdf8; border:1px solid #e8dfcc; border-radius:4px; padding:28px 32px; align-items:center">
-      <div style="display:flex; flex-direction:column; align-items:center; gap:10px">
-        <svg viewBox="0 0 200 170" style="width:190px; height:auto">
-          <line x1="14" y1="152" x2="186" y2="152" stroke="#e2d9c6" stroke-width="4" stroke-linecap="round"></line>
-          <g stroke="#12332d" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.92">
-            <line x1="132" y1="100" x2="82" y2="132"></line>
-            <line x1="132" y1="100" x2="132" y2="146"></line>
-            <line x1="132" y1="146" x2="160" y2="150"></line>
-          </g>
-          <g stroke="#b08128" stroke-width="8" stroke-linecap="round" fill="none">
-            <polyline points="84,132 68,146 48,148"></polyline>
-          </g>
-          <circle cx="60" cy="136" r="12" fill="#12332d"></circle>
-          <text x="150" y="40" text-anchor="middle" font-family="Marcellus, serif" font-size="30" fill="#e0d3b4">×2</text>
-        </svg>
-        <div style="font-size:11px; letter-spacing:.12em; color:#8a9a95; text-transform:uppercase">Identical to the first</div>
-      </div>
-      <div style="display:flex; flex-direction:column; gap:12px">
-        <div style="display:flex; align-items:baseline; gap:12px; flex-wrap:wrap">
-          <span style="font-family:Marcellus,serif; font-size:15px; color:#b08128">07</span>
-          <h2 style="font-family:Marcellus,serif; font-size:30px; margin:0; font-weight:400">Second prostration</h2>
-          <span style="font-family:'Noto Naskh Arabic',serif; font-size:22px; color:#4a5f59">السجود الثاني</span>
-        </div>
-        <p style="margin:0; font-size:16px; line-height:1.6; color:#4a5f59">Say the takbir and prostrate again exactly as before, with the same tasbih. That completes one rak'ah. Say the takbir and stand for the next one — or, after an even number of rak'ahs, stay seated for the tashahhud.</p>
-        <div style="background:#f2ede1; border-left:3px solid #b08128; padding:12px 16px; display:flex; flex-direction:column; gap:6px">
-          <div style="font-size:15px; font-weight:600">Subhana Rabbiya-l-A'la</div>
-          <div style="font-size:14px; color:#6b7d78; font-style:italic">Three times, quietly</div>
-          <div><button type="button" onClick="{{ play_sujud2 }}" style="background:#12332d; color:#f6f1e7; border:1px solid #12332d; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; cursor:pointer" style-hover="background:#b08128; border-color:#b08128">{{ plabel_sujud2 }}</button></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 8 -->
-    <div style="display:grid; grid-template-columns:210px 1fr; gap:32px; background:#12332d; color:#f6f1e7; border:1px solid #12332d; border-radius:4px; padding:28px 32px; align-items:center">
-      <div style="display:flex; flex-direction:column; align-items:center; gap:10px">
-        <svg viewBox="0 0 200 170" style="width:190px; height:auto">
-          <line x1="14" y1="152" x2="186" y2="152" stroke="#2c5148" stroke-width="4" stroke-linecap="round"></line>
-          <path d="M94 60 C90 72 88 86 90 98 L52 100 C46 101 44 108 44 116 L46 148 L52 150 L142 150 C142 132 138 114 130 100 C138 84 130 68 114 60 C107 56 98 57 94 60 Z" fill="#f6f1e7"></path>
-          <circle cx="94" cy="44" r="13" fill="#f6f1e7"></circle>
-          <path d="M102 72 C98 84 86 92 68 95" stroke="#d8a94a" stroke-width="8" stroke-linecap="round" fill="none"></path>
-          <line x1="66" y1="94" x2="54" y2="84" stroke="#d8a94a" stroke-width="6" stroke-linecap="round"></line>
-        </svg>
-        <div style="font-size:11px; letter-spacing:.12em; color:#9dbab2; text-transform:uppercase">Index finger raised at the shahadah</div>
-      </div>
-      <div style="display:flex; flex-direction:column; gap:12px">
-        <div style="display:flex; align-items:baseline; gap:12px; flex-wrap:wrap">
-          <span style="font-family:Marcellus,serif; font-size:15px; color:#d8a94a">08</span>
-          <h2 style="font-family:Marcellus,serif; font-size:30px; margin:0; font-weight:400">Final sitting and salam</h2>
-          <span style="font-family:'Noto Naskh Arabic',serif; font-size:22px; color:#9dbab2">التشهد والسلام</span>
-        </div>
-        <p style="margin:0; font-size:16px; line-height:1.6; color:#c8dbd5">Sit like you did in stage 6 and recite the tashahhud, raising your index finger when you say the testimony of faith. In the last sitting, add the durood and a du'a. Then turn your head right and left with the salam — that's it, your prayer is done.</p>
-        <div style="display:flex; flex-direction:column; gap:10px">
-          <div style="background:#1c443c; border-left:3px solid #d8a94a; padding:12px 16px; display:flex; flex-direction:column; gap:8px; align-items:flex-start">
-            <div style="font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#9dbab2">Every sitting</div>
-            <div style="font-size:15px; font-weight:600">At-tahiyyatu lillahi wa-s-salawatu wa-t-tayyibat…</div>
-            <div style="font-size:14px; color:#a9c4bd">then, in the final sitting: <strong>Allahumma salli 'ala Muhammad…</strong> and a du'a</div>
-            <div style="display:flex; gap:8px; flex-wrap:wrap">
-            <button type="button" onClick="{{ play_tashahhud }}" style="background:#d8a94a; color:#12332d; border:1px solid #d8a94a; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; font-weight:600; cursor:pointer" style-hover="background:#f6f1e7; border-color:#f6f1e7">{{ plabel_tashahhud }}</button>
-            <button type="button" onClick="{{ toggle_tashahhud }}" style="background:none; border:1px solid #4d726a; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; color:#f6f1e7; cursor:pointer" style-hover="background:#d8a94a; color:#12332d; border-color:#d8a94a">{{ label_tashahhud }}</button>
-            </div>
-            <sc-if value="{{ open_tashahhud }}" hint-placeholder-val="{{ false }}">
-              <div style="display:flex; flex-direction:column; gap:16px; border-top:1px solid #2c5148; padding-top:12px">
-                <div style="display:flex; flex-direction:column; gap:5px">
-                  <div style="font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#9dbab2">Tashahhud</div>
-                  <div style="font-family:'Noto Naskh Arabic',serif; font-size:20px; direction:rtl; line-height:2">التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ</div>
-                  <div style="font-size:14px; font-weight:600; line-height:1.65">At-tahiyyatu lillahi wa-s-salawatu wa-t-tayyibat. As-salamu 'alayka ayyuha-n-Nabiyyu wa rahmatullahi wa barakatuh. As-salamu 'alayna wa 'ala 'ibadillahi-s-salihin. Ashhadu an la ilaha illa Allah, wa ashhadu anna Muhammadan 'abduhu wa rasuluh.</div>
-                  <div style="font-size:13px; color:#a9c4bd; font-style:italic; line-height:1.65">"All greetings, prayers, and good things are for Allah. Peace be upon you, O Prophet, and Allah's mercy and blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no god but Allah, and I bear witness that Muhammad is His servant and messenger."</div>
-                </div>
-                <div style="display:flex; flex-direction:column; gap:5px">
-                  <div style="font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#9dbab2">Salat Ibrahimiyyah — final sitting only</div>
-                  <div style="font-family:'Noto Naskh Arabic',serif; font-size:20px; direction:rtl; line-height:2">اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ</div>
-                  <div style="font-size:14px; font-weight:600; line-height:1.65">Allahumma salli 'ala Muhammadin wa 'ala ali Muhammad, kama sallayta 'ala Ibrahima wa 'ala ali Ibrahim, innaka Hamidun Majid.</div>
-                  <div style="font-family:'Noto Naskh Arabic',serif; font-size:20px; direction:rtl; line-height:2">اللَّهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ</div>
-                  <div style="font-size:14px; font-weight:600; line-height:1.65">Allahumma barik 'ala Muhammadin wa 'ala ali Muhammad, kama barakta 'ala Ibrahima wa 'ala ali Ibrahim, innaka Hamidun Majid.</div>
-                  <div><button type="button" onClick="{{ play_salawat }}" style="background:#d8a94a; color:#12332d; border:1px solid #d8a94a; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; font-weight:600; cursor:pointer" style-hover="background:#f6f1e7; border-color:#f6f1e7">{{ plabel_salawat }}</button></div>
-                  <div style="font-size:13px; color:#a9c4bd; font-style:italic; line-height:1.65">"O Allah, send prayers upon Muhammad and the family of Muhammad, as You sent prayers upon Ibrahim and the family of Ibrahim. Indeed You are Praiseworthy, Glorious. O Allah, bless Muhammad and the family of Muhammad, as You blessed Ibrahim and the family of Ibrahim. Indeed You are Praiseworthy, Glorious."</div>
-                </div>
-                <div style="display:flex; flex-direction:column; gap:5px">
-                  <div style="font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#9dbab2">Du'a before the salam</div>
-                  <div style="font-family:'Noto Naskh Arabic',serif; font-size:20px; direction:rtl; line-height:2">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ</div>
-                  <div style="font-size:14px; font-weight:600; line-height:1.65">Allahumma inni a'udhu bika min 'adhabi jahannam, wa min 'adhabi-l-qabr, wa min fitnati-l-mahya wa-l-mamat, wa min sharri fitnati-l-Masihi-d-Dajjal.</div>
-                  <div><button type="button" onClick="{{ play_duasalam }}" style="background:#d8a94a; color:#12332d; border:1px solid #d8a94a; border-radius:999px; padding:6px 14px; font-family:'IBM Plex Sans',sans-serif; font-size:12px; letter-spacing:.06em; font-weight:600; cursor:pointer" style-hover="background:#f6f1e7; border-color:#f6f1e7">{{ plabel_duasalam }}</button></div>
-                  <div style="font-size:13px; color:#a9c4bd; font-style:italic; line-height:1.65">"O Allah, I seek refuge in You from the punishment of Hell, from the punishment of the grave, from the trials of life and death, and from the evil of the trial of the false messiah."</div>
-                </div>
-              </div>
-            </sc-if>
-          </div>
-          <div style="background:#1c443c; border-left:3px solid #f6f1e7; padding:12px 16px; display:flex; flex-direction:column; gap:5px">
-            <div style="font-family:'Noto Naskh Arabic',serif; font-size:22px; direction:rtl">السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ</div>
-            <div style="font-size:15px; font-weight:600">As-salamu 'alaykum wa rahmatullah</div>
-            <div style="font-size:14px; color:#a9c4bd; font-style:italic">Twice — to the right, then to the left</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
 
-  <section style="width:100%; max-width:900px; display:flex; flex-direction:column; gap:18px">
-    <h2 style="font-family:Marcellus,serif; font-size:30px; margin:0; font-weight:400">How many rak'ahs in each prayer</h2>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px">
-      <div style="background:#fffdf8; border:1px solid #e8dfcc; padding:18px 20px; display:flex; flex-direction:column; gap:8px">
-        <div style="font-family:Marcellus,serif; font-size:22px">Fajr</div>
-        <div style="font-size:34px; font-family:Marcellus,serif; color:#b08128; line-height:1">2</div>
-        <div style="font-size:13px; color:#6b7d78; line-height:1.5">Both rak'ahs are recited aloud</div>
+  <div class="step">
+    <div class="num">03</div>
+    <div class="figure">
+      <svg viewBox="0 0 200 170">
+        <line x1="14" y1="152" x2="186" y2="152" stroke="#253431" stroke-width="4" stroke-linecap="round"></line>
+        <g stroke="#e6e1d5" stroke-width="10" stroke-linecap="round" fill="none">
+          <line x1="128" y1="74" x2="74" y2="72"></line>
+          <line x1="128" y1="74" x2="126" y2="150"></line>
+        </g>
+        <g stroke="#c8983f" stroke-width="8" stroke-linecap="round" fill="none">
+          <line x1="80" y1="76" x2="84" y2="112"></line>
+        </g>
+        <circle cx="58" cy="76" r="13" fill="#e6e1d5"></circle>
+        <path d="M74 72 L128 74" stroke="#e6e1d5" stroke-width="10" stroke-linecap="round"></path>
+        <line x1="70" y1="96" x2="132" y2="96" stroke="#3a4a46" stroke-width="2" stroke-dasharray="4 5"></line>
+      </svg>
+      <div class="cap">Back flat, hands on knees</div>
+    </div>
+    <div class="main">
+      <div class="head">
+        <h2 class="h2">Bowing</h2>
+        <span class="ar">الرُّكوع</span>
       </div>
-      <div style="background:#fffdf8; border:1px solid #e8dfcc; padding:18px 20px; display:flex; flex-direction:column; gap:8px">
-        <div style="font-family:Marcellus,serif; font-size:22px">Dhuhr</div>
-        <div style="font-size:34px; font-family:Marcellus,serif; color:#b08128; line-height:1">4</div>
-        <div style="font-size:13px; color:#6b7d78; line-height:1.5">Everything is said quietly</div>
-      </div>
-      <div style="background:#fffdf8; border:1px solid #e8dfcc; padding:18px 20px; display:flex; flex-direction:column; gap:8px">
-        <div style="font-family:Marcellus,serif; font-size:22px">'Asr</div>
-        <div style="font-size:34px; font-family:Marcellus,serif; color:#b08128; line-height:1">4</div>
-        <div style="font-size:13px; color:#6b7d78; line-height:1.5">Everything is said quietly</div>
-      </div>
-      <div style="background:#fffdf8; border:1px solid #e8dfcc; padding:18px 20px; display:flex; flex-direction:column; gap:8px">
-        <div style="font-family:Marcellus,serif; font-size:22px">Maghrib</div>
-        <div style="font-size:34px; font-family:Marcellus,serif; color:#b08128; line-height:1">3</div>
-        <div style="font-size:13px; color:#6b7d78; line-height:1.5">First two rak'ahs aloud, third quiet</div>
-      </div>
-      <div style="background:#fffdf8; border:1px solid #e8dfcc; padding:18px 20px; display:flex; flex-direction:column; gap:8px">
-        <div style="font-family:Marcellus,serif; font-size:22px">'Isha</div>
-        <div style="font-size:34px; font-family:Marcellus,serif; color:#b08128; line-height:1">4</div>
-        <div style="font-size:13px; color:#6b7d78; line-height:1.5">First two rak'ahs aloud, last two quiet</div>
+      <p class="body">Say the takbir and bow. Bend from your hips until your back is flat, with your head in line with it. Spread your fingers on your knees, keep your arms and back straight, and get still before you speak.</p>
+      <div class="dua">
+        <div class="duaAr">سُبْحَانَ رَبِّيَ الْعَظِيمِ</div>
+        <div class="tr">Subhana Rabbiya-l-'Adhim</div>
+        <div class="gloss">"Glory to my Lord, the Most Great." Three times, quietly.</div>
+        <div class="row"><button type="button" class="btn btnPlay" onClick="{{ play_ruku }}">{{ plabel_ruku }}</button></div>
       </div>
     </div>
-    <p style="margin:0; font-size:14px; color:#6b7d78; line-height:1.6; max-width:640px">Add a short surah after Al-Fatihah in the first two rak'ahs only. After every two rak'ahs, sit for the tashahhud — in Fajr, that sitting is also the final one.</p>
+  </div>
+
+  <div class="step">
+    <div class="num">04</div>
+    <div class="figure">
+      <svg viewBox="0 0 200 170">
+        <line x1="14" y1="152" x2="186" y2="152" stroke="#253431" stroke-width="4" stroke-linecap="round"></line>
+        <g stroke="#e6e1d5" stroke-width="10" stroke-linecap="round" fill="none">
+          <line x1="100" y1="44" x2="100" y2="96"></line>
+          <line x1="100" y1="96" x2="92" y2="150"></line>
+          <line x1="100" y1="96" x2="110" y2="150"></line>
+        </g>
+        <g stroke="#c8983f" stroke-width="8" stroke-linecap="round" fill="none">
+          <line x1="100" y1="52" x2="88" y2="92"></line>
+        </g>
+        <circle cx="100" cy="30" r="13" fill="#e6e1d5"></circle>
+        <path d="M138 96 C138 72 138 66 138 52" stroke="#3a4a46" stroke-width="2" fill="none"></path>
+        <polyline points="133,58 138,48 143,58" stroke="#3a4a46" stroke-width="2" fill="none"></polyline>
+      </svg>
+      <div class="cap">Upright, arms at the sides</div>
+    </div>
+    <div class="main">
+      <div class="head">
+        <h2 class="h2">Rising from the bow</h2>
+        <span class="ar">الاعتدال</span>
+      </div>
+      <p class="body">Stand back up fully, saying the words as you rise. Pause here. This isn't just a movement, it's a position on its own.</p>
+      <div class="duaRow">
+        <div class="dua">
+          <div class="tag">While rising</div>
+          <div class="duaAr duaArSm">سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ</div>
+          <div class="tr">Sami'a Allahu liman hamidah</div>
+          <div class="row"><button type="button" class="btn btnPlay" onClick="{{ play_rising }}">{{ plabel_rising }}</button></div>
+        </div>
+        <div class="dua duaAlt">
+          <div class="tag">Once upright</div>
+          <div class="duaAr duaArSm">رَبَّنَا وَلَكَ الْحَمْدُ</div>
+          <div class="tr">Rabbana wa laka-l-hamd</div>
+          <div class="row">
+            <button type="button" class="btn btnPlay" onClick="{{ play_rabbana }}">{{ plabel_rabbana }}</button>
+            <button type="button" class="btn" onClick="{{ toggle_itidal }}">{{ label_itidal }}</button>
+          </div>
+          <sc-if value="{{ open_itidal }}" hint-placeholder-val="{{ false }}">
+            <div class="more">
+              <div class="verse">
+                <div class="tag">Optional longer form</div>
+                <div class="tr">Hamdan kathiran tayyiban mubarakan fih, mil'a-s-samawati wa mil'a-l-ardi wa mil'a ma shi'ta min shay'in ba'd.</div>
+                <div class="gloss">"Abundant, pure, blessed praise, filling the heavens, filling the earth, and filling whatever else You will."</div>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num">05</div>
+    <div class="figure">
+      <svg viewBox="0 0 200 170">
+        <line x1="14" y1="152" x2="186" y2="152" stroke="#253431" stroke-width="4" stroke-linecap="round"></line>
+        <g stroke="#e6e1d5" stroke-width="10" stroke-linecap="round" fill="none">
+          <line x1="132" y1="100" x2="82" y2="132"></line>
+          <line x1="132" y1="100" x2="132" y2="146"></line>
+          <line x1="132" y1="146" x2="160" y2="150"></line>
+        </g>
+        <g stroke="#c8983f" stroke-width="8" stroke-linecap="round" fill="none">
+          <polyline points="84,132 68,146 48,148"></polyline>
+        </g>
+        <circle cx="60" cy="136" r="12" fill="#e6e1d5"></circle>
+      </svg>
+      <div class="cap">Seven points touch the ground</div>
+    </div>
+    <div class="main">
+      <div class="head">
+        <h2 class="h2">Prostration</h2>
+        <span class="ar">السُّجود</span>
+      </div>
+      <p class="body">Say the takbir and go down. Your forehead, nose, both palms, both knees, and the toes of both feet should all be on the ground, seven points in all. Keep your elbows off the floor and away from your sides.</p>
+      <div class="dua">
+        <div class="duaAr">سُبْحَانَ رَبِّيَ الْأَعْلَى</div>
+        <div class="tr">Subhana Rabbiya-l-A'la</div>
+        <div class="gloss">"Glory to my Lord, the Most High." Three times, quietly.</div>
+        <div class="row">
+          <button type="button" class="btn btnPlay" onClick="{{ play_sujud }}">{{ plabel_sujud }}</button>
+          <button type="button" class="btn" onClick="{{ toggle_sujud }}">{{ label_sujud }}</button>
+        </div>
+        <sc-if value="{{ open_sujud }}" hint-placeholder-val="{{ false }}">
+          <div class="more">
+            <div class="verse">
+              <div class="tag">Optional addition</div>
+              <div class="duaAr duaArSm">سُبُّوحٌ قُدُّوسٌ رَبُّ الْمَلَائِكَةِ وَالرُّوحِ</div>
+              <div class="tr">Subbuhun Quddusun, Rabbu-l-mala'ikati wa-r-ruh.</div>
+              <div class="gloss">"Perfect, Holy, Lord of the angels and the Spirit."</div>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+      <div class="aside">After the required tasbih, this is the place to ask for whatever you want, in any language.</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num">06</div>
+    <div class="figure">
+      <svg viewBox="0 0 200 170">
+        <line x1="14" y1="152" x2="186" y2="152" stroke="#253431" stroke-width="4" stroke-linecap="round"></line>
+        <path d="M94 60 C90 72 88 86 90 98 L52 100 C46 101 44 108 44 116 L46 148 L52 150 L142 150 C142 132 138 114 130 100 C138 84 130 68 114 60 C107 56 98 57 94 60 Z" fill="#e6e1d5"></path>
+        <circle cx="94" cy="44" r="13" fill="#e6e1d5"></circle>
+        <path d="M102 72 C98 84 86 92 68 95" stroke="#c8983f" stroke-width="8" stroke-linecap="round" fill="none"></path>
+      </svg>
+      <div class="cap">Sitting back on the folded feet</div>
+    </div>
+    <div class="main">
+      <div class="head">
+        <h2 class="h2">Sitting between prostrations</h2>
+        <span class="ar">الجلسة</span>
+      </div>
+      <p class="body">Say the takbir and sit up. Fold your left foot under you and sit on it, keep your right foot upright with toes pointing toward the qiblah, and rest your hands on your thighs. Get settled before moving on.</p>
+      <div class="dua">
+        <div class="duaAr">رَبِّ اغْفِرْ لِي، وَارْحَمْنِي</div>
+        <div class="tr">Rabbi-ghfir li, warhamni, wajburni, warfa'ni, warzuqni, wahdini, wa 'afini</div>
+        <div class="note">Or simply: <strong>Rabbi-ghfir li, Rabbi-ghfir li</strong></div>
+        <div class="row">
+          <button type="button" class="btn btnPlay" onClick="{{ play_jalsa }}">{{ plabel_jalsa }}</button>
+          <button type="button" class="btn" onClick="{{ toggle_jalsa }}">{{ label_jalsa }}</button>
+        </div>
+        <sc-if value="{{ open_jalsa }}" hint-placeholder-val="{{ false }}">
+          <div class="more">
+            <div class="verse">
+              <div class="duaAr duaArSm">رَبِّ اغْفِرْ لِي، وَارْحَمْنِي، وَاجْبُرْنِي، وَارْفَعْنِي، وَارْزُقْنِي، وَاهْدِنِي، وَعَافِنِي</div>
+              <div class="gloss">"My Lord, forgive me, have mercy on me, mend me, raise me, provide for me, guide me, and grant me wellbeing."</div>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num">07</div>
+    <div class="figure">
+      <svg viewBox="0 0 200 170">
+        <line x1="14" y1="152" x2="186" y2="152" stroke="#253431" stroke-width="4" stroke-linecap="round"></line>
+        <g stroke="#e6e1d5" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.92">
+          <line x1="132" y1="100" x2="82" y2="132"></line>
+          <line x1="132" y1="100" x2="132" y2="146"></line>
+          <line x1="132" y1="146" x2="160" y2="150"></line>
+        </g>
+        <g stroke="#c8983f" stroke-width="8" stroke-linecap="round" fill="none">
+          <polyline points="84,132 68,146 48,148"></polyline>
+        </g>
+        <circle cx="60" cy="136" r="12" fill="#e6e1d5"></circle>
+        <text x="150" y="40" text-anchor="middle" font-family="'Instrument Serif', serif" font-size="32" fill="#3f4d49">×2</text>
+      </svg>
+      <div class="cap">Identical to the first</div>
+    </div>
+    <div class="main">
+      <div class="head">
+        <h2 class="h2">Second prostration</h2>
+        <span class="ar">السجود الثاني</span>
+      </div>
+      <p class="body">Say the takbir and prostrate again exactly as before, with the same tasbih. That completes one rak'ah. Say the takbir and stand for the next one. After an even number of rak'ahs, stay seated for the tashahhud instead.</p>
+      <div class="dua">
+        <div class="tr">Subhana Rabbiya-l-A'la</div>
+        <div class="gloss">Three times, quietly</div>
+        <div class="row"><button type="button" class="btn btnPlay" onClick="{{ play_sujud2 }}">{{ plabel_sujud2 }}</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="step stepFinal">
+    <div class="num">08</div>
+    <div class="figure">
+      <svg viewBox="0 0 200 170">
+        <line x1="14" y1="152" x2="186" y2="152" stroke="#253431" stroke-width="4" stroke-linecap="round"></line>
+        <path d="M94 60 C90 72 88 86 90 98 L52 100 C46 101 44 108 44 116 L46 148 L52 150 L142 150 C142 132 138 114 130 100 C138 84 130 68 114 60 C107 56 98 57 94 60 Z" fill="#f2eee3"></path>
+        <circle cx="94" cy="44" r="13" fill="#f2eee3"></circle>
+        <path d="M102 72 C98 84 86 92 68 95" stroke="#e2bd74" stroke-width="8" stroke-linecap="round" fill="none"></path>
+        <line x1="66" y1="94" x2="54" y2="84" stroke="#e2bd74" stroke-width="6" stroke-linecap="round"></line>
+      </svg>
+      <div class="cap">Index finger raised at the shahadah</div>
+    </div>
+    <div class="main">
+      <div class="head">
+        <h2 class="h2">Final sitting and salam</h2>
+        <span class="ar">التشهد والسلام</span>
+      </div>
+      <p class="body">Sit like you did in stage 6 and recite the tashahhud, raising your index finger when you say the testimony of faith. In the last sitting, add the durood and a du'a. Then turn your head right and left with the salam. That's it, your prayer is done.</p>
+      <div class="dua">
+        <div class="tag">Every sitting</div>
+        <div class="tr">At-tahiyyatu lillahi wa-s-salawatu wa-t-tayyibat...</div>
+        <div class="note">then, in the final sitting: <strong>Allahumma salli 'ala Muhammad...</strong> and a du'a</div>
+        <div class="row">
+          <button type="button" class="btn btnPlay" onClick="{{ play_tashahhud }}">{{ plabel_tashahhud }}</button>
+          <button type="button" class="btn" onClick="{{ toggle_tashahhud }}">{{ label_tashahhud }}</button>
+        </div>
+        <sc-if value="{{ open_tashahhud }}" hint-placeholder-val="{{ false }}">
+          <div class="more">
+            <div class="verse">
+              <div class="tag">Tashahhud</div>
+              <div class="duaAr duaArSm">التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ</div>
+              <div class="tr">At-tahiyyatu lillahi wa-s-salawatu wa-t-tayyibat. As-salamu 'alayka ayyuha-n-Nabiyyu wa rahmatullahi wa barakatuh. As-salamu 'alayna wa 'ala 'ibadillahi-s-salihin. Ashhadu an la ilaha illa Allah, wa ashhadu anna Muhammadan 'abduhu wa rasuluh.</div>
+              <div class="gloss">"All greetings, prayers, and good things are for Allah. Peace be upon you, O Prophet, and Allah's mercy and blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no god but Allah, and I bear witness that Muhammad is His servant and messenger."</div>
+            </div>
+            <div class="verse">
+              <div class="tag">Salat Ibrahimiyyah, final sitting only</div>
+              <div class="duaAr duaArSm">اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ</div>
+              <div class="tr">Allahumma salli 'ala Muhammadin wa 'ala ali Muhammad, kama sallayta 'ala Ibrahima wa 'ala ali Ibrahim, innaka Hamidun Majid.</div>
+              <div class="duaAr duaArSm">اللَّهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ</div>
+              <div class="tr">Allahumma barik 'ala Muhammadin wa 'ala ali Muhammad, kama barakta 'ala Ibrahima wa 'ala ali Ibrahim, innaka Hamidun Majid.</div>
+              <div class="row"><button type="button" class="btn btnPlay" onClick="{{ play_salawat }}">{{ plabel_salawat }}</button></div>
+              <div class="gloss">"O Allah, send prayers upon Muhammad and the family of Muhammad, as You sent prayers upon Ibrahim and the family of Ibrahim. Indeed You are Praiseworthy, Glorious. O Allah, bless Muhammad and the family of Muhammad, as You blessed Ibrahim and the family of Ibrahim. Indeed You are Praiseworthy, Glorious."</div>
+            </div>
+            <div class="verse">
+              <div class="tag">Du'a before the salam</div>
+              <div class="duaAr duaArSm">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ</div>
+              <div class="tr">Allahumma inni a'udhu bika min 'adhabi jahannam, wa min 'adhabi-l-qabr, wa min fitnati-l-mahya wa-l-mamat, wa min sharri fitnati-l-Masihi-d-Dajjal.</div>
+              <div class="row"><button type="button" class="btn btnPlay" onClick="{{ play_duasalam }}">{{ plabel_duasalam }}</button></div>
+              <div class="gloss">"O Allah, I seek refuge in You from the punishment of Hell, from the punishment of the grave, from the trials of life and death, and from the evil of the trial of the false messiah."</div>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+      <div class="dua duaAlt">
+        <div class="duaAr">السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ</div>
+        <div class="tr">As-salamu 'alaykum wa rahmatullah</div>
+        <div class="gloss">Twice: to the right, then to the left</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <h2 class="sectionTitle">How many rak'ahs in each prayer</h2>
+    <div class="counts">
+      <div class="count">
+        <div class="countName">Fajr</div>
+        <div class="countNum">2</div>
+        <div class="countNote">Both rak'ahs are recited aloud</div>
+      </div>
+      <div class="count">
+        <div class="countName">Dhuhr</div>
+        <div class="countNum">4</div>
+        <div class="countNote">Everything is said quietly</div>
+      </div>
+      <div class="count">
+        <div class="countName">'Asr</div>
+        <div class="countNum">4</div>
+        <div class="countNote">Everything is said quietly</div>
+      </div>
+      <div class="count">
+        <div class="countName">Maghrib</div>
+        <div class="countNum">3</div>
+        <div class="countNote">First two rak'ahs aloud, third quiet</div>
+      </div>
+      <div class="count">
+        <div class="countName">'Isha</div>
+        <div class="countNum">4</div>
+        <div class="countNote">First two rak'ahs aloud, last two quiet</div>
+      </div>
+    </div>
+    <p class="aside">Add a short surah after Al-Fatihah in the first two rak'ahs only. After every two rak'ahs, sit for the tashahhud. In Fajr, that sitting is also the final one.</p>
   </section>
 
-  <footer style="max-width:640px; text-align:center; font-size:13px; color:#8a9a95; line-height:1.65; border-top:1px solid #e2d9c6; padding-top:24px">
-    Some details vary between schools — like the opening supplication, saying <em>Amin</em> aloud or quietly, and where qunut fits in. All of these are within accepted practice. For pronunciation, listen to a reciter rather than relying on transliteration alone.
+  <footer class="foot">
+    Some details vary between schools, like the opening supplication, saying <em>Amin</em> aloud or quietly, and where qunut fits in. All of these are within accepted practice. For pronunciation, listen to a reciter rather than relying on transliteration alone.
   </footer>
 
+</div>
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script>
