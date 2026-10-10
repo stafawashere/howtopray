@@ -101,7 +101,9 @@ function renderLine(line, context) {
 
       if (!url) throw new Error(`${locale.code}: no audio track called "${line.listen}"`);
 
-      buttons.push(`<button type="button" class="listen" data-src="${escapeAttribute(url)}" data-title="${escapeAttribute(line.title)}"></button>`);
+      // data-track is unused now, but service workers from before the build
+      // step still serve an app.js that looks the audio up by it.
+      buttons.push(`<button type="button" class="listen" data-track="${line.listen}" data-src="${escapeAttribute(url)}" data-title="${escapeAttribute(line.title)}"></button>`);
     }
 
     if (line.more) {
