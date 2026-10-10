@@ -1,35 +1,81 @@
-# Sujood
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="img/banner-dark.png">
+  <img alt="Sujood" src="img/banner-light.png">
+</picture>
 
-A one-page guide to the eight positions of salah, in the order you do them. Each position has a simple figure of the body and the words you say there, in Arabic, transliteration and English. The recitations have a Listen button so you can hear the line instead of guessing at it from the spelling. At the bottom there's a table of how many rak'ahs each of the five prayers has.
+[![CI](https://github.com/stafawashere/sujood.online/actions/workflows/ci.yml/badge.svg)](https://github.com/stafawashere/sujood.online/actions/workflows/ci.yml)
+[![Deploy](https://github.com/stafawashere/sujood.online/actions/workflows/deploy.yml/badge.svg)](https://github.com/stafawashere/sujood.online/actions/workflows/deploy.yml)
 
-It's live at [sujood.online](https://sujood.online).
+I made Sujood for anyone learning to pray, so the positions of salah and what to say in each one are all on one page.
 
-## How it's built
+### [sujood.online](https://sujood.online)
 
-There's no build step and no framework. The page is all in `index.html`: the markup, the CSS and one small script at the bottom that runs the Listen buttons, the "Show full text" toggles and the bar of positions that stays along the top of the screen. The fonts are EB Garamond and Amiri (for the Arabic) from Google Fonts.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="img/screenshot-dark.png">
+  <img alt="The second position on the page, with the opening supplication and Al-Fatihah, each with a Listen button and a Show full text button" src="img/screenshot-light.png">
+</picture>
 
-The figures are inline SVG pictograms. Every position is drawn on the same 100 by 100 grid from the same body, so the head, arms and legs are the same size in every one, and the dotted line at the top of the page joins the head positions to show how a rak'ah goes up and down.
+## What's on the page
 
-The collapsed text uses `hidden="until-found"`, so searching the page in Chrome or Edge opens the section that has the match.
+The eight positions of one rak'ah go down the page in order. Each one has a figure of the body, a short note on what to do, and what you say there in Arabic with a transliteration and the meaning. The longer recitations, like Al-Fatihah and the tashahhud, start collapsed and open with "Show full text". Most of them have a Listen button, so you can hear the line instead of guessing at it from the spelling.
 
-The head has the search and sharing metadata: a canonical URL, Open Graph and Twitter tags pointing at `img/og.png`, and a JSON-LD block that describes the page as a `HowTo` with the eight positions as steps. If you change a position's wording, change its step there too. `robots.txt` and `sitemap.xml` sit at the root for crawlers.
+A bar along the top of the screen shows where you are and lets you jump to any position. At the bottom there's a table of how many rak'ahs each of the five daily prayers has and which ones are recited aloud. Once you've visited the page, it opens without a connection.
 
-The page can be installed to a phone's home screen through `manifest.webmanifest` and the icons in `img/`. `sw.js` is a small service worker that keeps a copy of the page, the icons and the fonts, so the guide still opens without signal once it has been visited. It always tries the network first for the page itself, so a deploy shows up on the next online visit. The audio isn't cached. The images in `img/` are drawn by `tools/make_images.py` from the same figure coordinates as the SVG symbols. It needs Pillow and runs on macOS because it uses the system Baskerville. Run `python3 tools/make_images.py img` to redraw them.
+## Languages
 
-The Share button in the footer opens the phone's share sheet where the browser supports it, and copies the link everywhere else.
+The page is in English, Arabic, Urdu, Bengali, Indonesian, Turkish and French, at `/`, `/ar/`, `/ur/`, `/bn/`, `/id/`, `/tr/` and `/fr/`. Arabic and Urdu pages run right to left.
 
-`support.js` is the old runtime from before the redesign. The page doesn't load it anymore.
+The English is the original. The other six are machine translations, and no native speaker has checked any of them yet. Some of the religious wording is the kind of thing a teacher or imam in that language would phrase differently, so I'd like each one read by someone who knows the language and the prayer well. If that's you, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-None of the audio lives in this repo. When you press Listen, the page makes an `Audio` object pointed at an MP3 and the browser streams it straight from the source. Al-Fatihah and Al-Ikhlas are Mishary Rashid Alafasy's recitation from quranicaudio.com, and the other lines (the opening dua, what you say in ruku and sujud, the tashahhud, the salawat and the rest) come from hisnmuslim.com. Only one track plays at a time, and pressing the button again stops it.
+## Audio
 
-Every push to `main` deploys the repo to GitHub Pages through `.github/workflows/deploy.yml`, and `CNAME` points sujood.online at it.
+None of the audio is in this repo. A Listen button streams the MP3 straight from where it's hosted, and the service worker doesn't cache it.
+
+- Al-Fatihah and Al-Ikhlas are Mishary Rashid Alafasy's recitation, from [quranicaudio.com](https://quranicaudio.com).
+- Everything else (the opening supplication, what you say in ruku, rising from it, sujud and the sitting, the tashahhud, the salawat and the du'a before the salam) is from [Hisn al-Muslim](https://www.hisnmuslim.com).
+
+quranicaudio.com says its files are free for personal, non-commercial use. I couldn't find any terms on hisnmuslim.com. Sujood is free and has no ads, but if you run either site and would rather it didn't link to your files, please open an issue and I'll change it.
 
 ## Running it locally
 
-Any static file server works. From the repo folder:
+You need Node 20 or newer. There's nothing to install.
 
 ```bash
-python3 -m http.server 8000
+npm run serve
 ```
 
-Then open http://localhost:8000. You need to be online for the fonts and the audio, because they load from other sites.
+That builds the site into `_site/` and serves it at http://localhost:8000. Any static server pointed at `_site/` works too. The fonts and the audio load from other sites, so you need to be online for those.
+
+## How it's built
+
+The words for each language live in `src/locales/`, one JSON file per language, with `en.json` as the reference. The Arabic of every recitation is in `src/arabic.json` and every page shares it, so a fix to the Arabic happens once and a translator can't change it by accident. `src/audio.json` maps each Listen button to its MP3, and `src/site.json` holds the order of the positions and the rak'ah counts.
+
+`src/template.html` is the page with placeholders. `scripts/build.js` fills it in once per language and writes the result to `_site/`, along with the files in `static/`, the images in `img/` and a sitemap. It uses only Node's standard library. If a translation is missing a key that `en.json` has, the build stops and names the key.
+
+The build also writes the service worker. Its list of files to cache comes from the pages it just built, so it can't fall behind when a file is added or renamed, and its cache name changes whenever one of those files does. Pages load from the network first and fall back to the cached copy when you're offline.
+
+There's no framework because the page doesn't need one. All the text is in the HTML when it arrives, so it reads fine before any script runs. `static/app.js` is about 300 lines. It runs the Listen buttons, the collapsed text, the position bar and the Share button, and registers the service worker. The figures are inline SVG drawn on the same 100 by 100 grid, so the body is the same size in every position. The collapsed text uses `hidden="until-found"`, so searching the page in Chrome or Edge opens the section with the match.
+
+`tools/make_images.py` draws the icons, `og.png` and the README banners from the same figure coordinates. It needs Pillow and runs on macOS because it uses the system Baskerville. `python3 tools/make_images.py img` redraws them.
+
+## Tests
+
+```bash
+npm test
+```
+
+The tests use Node's built-in runner. They build the site into a temporary folder and check that every language gets a page with the right `lang` and `dir`, that every translation has every key in `en.json`, that no placeholder is left unfilled, that every internal link, asset path and `#` link points at something real, and that the service worker caches exactly the pages and assets in the build.
+
+`npm run check-audio` checks that every audio URL still answers with an MP3. It isn't part of the tests because it depends on two other sites being up.
+
+## Deploying
+
+Every push to `main` runs `.github/workflows/deploy.yml`, which builds the site, runs the tests and publishes `_site/` to GitHub Pages. `static/CNAME` points sujood.online at it. Pull requests run the same build and tests in `.github/workflows/ci.yml` without deploying.
+
+## Contributing
+
+The two things that would help most are a native speaker checking a translation and anyone pointing out a mistake in a recitation, transliteration or meaning. [CONTRIBUTING.md](CONTRIBUTING.md) explains both.
+
+## License
+
+The code is under the [MIT License](LICENSE). The written content, the translations and the figures are under [CC BY 4.0](LICENSE-content). Neither covers the Arabic text of the Qur'an and the supplications, or the audio, which isn't in this repo.
