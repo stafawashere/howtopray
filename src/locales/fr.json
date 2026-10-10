@@ -1,0 +1,374 @@
+{
+  "lang": "fr",
+  "dir": "ltr",
+  "ogLocale": "fr_FR",
+  "brand": "Sujood",
+  "siteName": "Sujood",
+  "appTitle": "Sujood",
+  "arabicNames": { "headings": true, "contents": true },
+  "meta": {
+    "title": "Comment faire la prière étape par étape, avec audio | Sujood",
+    "description": "Apprendre à faire la prière (salât) quand on débute : les huit positions dans l’ordre, ce qu’il faut dire dans chacune en arabe, en phonétique et en français, et l’audio pour écouter.",
+    "ogTitle": "Comment faire la prière, étape par étape",
+    "ogDescription": "Chaque position de la prière dans l’ordre, ce qu’il faut dire dans chacune, et l’audio pour écouter en même temps.",
+    "ogImageAlt": "Sujood. Comment faire la prière étape par étape, avec les silhouettes des huit positions d’une rak'a."
+  },
+  "howTo": { "name": "Comment faire la prière, étape par étape", "description": "Les huit positions d’une rak'a de la prière dans l’ordre, avec ce qu’il faut dire dans chacune." },
+  "mast": { "subtitle": "Tes cinq prières de chaque jour", "lede": "Voici les huit positions de la prière, dans l’ordre où tu vas les faire. Pour chacune, tu verras ce que doit faire ton corps et ce qu’il faut dire à ce moment-là. Quand tu as fait les huit, tu as accompli une <em>rak'a</em>." },
+  "flow": {
+    "name": "Une rak'a",
+    "steps": [
+      "Se tenir debout",
+      "S’incliner",
+      "Se relever",
+      "Se prosterner",
+      "S’asseoir",
+      "Se prosterner"
+    ],
+    "next": "Rak'a suivante",
+    "sentence": "Se tenir debout, s’incliner, se relever, se prosterner, s’asseoir, se prosterner"
+  },
+  "contents": { "label": "Sommaire" },
+  "runner": { "label": "Aller à une position", "itemLabel": "{n}, {title}" },
+  "positions": {
+    "takbir": {
+      "title": "Debout : le takbir",
+      "short": "Takbir",
+      "says": "Allâhou akbar",
+      "caption": "Mains levées, puis posées l’une sur l’autre",
+      "instruction": "Tiens-toi debout face à la qibla. Lève les mains à hauteur des épaules ou des oreilles, dis le takbir, puis pose les mains l’une sur l’autre sur la poitrine ou sur le ventre. À partir de ce moment, tu es en prière.",
+      "say": [
+        {
+          "lines": [
+            { "arabic": "takbir" },
+            { "tr": "Allâhou akbar" },
+            { "meaning": "« Allah est le plus grand. » Une fois, à voix haute." }
+          ]
+        }
+      ],
+      "step": { "name": "Debout : le takbir", "text": "Tiens-toi debout face à la qibla, lève les mains à hauteur des épaules ou des oreilles, dis Allâhou akbar, puis pose les mains l’une sur l’autre sur la poitrine ou sur le ventre." }
+    },
+    "qiyam": {
+      "title": "Debout : la récitation",
+      "short": "Récitation",
+      "says": "Soubhânaka Allâhoumma, Al-Fâtiha",
+      "caption": "Le regard sur l’endroit de la prosternation",
+      "instruction": "Reste debout, les mains toujours l’une sur l’autre. Dans la première rak'a seulement, dis l’invocation d’ouverture à voix basse. Ensuite, demande la protection d’Allah, dis la basmala et récite Al-Fâtiha. Tu la récites dans chaque rak'a, et rien d’autre ne peut la remplacer. Dans les deux premières rak'as, ajoute une courte sourate après Al-Fâtiha.",
+      "say": [
+        {
+          "lines": [
+            { "when": "Première rak'a seulement, à voix basse" },
+            { "tr": "Soubhânaka Allâhoumma wa bi-hamdika..." },
+            { "note": "puis <strong>A'oûdhou billâhi mina-ch-chaytâni-r-rajîm</strong>" },
+            { "listen": "istiftah", "title": "Soubhânaka Allâhoumma wa bi-hamdika", "more": "istiftah" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "arabicSmall": "istiftah" },
+                { "tr": "Soubhânaka Allâhoumma wa bi-hamdika, wa tabâraka-smouka, wa ta'âlâ jaddouka, wa lâ ilâha ghayrouk." },
+                { "meaning": "« Gloire à Toi, ô Allah, et louange. Béni soit Ton nom, très haute est Ta majesté, et il n’y a de dieu que Toi. »" }
+              ]
+            },
+            {
+              "lines": [
+                { "when": "Puis la demande de protection et la basmala" },
+                { "arabicSmall": "taawwudh" },
+                { "tr": "A'oûdhou billâhi mina-ch-chaytâni-r-rajîm. Bismillâhi-r-Rahmâni-r-Rahîm." },
+                { "meaning": "« Je cherche refuge auprès d’Allah contre Satan, le maudit. Au nom d’Allah, le Plus Miséricordieux, le Particulièrement Miséricordieux. »" }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            { "when": "Chaque rak'a" },
+            { "arabicSmall": "fatihah-2" },
+            { "tr": "Al-Fâtiha, puis <em>Âmîn</em>" },
+            { "listen": "fatihah", "title": "Al-Fâtiha", "more": "fatihah" }
+          ],
+          "more": [
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-1" },
+                { "tr": "Bismillâhi-r-Rahmâni-r-Rahîm" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-2" },
+                { "tr": "Al-hamdou lillâhi Rabbi-l-'âlamîn" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-3" },
+                { "tr": "Ar-Rahmâni-r-Rahîm" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-4" },
+                { "tr": "Mâliki yawmi-d-dîn" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-5" },
+                { "tr": "Iyyâka na'boudou wa iyyâka nasta'în" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-6" },
+                { "tr": "Ihdina-s-sirâta-l-moustaqîm" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-7" },
+                { "tr": "Sirâta-lladhîna an'amta 'alayhim, ghayri-l-maghdoubi 'alayhim wa la-d-dâllîn" }
+              ]
+            },
+            {
+              "lines": [
+                { "tr": "Ensuite, dis : <span class=\"ar-inline\" lang=\"ar\" dir=\"rtl\">آمِين</span> Âmîn" },
+                { "meaning": "« Toute louange revient à Allah, Seigneur de tous les mondes, le Plus Miséricordieux, le Particulièrement Miséricordieux, Maître du Jour du Jugement. C’est Toi seul que nous adorons, et c’est à Toi seul que nous demandons de l’aide. Guide-nous vers le chemin droit, le chemin de ceux que Tu as bénis, pas de ceux qui ont mérité la colère, ni de ceux qui se sont égarés. »" }
+              ]
+            },
+            {
+              "lines": [
+                { "when": "Deux premières rak'as : une courte sourate (Al-Ikhlâs)" },
+                { "arabicSmall": "ikhlas" },
+                { "tr": "Qoul houwa Allâhou ahad. Allâhou-s-samad. Lam yalid wa lam yoûlad. Wa lam yakoun lahou koufouwan ahad." },
+                { "meaning": "« Dis : Il est Allah, Unique. Allah, le Refuge éternel. Il n’engendre pas et Il n’est pas né, et rien ne Lui est comparable. »" },
+                { "listen": "ikhlas", "title": "Al-Ikhlâs" }
+              ]
+            }
+          ]
+        }
+      ],
+      "step": { "name": "Debout : la récitation", "text": "Dans la première rak'a, dis l’invocation d’ouverture à voix basse. Ensuite, demande la protection d’Allah, dis la basmala et récite Al-Fâtiha. Dans les deux premières rak'as, ajoute une courte sourate après." }
+    },
+    "ruku": {
+      "title": "L’inclinaison",
+      "short": "Inclinaison",
+      "says": "Soubhâna Rabbiya-l-'Adhîm",
+      "caption": "Dos à plat, mains sur les genoux",
+      "instruction": "Dis le takbir et incline-toi. Plie-toi au niveau des hanches jusqu’à ce que ton dos soit à plat, la tête dans son prolongement. Pose les mains sur les genoux, doigts écartés, garde les bras et le dos droits, et attends d’être immobile avant de parler.",
+      "say": [
+        {
+          "lines": [
+            { "arabic": "ruku" },
+            { "tr": "Soubhâna Rabbiya-l-'Adhîm" },
+            { "meaning": "« Gloire à mon Seigneur, le Très Grand. » Trois fois, à voix basse." },
+            { "listen": "ruku", "title": "Soubhâna Rabbiya-l-'Adhîm" }
+          ]
+        }
+      ],
+      "step": { "name": "L’inclinaison (roukou')", "text": "Dis le takbir et incline-toi jusqu’à ce que ton dos soit à plat, les mains sur les genoux, puis dis trois fois Soubhâna Rabbiya-l-'Adhîm." }
+    },
+    "itidal": {
+      "title": "Le redressement après l’inclinaison",
+      "short": "Redressement",
+      "says": "Sami'a Allâhou liman hamidah",
+      "caption": "Debout, les bras le long du corps",
+      "instruction": "Redresse-toi complètement, en disant ces paroles pendant que tu te relèves. Marque une pause ici. C’est une position à part entière, et pas seulement un passage d’un mouvement à l’autre.",
+      "say": [
+        {
+          "lines": [
+            { "when": "En te relevant" },
+            { "arabicSmall": "rising" },
+            { "tr": "Sami'a Allâhou liman hamidah" },
+            { "listen": "rising", "title": "Sami'a Allâhou liman hamidah" }
+          ]
+        },
+        {
+          "lines": [
+            { "when": "Une fois debout" },
+            { "arabicSmall": "rabbana" },
+            { "tr": "Rabbanâ wa laka-l-hamd" },
+            { "listen": "rabbana", "title": "Rabbanâ wa laka-l-hamd", "more": "itidal" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "when": "Forme plus longue, facultative" },
+                { "tr": "Hamdan kathîran tayyiban moubârakan fîh, mil'a-s-samâwâti wa mil'a-l-ardi wa mil'a mâ chi'ta min chay'in ba'd." },
+                { "meaning": "« Une louange abondante, pure et bénie, qui remplit les cieux, qui remplit la terre, et qui remplit tout ce que Tu voudras d’autre. »" }
+              ]
+            }
+          ]
+        }
+      ],
+      "step": { "name": "Le redressement après l’inclinaison", "text": "Redresse-toi complètement en disant Sami'a Allâhou liman hamidah, puis, une fois debout, dis Rabbanâ wa laka-l-hamd." }
+    },
+    "sujud": {
+      "title": "La prosternation",
+      "short": "Prosternation",
+      "says": "Soubhâna Rabbiya-l-A'lâ",
+      "caption": "Sept points touchent le sol",
+      "instruction": "Dis le takbir et descends. Ton front, ton nez, tes deux paumes, tes deux genoux et les orteils de tes deux pieds doivent tous toucher le sol, soit sept points en tout. Garde les coudes décollés du sol et écartés de tes flancs.",
+      "say": [
+        {
+          "lines": [
+            { "arabic": "sujud" },
+            { "tr": "Soubhâna Rabbiya-l-A'lâ" },
+            { "meaning": "« Gloire à mon Seigneur, le Très-Haut. » Trois fois, à voix basse." },
+            { "listen": "sujud", "title": "Soubhâna Rabbiya-l-A'lâ", "more": "sujud" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "when": "Ajout facultatif" },
+                { "arabicSmall": "subbuhun" },
+                { "tr": "Soubboûhoun Qouddoûsoun, Rabbou-l-malâ'ikati wa-r-roûh." },
+                { "meaning": "« Parfait, Saint, Seigneur des anges et de l’Esprit. »" }
+              ]
+            }
+          ]
+        }
+      ],
+      "aside": "Après le tasbih requis, c’est le moment de demander tout ce que tu veux, dans n’importe quelle langue.",
+      "step": { "name": "La prosternation (soujoud)", "text": "Dis le takbir et descends de sorte que ton front, ton nez, tes paumes, tes genoux et tes orteils touchent le sol, puis dis trois fois Soubhâna Rabbiya-l-A'lâ." }
+    },
+    "jalsa": {
+      "title": "L’assise entre les deux prosternations",
+      "short": "Assise",
+      "says": "Rabbi-ghfir lî",
+      "caption": "Assis sur les pieds repliés",
+      "instruction": "Dis le takbir et relève-toi pour t’asseoir. Replie ton pied gauche sous toi et assieds-toi dessus, garde le pied droit dressé, les orteils tournés vers la qibla, et pose les mains sur les cuisses. Prends le temps de bien te poser avant de continuer.",
+      "say": [
+        {
+          "lines": [
+            { "arabic": "jalsa" },
+            { "tr": "Rabbi-ghfir lî, warhamnî, wajbournî, warfa'nî, warzouqnî, wahdinî, wa 'âfinî" },
+            { "note": "Ou simplement : <strong>Rabbi-ghfir lî, Rabbi-ghfir lî</strong>" },
+            { "listen": "jalsa", "title": "Rabbi-ghfir lî", "more": "jalsa" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "arabicSmall": "jalsa-long" },
+                { "meaning": "« Mon Seigneur, pardonne-moi, fais-moi miséricorde, répare-moi, élève-moi, accorde-moi ma subsistance, guide-moi et accorde-moi le bien-être. »" }
+              ]
+            }
+          ]
+        }
+      ],
+      "step": { "name": "L’assise entre les deux prosternations", "text": "Dis le takbir et assieds-toi sur ton pied gauche replié, les mains sur les cuisses, et dis Rabbi-ghfir lî." }
+    },
+    "sujud-2": {
+      "title": "La deuxième prosternation",
+      "short": "Prosternation",
+      "says": "Soubhâna Rabbiya-l-A'lâ",
+      "caption": "Identique à la première",
+      "instruction": "Dis le takbir et prosterne-toi de nouveau, exactement comme la première fois, avec le même tasbih. Cela termine une rak'a. Dis le takbir et lève-toi pour la suivante. Après un nombre pair de rak'as, reste plutôt en position assise pour <a href=\"#tashahhud\">le tachahhoud</a>.",
+      "say": [
+        {
+          "lines": [
+            { "tr": "Soubhâna Rabbiya-l-A'lâ" },
+            { "meaning": "Trois fois, à voix basse" },
+            { "listen": "sujud", "title": "Soubhâna Rabbiya-l-A'lâ" }
+          ]
+        }
+      ],
+      "step": { "name": "La deuxième prosternation", "text": "Dis le takbir et prosterne-toi de nouveau, exactement comme la première fois. Cela termine une rak'a." }
+    },
+    "tashahhud": {
+      "title": "L’assise finale et le salam",
+      "short": "Salam",
+      "says": "At-tahiyyâtou lillâhi",
+      "caption": "L’index levé à la chahâda",
+      "instruction": "Assieds-toi comme à l’étape 6 et récite le tachahhoud, en levant l’index au moment où tu prononces l’attestation de foi. Dans la dernière assise, ajoute la prière sur le Prophète et une dou'a. Puis tourne la tête à droite, puis à gauche, en disant le salam. Et voilà, ta prière est terminée.",
+      "say": [
+        {
+          "lines": [
+            { "when": "À chaque assise" },
+            { "tr": "At-tahiyyâtou lillâhi wa-s-salawâtou wa-t-tayyibât..." },
+            { "note": "puis, dans la dernière assise : <strong>Allâhoumma salli 'alâ Mouhammad...</strong> et une dou'a" },
+            { "listen": "tashahhud", "title": "At-tahiyyâtou lillâhi", "more": "tashahhud" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "when": "Tachahhoud" },
+                { "arabicSmall": "tashahhud" },
+                { "tr": "At-tahiyyâtou lillâhi wa-s-salawâtou wa-t-tayyibât. As-salâmou 'alayka ayyouha-n-Nabiyyou wa rahmatoullâhi wa barakâtouh. As-salâmou 'alaynâ wa 'alâ 'ibâdillâhi-s-sâlihîn. Ach-hadou an lâ ilâha illa-llâh, wa ach-hadou anna Mouhammadan 'abdouhou wa rasoûlouh." },
+                { "meaning": "« Toutes les salutations, les prières et les bonnes choses sont pour Allah. Que la paix soit sur toi, ô Prophète, ainsi que la miséricorde d’Allah et Ses bénédictions. Que la paix soit sur nous et sur les serviteurs vertueux d’Allah. J’atteste qu’il n’y a de dieu qu’Allah, et j’atteste que Muhammad est Son serviteur et Son messager. »" }
+              ]
+            },
+            {
+              "lines": [
+                { "when": "As-Salât al-Ibrâhîmiyya, dans la dernière assise seulement" },
+                { "arabicSmall": "salawat" },
+                { "tr": "Allâhoumma salli 'alâ Mouhammadin wa 'alâ âli Mouhammad, kamâ sallayta 'alâ Ibrâhîma wa 'alâ âli Ibrâhîm, innaka Hamîdoun Majîd." },
+                { "arabicSmall": "barakat" },
+                { "tr": "Allâhoumma bârik 'alâ Mouhammadin wa 'alâ âli Mouhammad, kamâ bârakta 'alâ Ibrâhîma wa 'alâ âli Ibrâhîm, innaka Hamîdoun Majîd." },
+                { "listen": "salawat", "title": "Allâhoumma salli 'alâ Mouhammad" },
+                { "meaning": "« Ô Allah, prie sur Muhammad et sur la famille de Muhammad, comme Tu as prié sur Ibrahim et sur la famille d’Ibrahim. Tu es certes Digne de louange et Glorieux. Ô Allah, bénis Muhammad et la famille de Muhammad, comme Tu as béni Ibrahim et la famille d’Ibrahim. Tu es certes Digne de louange et Glorieux. »" }
+              ]
+            },
+            {
+              "lines": [
+                { "when": "Dou'a avant le salam" },
+                { "arabicSmall": "dua-before-salam" },
+                { "tr": "Allâhoumma innî a'oûdhou bika min 'adhâbi jahannam, wa min 'adhâbi-l-qabr, wa min fitnati-l-mahyâ wa-l-mamât, wa min charri fitnati-l-Masîhi-d-Dajjâl." },
+                { "listen": "duasalam", "title": "Allâhoumma innî a'oûdhou bika" },
+                { "meaning": "« Ô Allah, je cherche refuge auprès de Toi contre le châtiment de l’Enfer, contre le châtiment de la tombe, contre les épreuves de la vie et de la mort, et contre le mal de l’épreuve du faux messie. »" }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            { "arabic": "salam" },
+            { "tr": "As-salâmou 'alaykoum wa rahmatoullâh" },
+            { "meaning": "Deux fois, d’abord à droite, puis à gauche" }
+          ]
+        }
+      ],
+      "step": { "name": "L’assise finale et le salam", "text": "Assieds-toi et récite le tachahhoud. Dans la dernière assise, ajoute la prière sur le Prophète et une dou'a, puis tourne la tête à droite et à gauche en disant As-salâmou 'alaykoum wa rahmatoullâh." }
+    }
+  },
+  "counts": {
+    "title": "Combien de rak'as dans chaque prière",
+    "says": "Fajr 2, Dhohr 4, 'Asr 4, Maghrib 3, 'Icha 4",
+    "short": "Nombre de rak'as",
+    "prayerColumn": "Prière",
+    "rakahsColumn": "Rak'as",
+    "prayers": {
+      "fajr": { "name": "Fajr (Sobh)", "note": "Les deux rak'as sont récitées à voix haute" },
+      "dhuhr": { "name": "Dhohr", "note": "Tout se dit à voix basse" },
+      "asr": { "name": "'Asr", "note": "Tout se dit à voix basse" },
+      "maghrib": { "name": "Maghrib", "note": "Les deux premières rak'as à voix haute, la troisième à voix basse" },
+      "isha": { "name": "'Icha", "note": "Les deux premières rak'as à voix haute, les deux dernières à voix basse" }
+    },
+    "aloud": "à voix haute",
+    "quiet": "à voix basse",
+    "aside": "Ajoute une courte sourate après <a href=\"#qiyam\">Al-Fâtiha</a> dans les deux premières rak'as seulement. Toutes les deux rak'as, assieds-toi pour <a href=\"#tashahhud\">le tachahhoud</a>. Au Fajr, cette assise est aussi la dernière."
+  },
+  "footer": { "note": "Certains détails varient selon les écoles, comme l’invocation d’ouverture, le fait de dire <em>Âmîn</em> à voix haute ou à voix basse, et la place du qounout. Toutes ces façons de faire font partie de la pratique reconnue. Pour la prononciation, écoute un récitateur plutôt que de te fier seulement à la phonétique.", "sharePrompt": "Tu connais quelqu’un qui apprend à prier ?" },
+  "ui": {
+    "listen": "Écouter",
+    "listenTo": "l’audio :",
+    "loading": "chargement",
+    "stop": "Arrêter",
+    "playing": "Lecture en cours :",
+    "playError": "Impossible de lire {title}. Vérifie ta connexion et réessaie.",
+    "showFull": "Afficher le texte complet",
+    "hideFull": "Masquer le texte complet",
+    "share": "Partager cette page",
+    "shareText": "Comment faire la prière, étape par étape, avec l’audio de chaque position.",
+    "linkCopied": "Lien copié",
+    "linkCopiedStatus": "Lien copié dans le presse-papiers.",
+    "copyPrompt": "Copie ce lien :"
+  }
+}

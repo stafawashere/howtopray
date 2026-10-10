@@ -1,0 +1,374 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "ogLocale": "en_US",
+  "brand": "Sujood",
+  "siteName": "Sujood",
+  "appTitle": "Sujood",
+  "arabicNames": { "headings": true, "contents": true },
+  "meta": {
+    "title": "How to Pray Salah Step by Step, with Audio | Sujood",
+    "description": "A beginner's guide to the Muslim prayer. The eight positions of salah in order, what to say in each one in Arabic, transliteration and English, and audio to listen along.",
+    "ogTitle": "How to pray salah, step by step",
+    "ogDescription": "Every position of the prayer in order, what to say in each one, and audio to listen along.",
+    "ogImageAlt": "Sujood. How to pray salah, step by step, with figures of the eight positions of one rak'ah."
+  },
+  "howTo": { "name": "How to pray salah, step by step", "description": "The eight positions of one rak'ah of salah in order, with what to say in each one." },
+  "mast": { "subtitle": "Your five daily prayers", "lede": "Here are the eight positions of salah, in the order you'll do them. Each one shows what your body should be doing and what to say while you're there. Going through all eight makes one <em>rak'ah</em>." },
+  "flow": {
+    "name": "One rak'ah",
+    "steps": [
+      "Stand",
+      "Bow",
+      "Stand",
+      "Prostrate",
+      "Sit",
+      "Prostrate"
+    ],
+    "next": "Next rak'ah",
+    "sentence": "Stand, Bow, Stand, Prostrate, Sit, Prostrate"
+  },
+  "contents": { "label": "Contents" },
+  "runner": { "label": "Jump to a position", "itemLabel": "{n}, {title}" },
+  "positions": {
+    "takbir": {
+      "title": "Standing: takbir",
+      "short": "Takbir",
+      "says": "Allahu akbar",
+      "caption": "Hands raised, then folded",
+      "instruction": "Stand facing the qiblah. Raise your hands to shoulder height or ear level, say the takbir, then fold your hands on your chest or stomach. From here, you're in prayer.",
+      "say": [
+        {
+          "lines": [
+            { "arabic": "takbir" },
+            { "tr": "Allahu akbar" },
+            { "meaning": "\"Allah is the greatest.\" Once, aloud." }
+          ]
+        }
+      ],
+      "step": { "name": "Standing: takbir", "text": "Stand facing the qiblah, raise your hands to shoulder or ear level, say Allahu akbar, then fold your hands on your chest or stomach." }
+    },
+    "qiyam": {
+      "title": "Standing: recitation",
+      "short": "Recitation",
+      "says": "Subhanaka Allahumma, Al-Fatihah",
+      "caption": "Eyes to the place of sujud",
+      "instruction": "Keep standing with your hands folded. In the first rak'ah only, say the opening supplication quietly. Then seek refuge, say the basmalah, and recite Al-Fatihah. You do this in every rak'ah, and nothing else takes its place. In the first two rak'ahs, add a short surah after Al-Fatihah.",
+      "say": [
+        {
+          "lines": [
+            { "when": "First rak'ah only, silent" },
+            { "tr": "Subhanaka Allahumma wa bihamdika..." },
+            { "note": "then <strong>A'udhu billahi mina-sh-shaytani-r-rajim</strong>" },
+            { "listen": "istiftah", "title": "Subhanaka Allahumma wa bihamdika", "more": "istiftah" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "arabicSmall": "istiftah" },
+                { "tr": "Subhanaka Allahumma wa bihamdika, wa tabaraka-smuka, wa ta'ala jadduka, wa la ilaha ghayruk." },
+                { "meaning": "\"Glory be to You, O Allah, and praise. Blessed is Your name, exalted is Your majesty, and there is no god but You.\"" }
+              ]
+            },
+            {
+              "lines": [
+                { "when": "Then seeking refuge and the basmalah" },
+                { "arabicSmall": "taawwudh" },
+                { "tr": "A'udhu billahi mina-sh-shaytani-r-rajim. Bismillahi-r-Rahmani-r-Rahim." },
+                { "meaning": "\"I seek refuge in Allah from Satan, the accursed. In the name of Allah, the Most Merciful, the Especially Merciful.\"" }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            { "when": "Every rak'ah" },
+            { "arabicSmall": "fatihah-2" },
+            { "tr": "Al-Fatihah, then <em>Amin</em>" },
+            { "listen": "fatihah", "title": "Al-Fatihah", "more": "fatihah" }
+          ],
+          "more": [
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-1" },
+                { "tr": "Bismillahi-r-Rahmani-r-Rahim" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-2" },
+                { "tr": "Al-hamdu lillahi Rabbi-l-'alamin" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-3" },
+                { "tr": "Ar-Rahmani-r-Rahim" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-4" },
+                { "tr": "Maliki yawmi-d-din" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-5" },
+                { "tr": "Iyyaka na'budu wa iyyaka nasta'in" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-6" },
+                { "tr": "Ihdina-s-sirata-l-mustaqim" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-7" },
+                { "tr": "Sirata-lladhina an'amta 'alayhim, ghayri-l-maghdubi 'alayhim wa la-d-dallin" }
+              ]
+            },
+            {
+              "lines": [
+                { "tr": "Then say: <span class=\"ar-inline\" lang=\"ar\" dir=\"rtl\">آمِين</span> Amin" },
+                { "meaning": "\"All praise is for Allah, Lord of all worlds, the Most Merciful, the Especially Merciful, Master of the Day of Judgement. You alone we worship, and You alone we ask for help. Guide us to the straight path, the path of those You have blessed, not of those who earned anger, nor of those who went astray.\"" }
+              ]
+            },
+            {
+              "lines": [
+                { "when": "First two rak'ahs: a short surah (Al-Ikhlas)" },
+                { "arabicSmall": "ikhlas" },
+                { "tr": "Qul huwa Allahu ahad. Allahu-s-samad. Lam yalid wa lam yulad. Wa lam yakun lahu kufuwan ahad." },
+                { "meaning": "\"Say: He is Allah, One. Allah, the Eternal Refuge. He neither begets nor is born, and there is none comparable to Him.\"" },
+                { "listen": "ikhlas", "title": "Al-Ikhlas" }
+              ]
+            }
+          ]
+        }
+      ],
+      "step": { "name": "Standing: recitation", "text": "In the first rak'ah, say the opening supplication quietly. Then seek refuge, say the basmalah and recite Al-Fatihah. In the first two rak'ahs, add a short surah after it." }
+    },
+    "ruku": {
+      "title": "Bowing",
+      "short": "Bowing",
+      "says": "Subhana Rabbiya-l-'Adhim",
+      "caption": "Back flat, hands on knees",
+      "instruction": "Say the takbir and bow. Bend from your hips until your back is flat, with your head in line with it. Spread your fingers on your knees, keep your arms and back straight, and get still before you speak.",
+      "say": [
+        {
+          "lines": [
+            { "arabic": "ruku" },
+            { "tr": "Subhana Rabbiya-l-'Adhim" },
+            { "meaning": "\"Glory to my Lord, the Most Great.\" Three times, quietly." },
+            { "listen": "ruku", "title": "Subhana Rabbiya-l-'Adhim" }
+          ]
+        }
+      ],
+      "step": { "name": "Bowing (ruku)", "text": "Say the takbir and bow until your back is flat with your hands on your knees, then say Subhana Rabbiya-l-'Adhim three times." }
+    },
+    "itidal": {
+      "title": "Rising from the bow",
+      "short": "Rising",
+      "says": "Sami'a Allahu liman hamidah",
+      "caption": "Upright, arms at the sides",
+      "instruction": "Stand back up fully, saying the words as you rise. Pause here. This isn't just a movement, it's a position on its own.",
+      "say": [
+        {
+          "lines": [
+            { "when": "While rising" },
+            { "arabicSmall": "rising" },
+            { "tr": "Sami'a Allahu liman hamidah" },
+            { "listen": "rising", "title": "Sami'a Allahu liman hamidah" }
+          ]
+        },
+        {
+          "lines": [
+            { "when": "Once upright" },
+            { "arabicSmall": "rabbana" },
+            { "tr": "Rabbana wa laka-l-hamd" },
+            { "listen": "rabbana", "title": "Rabbana wa laka-l-hamd", "more": "itidal" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "when": "Optional longer form" },
+                { "tr": "Hamdan kathiran tayyiban mubarakan fih, mil'a-s-samawati wa mil'a-l-ardi wa mil'a ma shi'ta min shay'in ba'd." },
+                { "meaning": "\"Abundant, pure, blessed praise, filling the heavens, filling the earth, and filling whatever else You will.\"" }
+              ]
+            }
+          ]
+        }
+      ],
+      "step": { "name": "Rising from the bow", "text": "Stand back up fully saying Sami'a Allahu liman hamidah, then say Rabbana wa laka-l-hamd once upright." }
+    },
+    "sujud": {
+      "title": "Prostration",
+      "short": "Prostration",
+      "says": "Subhana Rabbiya-l-A'la",
+      "caption": "Seven points touch the ground",
+      "instruction": "Say the takbir and go down. Your forehead, nose, both palms, both knees, and the toes of both feet should all be on the ground, seven points in all. Keep your elbows off the floor and away from your sides.",
+      "say": [
+        {
+          "lines": [
+            { "arabic": "sujud" },
+            { "tr": "Subhana Rabbiya-l-A'la" },
+            { "meaning": "\"Glory to my Lord, the Most High.\" Three times, quietly." },
+            { "listen": "sujud", "title": "Subhana Rabbiya-l-A'la", "more": "sujud" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "when": "Optional addition" },
+                { "arabicSmall": "subbuhun" },
+                { "tr": "Subbuhun Quddusun, Rabbu-l-mala'ikati wa-r-ruh." },
+                { "meaning": "\"Perfect, Holy, Lord of the angels and the Spirit.\"" }
+              ]
+            }
+          ]
+        }
+      ],
+      "aside": "After the required tasbih, this is the place to ask for whatever you want, in any language.",
+      "step": { "name": "Prostration (sujud)", "text": "Say the takbir and go down so your forehead, nose, palms, knees and toes touch the ground, then say Subhana Rabbiya-l-A'la three times." }
+    },
+    "jalsa": {
+      "title": "Sitting between prostrations",
+      "short": "Sitting",
+      "says": "Rabbi-ghfir li",
+      "caption": "Sitting back on the folded feet",
+      "instruction": "Say the takbir and sit up. Fold your left foot under you and sit on it, keep your right foot upright with toes pointing toward the qiblah, and rest your hands on your thighs. Get settled before moving on.",
+      "say": [
+        {
+          "lines": [
+            { "arabic": "jalsa" },
+            { "tr": "Rabbi-ghfir li, warhamni, wajburni, warfa'ni, warzuqni, wahdini, wa 'afini" },
+            { "note": "Or simply: <strong>Rabbi-ghfir li, Rabbi-ghfir li</strong>" },
+            { "listen": "jalsa", "title": "Rabbi-ghfir li", "more": "jalsa" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "arabicSmall": "jalsa-long" },
+                { "meaning": "\"My Lord, forgive me, have mercy on me, mend me, raise me, provide for me, guide me, and grant me wellbeing.\"" }
+              ]
+            }
+          ]
+        }
+      ],
+      "step": { "name": "Sitting between prostrations", "text": "Say the takbir and sit back on your folded left foot with your hands on your thighs, and say Rabbi-ghfir li." }
+    },
+    "sujud-2": {
+      "title": "Second prostration",
+      "short": "Prostration",
+      "says": "Subhana Rabbiya-l-A'la",
+      "caption": "Identical to the first",
+      "instruction": "Say the takbir and prostrate again exactly as before, with the same tasbih. That completes one rak'ah. Say the takbir and stand for the next one. After an even number of rak'ahs, stay seated for <a href=\"#tashahhud\">the tashahhud</a> instead.",
+      "say": [
+        {
+          "lines": [
+            { "tr": "Subhana Rabbiya-l-A'la" },
+            { "meaning": "Three times, quietly" },
+            { "listen": "sujud", "title": "Subhana Rabbiya-l-A'la" }
+          ]
+        }
+      ],
+      "step": { "name": "Second prostration", "text": "Say the takbir and prostrate again exactly as before. That completes one rak'ah." }
+    },
+    "tashahhud": {
+      "title": "Final sitting and salam",
+      "short": "Salam",
+      "says": "At-tahiyyatu lillahi",
+      "caption": "Index finger raised at the shahadah",
+      "instruction": "Sit like you did in stage 6 and recite the tashahhud, raising your index finger when you say the testimony of faith. In the last sitting, add the durood and a du'a. Then turn your head right and left with the salam. That's it, your prayer is done.",
+      "say": [
+        {
+          "lines": [
+            { "when": "Every sitting" },
+            { "tr": "At-tahiyyatu lillahi wa-s-salawatu wa-t-tayyibat..." },
+            { "note": "then, in the final sitting: <strong>Allahumma salli 'ala Muhammad...</strong> and a du'a" },
+            { "listen": "tashahhud", "title": "At-tahiyyatu lillahi", "more": "tashahhud" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "when": "Tashahhud" },
+                { "arabicSmall": "tashahhud" },
+                { "tr": "At-tahiyyatu lillahi wa-s-salawatu wa-t-tayyibat. As-salamu 'alayka ayyuha-n-Nabiyyu wa rahmatullahi wa barakatuh. As-salamu 'alayna wa 'ala 'ibadillahi-s-salihin. Ashhadu an la ilaha illa Allah, wa ashhadu anna Muhammadan 'abduhu wa rasuluh." },
+                { "meaning": "\"All greetings, prayers, and good things are for Allah. Peace be upon you, O Prophet, and Allah's mercy and blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no god but Allah, and I bear witness that Muhammad is His servant and messenger.\"" }
+              ]
+            },
+            {
+              "lines": [
+                { "when": "Salat Ibrahimiyyah, final sitting only" },
+                { "arabicSmall": "salawat" },
+                { "tr": "Allahumma salli 'ala Muhammadin wa 'ala ali Muhammad, kama sallayta 'ala Ibrahima wa 'ala ali Ibrahim, innaka Hamidun Majid." },
+                { "arabicSmall": "barakat" },
+                { "tr": "Allahumma barik 'ala Muhammadin wa 'ala ali Muhammad, kama barakta 'ala Ibrahima wa 'ala ali Ibrahim, innaka Hamidun Majid." },
+                { "listen": "salawat", "title": "Allahumma salli 'ala Muhammad" },
+                { "meaning": "\"O Allah, send prayers upon Muhammad and the family of Muhammad, as You sent prayers upon Ibrahim and the family of Ibrahim. Indeed You are Praiseworthy, Glorious. O Allah, bless Muhammad and the family of Muhammad, as You blessed Ibrahim and the family of Ibrahim. Indeed You are Praiseworthy, Glorious.\"" }
+              ]
+            },
+            {
+              "lines": [
+                { "when": "Du'a before the salam" },
+                { "arabicSmall": "dua-before-salam" },
+                { "tr": "Allahumma inni a'udhu bika min 'adhabi jahannam, wa min 'adhabi-l-qabr, wa min fitnati-l-mahya wa-l-mamat, wa min sharri fitnati-l-Masihi-d-Dajjal." },
+                { "listen": "duasalam", "title": "Allahumma inni a'udhu bika" },
+                { "meaning": "\"O Allah, I seek refuge in You from the punishment of Hell, from the punishment of the grave, from the trials of life and death, and from the evil of the trial of the false messiah.\"" }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            { "arabic": "salam" },
+            { "tr": "As-salamu 'alaykum wa rahmatullah" },
+            { "meaning": "Twice: to the right, then to the left" }
+          ]
+        }
+      ],
+      "step": { "name": "Final sitting and salam", "text": "Sit and recite the tashahhud. In the last sitting add the salawat and a du'a, then turn your head right and left saying As-salamu 'alaykum wa rahmatullah." }
+    }
+  },
+  "counts": {
+    "title": "How many rak'ahs in each prayer",
+    "says": "Fajr 2, Dhuhr 4, 'Asr 4, Maghrib 3, 'Isha 4",
+    "short": "Rak'ah counts",
+    "prayerColumn": "Prayer",
+    "rakahsColumn": "Rak'ahs",
+    "prayers": {
+      "fajr": { "name": "Fajr", "note": "Both rak'ahs are recited aloud" },
+      "dhuhr": { "name": "Dhuhr", "note": "Everything is said quietly" },
+      "asr": { "name": "'Asr", "note": "Everything is said quietly" },
+      "maghrib": { "name": "Maghrib", "note": "First two rak'ahs aloud, third quiet" },
+      "isha": { "name": "'Isha", "note": "First two rak'ahs aloud, last two quiet" }
+    },
+    "aloud": "aloud",
+    "quiet": "quiet",
+    "aside": "Add a short surah after <a href=\"#qiyam\">Al-Fatihah</a> in the first two rak'ahs only. After every two rak'ahs, sit for <a href=\"#tashahhud\">the tashahhud</a>. In Fajr, that sitting is also the final one."
+  },
+  "footer": { "note": "Some details vary between schools, like the opening supplication, saying <em>Amin</em> aloud or quietly, and where qunut fits in. All of these are within accepted practice. For pronunciation, listen to a reciter rather than relying on transliteration alone.", "sharePrompt": "Know someone learning to pray?" },
+  "ui": {
+    "listen": "Listen",
+    "listenTo": "to",
+    "loading": "loading",
+    "stop": "Stop",
+    "playing": "Playing",
+    "playError": "Couldn't play {title}. Check your connection and try again.",
+    "showFull": "Show full text",
+    "hideFull": "Hide full text",
+    "share": "Share this page",
+    "shareText": "How to pray salah, step by step, with audio for every position.",
+    "linkCopied": "Link copied",
+    "linkCopiedStatus": "Link copied to the clipboard.",
+    "copyPrompt": "Copy this link:"
+  }
+}

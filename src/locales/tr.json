@@ -1,0 +1,374 @@
+{
+  "lang": "tr",
+  "dir": "ltr",
+  "ogLocale": "tr_TR",
+  "brand": "Sujood",
+  "siteName": "Sujood",
+  "appTitle": "Sujood",
+  "arabicNames": { "headings": true, "contents": true },
+  "meta": {
+    "title": "Namaz Nasıl Kılınır? Adım Adım, Sesli Anlatım | Sujood",
+    "description": "Namaz nasıl kılınır, adım adım öğren. Bir rekâtın sekiz hâli sırasıyla, her birinde okunan dualar Arapça, okunuşu ve Türkçe anlamıyla, dinleyerek takip edebileceğin seslerle.",
+    "ogTitle": "Namaz nasıl kılınır, adım adım",
+    "ogDescription": "Namazın her hâli sırasıyla, her birinde ne okunacağı ve dinleyerek takip edebileceğin sesler.",
+    "ogImageAlt": "Sujood. Namaz nasıl kılınır, adım adım. Bir rekâtın sekiz hâlini gösteren çizimler."
+  },
+  "howTo": { "name": "Namaz nasıl kılınır, adım adım", "description": "Bir rekâtın sekiz hâli sırasıyla ve her birinde ne okunacağı." },
+  "mast": { "subtitle": "Günde beş vakit namazın", "lede": "Namazın sekiz hâli, kılarken izleyeceğin sırayla burada. Her birinde bedeninin ne yapması gerektiğini ve o sırada ne söyleyeceğini görürsün. Sekizini baştan sona yapınca bir <em>rekât</em> olur." },
+  "flow": {
+    "name": "Bir rekât",
+    "steps": [
+      "Dur",
+      "Eğil",
+      "Doğrul",
+      "Secde et",
+      "Otur",
+      "Secde et"
+    ],
+    "next": "Sonraki rekât",
+    "sentence": "Dur, Eğil, Doğrul, Secde et, Otur, Secde et"
+  },
+  "contents": { "label": "İçindekiler" },
+  "runner": { "label": "Bir adıma geç", "itemLabel": "{n}, {title}" },
+  "positions": {
+    "takbir": {
+      "title": "Ayakta: iftitah tekbiri",
+      "short": "Tekbir",
+      "says": "Allâhü ekber",
+      "caption": "Önce eller kalkar, sonra bağlanır",
+      "instruction": "Kıbleye dönerek ayakta dur. Ellerini omuz ya da kulak hizasına kaldır, tekbir al, sonra ellerini göğsünün ya da karnının üzerinde bağla. Bu andan itibaren namazdasın.",
+      "say": [
+        {
+          "lines": [
+            { "arabic": "takbir" },
+            { "tr": "Allâhü ekber" },
+            { "meaning": "\"Allah en büyüktür.\" Bir kere, sesli." }
+          ]
+        }
+      ],
+      "step": { "name": "Ayakta: iftitah tekbiri", "text": "Kıbleye dönerek ayakta dur, ellerini omuz ya da kulak hizasına kaldır, Allâhü ekber de, sonra ellerini göğsünün ya da karnının üzerinde bağla." }
+    },
+    "qiyam": {
+      "title": "Ayakta: kıraat",
+      "short": "Kıraat",
+      "says": "Sübhâneke, Fâtiha",
+      "caption": "Gözler secde yerinde",
+      "instruction": "Ellerin bağlı olarak ayakta durmaya devam et. Yalnızca ilk rekâtta açılış duasını (Sübhâneke) alçak sesle oku. Sonra eûzü besmele çek ve Fâtiha'yı oku. Fâtiha her rekâtta okunur ve onun yerini başka hiçbir şey tutmaz. İlk iki rekâtta Fâtiha'dan sonra kısa bir sûre ekle.",
+      "say": [
+        {
+          "lines": [
+            { "when": "Yalnızca ilk rekâtta, sessizce" },
+            { "tr": "Sübhâneke'llâhümme ve bi-hamdik..." },
+            { "note": "sonra <strong>E'ûzü billâhi mine'ş-şeytâni'r-racîm</strong>" },
+            { "listen": "istiftah", "title": "Sübhâneke'llâhümme ve bi-hamdik", "more": "istiftah" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "arabicSmall": "istiftah" },
+                { "tr": "Sübhâneke'llâhümme ve bi-hamdik, ve tebâreke'smük, ve teâlâ ceddük, ve lâ ilâhe gayruk." },
+                { "meaning": "\"Allah'ım, seni her eksiklikten uzak bilir ve överim. Adın mübarektir, yüceliğin pek yücedir ve senden başka ilah yoktur.\"" }
+              ]
+            },
+            {
+              "lines": [
+                { "when": "Sonra eûzü ve besmele" },
+                { "arabicSmall": "taawwudh" },
+                { "tr": "E'ûzü billâhi mine'ş-şeytâni'r-racîm. Bismillâhi'r-rahmâni'r-rahîm." },
+                { "meaning": "\"Kovulmuş şeytandan Allah'a sığınırım. Rahmeti bol, merhameti sonsuz Allah'ın adıyla.\"" }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            { "when": "Her rekâtta" },
+            { "arabicSmall": "fatihah-2" },
+            { "tr": "Fâtiha, sonra <em>Âmîn</em>" },
+            { "listen": "fatihah", "title": "Fâtiha", "more": "fatihah" }
+          ],
+          "more": [
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-1" },
+                { "tr": "Bismillâhi'r-rahmâni'r-rahîm" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-2" },
+                { "tr": "Elhamdü lillâhi rabbi'l-âlemîn" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-3" },
+                { "tr": "Er-rahmâni'r-rahîm" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-4" },
+                { "tr": "Mâliki yevmi'd-dîn" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-5" },
+                { "tr": "İyyâke na'büdü ve iyyâke neste'în" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-6" },
+                { "tr": "İhdine's-sırâta'l-müstakîm" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-7" },
+                { "tr": "Sırâta'llezîne en'amte aleyhim, gayri'l-magdûbi aleyhim ve le'd-dâllîn" }
+              ]
+            },
+            {
+              "lines": [
+                { "tr": "Sonra de ki: <span class=\"ar-inline\" lang=\"ar\" dir=\"rtl\">آمِين</span> Âmîn" },
+                { "meaning": "\"Bütün övgüler, âlemlerin Rabbi olan Allah'adır. O, rahmeti bol, merhameti sonsuz olandır, Hesap Günü'nün sahibidir. Yalnız sana kulluk eder, yalnız senden yardım isteriz. Bizi dosdoğru yola ilet, nimet verdiklerinin yoluna. Gazabı hak edenlerin ve yoldan sapanların yoluna değil.\"" }
+              ]
+            },
+            {
+              "lines": [
+                { "when": "İlk iki rekâtta kısa bir sûre (İhlâs)" },
+                { "arabicSmall": "ikhlas" },
+                { "tr": "Kul hüve'llâhü ehad. Allâhü's-samed. Lem yelid ve lem yûled. Ve lem yekün lehû küfüven ehad." },
+                { "meaning": "\"De ki: O Allah'tır, birdir. Allah, herkesin sığındığı ve hep var olandır. O ne doğurmuş ne de doğmuştur. Hiçbir şey O'na denk değildir.\"" },
+                { "listen": "ikhlas", "title": "İhlâs" }
+              ]
+            }
+          ]
+        }
+      ],
+      "step": { "name": "Ayakta: kıraat", "text": "İlk rekâtta açılış duasını sessizce oku. Sonra eûzü besmele çek ve Fâtiha'yı oku. İlk iki rekâtta Fâtiha'nın ardından kısa bir sûre ekle." }
+    },
+    "ruku": {
+      "title": "Rükû",
+      "short": "Rükû",
+      "says": "Sübhâne rabbiye'l-azîm",
+      "caption": "Sırt düz, eller dizlerde",
+      "instruction": "Tekbir alarak rükûya eğil. Belinden eğilerek sırtını dümdüz yap, başın da sırtınla aynı hizada olsun. Parmaklarını açarak dizlerine koy, kollarını ve sırtını düz tut ve okumaya başlamadan önce tamamen hareketsiz kal.",
+      "say": [
+        {
+          "lines": [
+            { "arabic": "ruku" },
+            { "tr": "Sübhâne rabbiye'l-azîm" },
+            { "meaning": "\"Pek büyük olan Rabbimi her eksiklikten uzak tutarım.\" Üç kere, alçak sesle." },
+            { "listen": "ruku", "title": "Sübhâne rabbiye'l-azîm" }
+          ]
+        }
+      ],
+      "step": { "name": "Rükû", "text": "Tekbir alarak sırtın dümdüz olana kadar eğil, ellerini dizlerine koy ve üç kere Sübhâne rabbiye'l-azîm de." }
+    },
+    "itidal": {
+      "title": "Rükûdan doğrulma (kavme)",
+      "short": "Kavme",
+      "says": "Semi'allâhü li-men hamideh",
+      "caption": "Dik, kollar yanlarda",
+      "instruction": "Aşağıdaki sözleri söyleyerek tamamen doğrul. Burada biraz dur. Bu yalnızca bir geçiş hareketi sayılmaz, kendi başına bir duruştur.",
+      "say": [
+        {
+          "lines": [
+            { "when": "Doğrulurken" },
+            { "arabicSmall": "rising" },
+            { "tr": "Semi'allâhü li-men hamideh" },
+            { "listen": "rising", "title": "Semi'allâhü li-men hamideh" }
+          ]
+        },
+        {
+          "lines": [
+            { "when": "Dik durunca" },
+            { "arabicSmall": "rabbana" },
+            { "tr": "Rabbenâ ve leke'l-hamd" },
+            { "listen": "rabbana", "title": "Rabbenâ ve leke'l-hamd", "more": "itidal" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "when": "İsteğe bağlı uzun hâli" },
+                { "tr": "Hamden kesîran tayyiben mübâreken fîh, mil'e's-semâvâti ve mil'e'l-ardı ve mil'e mâ şi'te min şey'in ba'd." },
+                { "meaning": "\"Bol, temiz ve bereketli hamd olsun. Gökleri dolduran, yeri dolduran ve dilediğin başka her şeyi dolduran bir hamd.\"" }
+              ]
+            }
+          ]
+        }
+      ],
+      "step": { "name": "Rükûdan doğrulma (kavme)", "text": "Semi'allâhü li-men hamideh diyerek tamamen doğrul, dik durunca bir kere Rabbenâ ve leke'l-hamd de." }
+    },
+    "sujud": {
+      "title": "Secde",
+      "short": "Secde",
+      "says": "Sübhâne rabbiye'l-a'lâ",
+      "caption": "Yedi yer yere değer",
+      "instruction": "Tekbir alarak secdeye in. Alnın, burnun, iki avucun, iki dizin ve iki ayağının parmakları yere değmeli, yani toplam yedi yer. Dirseklerini yerden kaldır ve yanlarından uzak tut.",
+      "say": [
+        {
+          "lines": [
+            { "arabic": "sujud" },
+            { "tr": "Sübhâne rabbiye'l-a'lâ" },
+            { "meaning": "\"Pek yüce olan Rabbimi her eksiklikten uzak tutarım.\" Üç kere, alçak sesle." },
+            { "listen": "sujud", "title": "Sübhâne rabbiye'l-a'lâ", "more": "sujud" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "when": "İsteğe bağlı ek" },
+                { "arabicSmall": "subbuhun" },
+                { "tr": "Sübbûhun kuddûsün, rabbü'l-melâiketi ve'r-rûh." },
+                { "meaning": "\"Kusursuzdur, mukaddestir, meleklerin ve Rûh'un Rabbidir.\"" }
+              ]
+            }
+          ]
+        }
+      ],
+      "aside": "Gereken tesbihi okuduktan sonra, dilediğin her şeyi istediğin dilde isteyebileceğin yer burasıdır.",
+      "step": { "name": "Secde", "text": "Tekbir alarak secdeye in. Alnın, burnun, avuçların, dizlerin ve ayak parmakların yere değsin, sonra üç kere Sübhâne rabbiye'l-a'lâ de." }
+    },
+    "jalsa": {
+      "title": "İki secde arası oturuş (celse)",
+      "short": "Celse",
+      "says": "Rabbiğfir lî",
+      "caption": "Yatırılan ayağın üzerine oturulur",
+      "instruction": "Tekbir alarak doğrulup otur. Sol ayağını altına yatırıp üzerine otur, sağ ayağını parmakları kıbleye bakacak şekilde dik tut ve ellerini uyluklarının üzerine koy. Devam etmeden önce iyice yerleş.",
+      "say": [
+        {
+          "lines": [
+            { "arabic": "jalsa" },
+            { "tr": "Rabbiğfir lî, verhamnî, vecburnî, verfa'nî, verzuknî, vehdinî, ve âfinî" },
+            { "note": "Ya da kısaca: <strong>Rabbiğfir lî, Rabbiğfir lî</strong>" },
+            { "listen": "jalsa", "title": "Rabbiğfir lî", "more": "jalsa" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "arabicSmall": "jalsa-long" },
+                { "meaning": "\"Rabbim, beni bağışla, bana merhamet et, eksiğimi gider, derecemi yükselt, bana rızık ver, beni doğru yola ilet ve bana afiyet ver.\"" }
+              ]
+            }
+          ]
+        }
+      ],
+      "step": { "name": "İki secde arası oturuş (celse)", "text": "Tekbir alarak doğrul, sol ayağını altına yatırıp üzerine otur, ellerini uyluklarına koy ve Rabbiğfir lî de." }
+    },
+    "sujud-2": {
+      "title": "İkinci secde",
+      "short": "Secde",
+      "says": "Sübhâne rabbiye'l-a'lâ",
+      "caption": "Birincisinin aynısı",
+      "instruction": "Tekbir alarak aynı tesbihle, tıpkı öncekinde olduğu gibi tekrar secde et. Böylece bir rekât tamamlanır. Tekbir alarak sonraki rekât için ayağa kalk. Çift sayıda rekâttan sonra ise kalkmak yerine oturur ve <a href=\"#tashahhud\">Ettehiyyâtü'yü</a> okursun.",
+      "say": [
+        {
+          "lines": [
+            { "tr": "Sübhâne rabbiye'l-a'lâ" },
+            { "meaning": "Üç kere, alçak sesle" },
+            { "listen": "sujud", "title": "Sübhâne rabbiye'l-a'lâ" }
+          ]
+        }
+      ],
+      "step": { "name": "İkinci secde", "text": "Tekbir alarak tıpkı öncekinde olduğu gibi tekrar secde et. Böylece bir rekât tamamlanır." }
+    },
+    "tashahhud": {
+      "title": "Son oturuş (ka'de) ve selam",
+      "short": "Selam",
+      "says": "Ettehiyyâtü lillâhi",
+      "caption": "Şehadette işaret parmağı kalkar",
+      "instruction": "6. adımdaki gibi otur ve Ettehiyyâtü'yü oku. Şehadet cümlesini söylerken işaret parmağını kaldır. Son oturuşta Salli ve Barik dualarını ve bir dua ekle. Sonra selam vererek başını önce sağa, sonra sola çevir. İşte bu kadar, namazın bitti.",
+      "say": [
+        {
+          "lines": [
+            { "when": "Her oturuşta" },
+            { "tr": "Ettehiyyâtü lillâhi ve's-salevâtü ve't-tayyibât..." },
+            { "note": "sonra, son oturuşta: <strong>Allâhümme salli alâ Muhammed...</strong> ve bir dua" },
+            { "listen": "tashahhud", "title": "Ettehiyyâtü lillâhi", "more": "tashahhud" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "when": "Ettehiyyâtü (teşehhüd)" },
+                { "arabicSmall": "tashahhud" },
+                { "tr": "Ettehiyyâtü lillâhi ve's-salevâtü ve't-tayyibât. Esselâmü aleyke eyyühe'n-nebiyyü ve rahmetullâhi ve berakâtüh. Esselâmü aleynâ ve alâ ibâdillâhi's-sâlihîn. Eşhedü en lâ ilâhe illallâh, ve eşhedü enne Muhammeden abdühû ve rasûlüh." },
+                { "meaning": "\"Bütün selamlar, dualar ve güzel şeyler Allah içindir. Ey Peygamber, selam, Allah'ın rahmeti ve bereketi senin üzerine olsun. Selam bizim üzerimize ve Allah'ın iyi kullarının üzerine olsun. Şahitlik ederim ki Allah'tan başka ilah yoktur ve yine şahitlik ederim ki Muhammed O'nun kulu ve elçisidir.\"" }
+              ]
+            },
+            {
+              "lines": [
+                { "when": "Salli ve Barik, yalnızca son oturuşta" },
+                { "arabicSmall": "salawat" },
+                { "tr": "Allâhümme salli alâ Muhammedin ve alâ âli Muhammed, kemâ salleyte alâ İbrâhîme ve alâ âli İbrâhîm, inneke hamîdün mecîd." },
+                { "arabicSmall": "barakat" },
+                { "tr": "Allâhümme bârik alâ Muhammedin ve alâ âli Muhammed, kemâ bârekte alâ İbrâhîme ve alâ âli İbrâhîm, inneke hamîdün mecîd." },
+                { "listen": "salawat", "title": "Allâhümme salli alâ Muhammed" },
+                { "meaning": "\"Allah'ım, İbrâhim'e ve İbrâhim'in ailesine rahmet ettiğin gibi Muhammed'e ve Muhammed'in ailesine de rahmet et. Şüphesiz sen övülmeye layıksın, şanı yücesin. Allah'ım, İbrâhim'e ve İbrâhim'in ailesine bereket verdiğin gibi Muhammed'e ve Muhammed'in ailesine de bereket ver. Şüphesiz sen övülmeye layıksın, şanı yücesin.\"" }
+              ]
+            },
+            {
+              "lines": [
+                { "when": "Selamdan önce dua" },
+                { "arabicSmall": "dua-before-salam" },
+                { "tr": "Allâhümme innî e'ûzü bike min azâbi cehennem, ve min azâbi'l-kabr, ve min fitneti'l-mahyâ ve'l-memât, ve min şerri fitneti'l-mesîhi'd-deccâl." },
+                { "listen": "duasalam", "title": "Allâhümme innî e'ûzü bike" },
+                { "meaning": "\"Allah'ım, cehennem azabından, kabir azabından, hayatın ve ölümün imtihanlarından ve yalancı mesihin (Deccal'in) fitnesinin şerrinden sana sığınırım.\"" }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            { "arabic": "salam" },
+            { "tr": "Esselâmü aleyküm ve rahmetullâh" },
+            { "meaning": "İki kere: önce sağa, sonra sola" }
+          ]
+        }
+      ],
+      "step": { "name": "Son oturuş (ka'de) ve selam", "text": "Oturup Ettehiyyâtü'yü oku. Son oturuşta Salli ve Barik dualarını ve bir dua ekle, sonra Esselâmü aleyküm ve rahmetullâh diyerek başını önce sağa, sonra sola çevir." }
+    }
+  },
+  "counts": {
+    "title": "Hangi namaz kaç rekât?",
+    "says": "Sabah 2, Öğle 4, İkindi 4, Akşam 3, Yatsı 4",
+    "short": "Rekât sayıları",
+    "prayerColumn": "Namaz",
+    "rakahsColumn": "Rekât",
+    "prayers": {
+      "fajr": { "name": "Sabah", "note": "İki rekâtta da sesli okunur" },
+      "dhuhr": { "name": "Öğle", "note": "Hepsi alçak sesle okunur" },
+      "asr": { "name": "İkindi", "note": "Hepsi alçak sesle okunur" },
+      "maghrib": { "name": "Akşam", "note": "İlk iki rekât sesli, üçüncüsü sessiz" },
+      "isha": { "name": "Yatsı", "note": "İlk iki rekât sesli, son ikisi sessiz" }
+    },
+    "aloud": "sesli",
+    "quiet": "sessiz",
+    "aside": "Kısa sûreyi yalnızca ilk iki rekâtta, <a href=\"#qiyam\">Fâtiha'dan</a> sonra ekle. Her iki rekâttan sonra oturup <a href=\"#tashahhud\">Ettehiyyâtü'yü</a> oku. Sabah namazında bu oturuş aynı zamanda son oturuştur."
+  },
+  "footer": { "note": "Açılış duası, <em>Âmîn</em> kelimesinin sesli mi alçak sesle mi söyleneceği ve kunut duasının nerede okunacağı gibi bazı ayrıntılar mezhepten mezhebe değişir. Bunların hepsi kabul görmüş uygulamalardır. Doğru telaffuz için yalnızca okunuş yazısına güvenme, bir kâriyi dinle.", "sharePrompt": "Namaz kılmayı öğrenen birini tanıyor musun?" },
+  "ui": {
+    "listen": "Dinle",
+    "listenTo": ":",
+    "loading": "yükleniyor",
+    "stop": "Durdur",
+    "playing": "Okunuyor:",
+    "playError": "{title} başlatılamadı. İnternet bağlantını kontrol edip tekrar dene.",
+    "showFull": "Tam metni göster",
+    "hideFull": "Tam metni gizle",
+    "share": "Bu sayfayı paylaş",
+    "shareText": "Namaz nasıl kılınır, adım adım. Her hâl için dinleyerek takip edebileceğin seslerle.",
+    "linkCopied": "Bağlantı kopyalandı",
+    "linkCopiedStatus": "Bağlantı panoya kopyalandı.",
+    "copyPrompt": "Bu bağlantıyı kopyala:"
+  }
+}

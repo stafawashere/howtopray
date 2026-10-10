@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" dir="{{dir}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{meta.title}}</title>
+<meta name="description" content="{{meta.description}}">
+<link rel="canonical" href="{{pageUrl}}">
+{{alternates}}
+<meta property="og:site_name" content="{{siteName}}">
+<meta property="og:title" content="{{meta.ogTitle}}">
+<meta property="og:description" content="{{meta.ogDescription}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{pageUrl}}">
+<meta property="og:locale" content="{{ogLocale}}">
+<meta property="og:image" content="{{origin}}/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{meta.ogImageAlt}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0f1512" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f4ecdc" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-title" content="{{appTitle}}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%231f6b5a'/%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='11' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M86 84 L81 74 L62 80 L68 52 L40 66'/%3E%3C/g%3E%3Ccircle cx='27' cy='74' r='9' fill='%23ffffff'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<script type="application/ld+json">
+{{jsonLd}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="{{fontsUrl}}" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+{{localeStyle}}</head>
+<body>
+
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="p-takbir" viewBox="0 0 100 100">
+    <path class="body-ink" d="M50 31 V95 H41"/>
+    <path class="knock" d="M50 35 L41 46 L38 23"/>
+    <path class="body-ink" d="M50 35 L41 46 L38 23"/>
+    <circle class="halo" cx="51" cy="17" r="13"/>
+    <circle cx="51" cy="17" r="8.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="p-qiyam" viewBox="0 0 100 100">
+    <path class="cue-dots" d="M42 22 L13 95"/>
+    <path class="body-ink" d="M50 31 V95 H41"/>
+    <path class="knock" d="M50 35 L54 52 L40 45"/>
+    <path class="body-ink" d="M50 35 L54 52 L40 45"/>
+    <circle class="halo" cx="49" cy="18" r="13"/>
+    <circle cx="49" cy="18" r="8.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="p-ruku" viewBox="0 0 100 100">
+    <path class="cue" d="M20 44 H74" stroke-dasharray="3 4"/>
+    <path class="body-ink" d="M33 57 H67 V95 H58"/>
+    <path class="knock" d="M37 59 L64 77"/>
+    <path class="body-ink" d="M37 59 L64 77"/>
+    <circle class="halo" cx="19" cy="58" r="13"/>
+    <circle cx="19" cy="58" r="8.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="p-itidal" viewBox="0 0 100 100">
+    <path class="cue" d="M80 72 V32 M74 39 L80 32 L86 39"/>
+    <path class="body-ink" d="M50 31 V95 H41"/>
+    <path class="knock" d="M51 35 L55 50 L56 64"/>
+    <path class="body-ink" d="M51 35 L55 50 L56 64"/>
+    <circle class="halo" cx="51" cy="17" r="13"/>
+    <circle cx="51" cy="17" r="8.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="p-sujud" viewBox="0 0 100 100">
+    <path class="body-ink" d="M87 95 L81 86 L63 92 L68 63 L40 79"/>
+    <path class="knock" d="M41 80 L46 91 L34 95"/>
+    <path class="body-ink" d="M41 80 L46 91 L34 95"/>
+    <circle class="halo" cx="25" cy="86.5" r="13"/>
+    <circle cx="25" cy="86.5" r="8.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="p-jalsa" viewBox="0 0 100 100">
+    <path class="body-ink" d="M63 51 L66 80 L33 89 L35 95 L70 95"/>
+    <path class="knock" d="M63 55 L60 70 L44 81"/>
+    <path class="body-ink" d="M63 55 L60 70 L44 81"/>
+    <circle class="halo" cx="61" cy="36" r="13"/>
+    <circle cx="61" cy="36" r="8.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="p-tashahhud" viewBox="0 0 100 100">
+    <path class="body-ink" d="M63 51 L66 80 L33 89 L35 95 L70 95"/>
+    <path class="knock" d="M63 55 L60 70 L44 81"/>
+    <path class="body-ink" d="M63 55 L60 70 L44 81"/>
+    <path class="finger" d="M41 80 L30 76"/>
+    <circle class="halo" cx="61" cy="36" r="13"/>
+    <circle cx="61" cy="36" r="8.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="i-play" viewBox="0 0 12 12"><path d="M1.5 0.8v10.4L11 6z" fill="currentColor"/></symbol>
+  <symbol id="i-stop" viewBox="0 0 12 12"><rect x="1" y="1" width="10" height="10" rx="1" fill="currentColor"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+</svg>
+
+<div class="page">
+
+  <header class="mast">
+    <h1>{{brand}}</h1>
+    <p class="mast-ar" lang="ar" dir="rtl">{{arabicTitle}}</p>
+    <p class="sub">{{mast.subtitle}}</p>
+    <p class="lede">{{mast.lede}}</p>
+  </header>
+
+  <figure class="profile" aria-labelledby="flow-label">
+    <div class="band" aria-hidden="true">
+      <svg class="trail" viewBox="0 0 800 100" preserveAspectRatio="none"><path d="M51 17 C100 17 100 18 149 18 C184 18 184 58 219 58 C285 58 285 17 351 17 C388 17 388 86.5 425 86.5 C493 86.5 493 36 561 36 C593 36 593 86.5 625 86.5 C693 86.5 693 36 761 36"/></svg>
+      <svg class="p" viewBox="0 0 100 100"><use href="#p-takbir"/></svg>
+      <svg class="p" viewBox="0 0 100 100"><use href="#p-qiyam"/></svg>
+      <svg class="p" viewBox="0 0 100 100"><use href="#p-ruku"/></svg>
+      <svg class="p" viewBox="0 0 100 100"><use href="#p-itidal"/></svg>
+      <svg class="p" viewBox="0 0 100 100"><use href="#p-sujud"/></svg>
+      <svg class="p" viewBox="0 0 100 100"><use href="#p-jalsa"/></svg>
+      <svg class="p" viewBox="0 0 100 100"><use href="#p-sujud"/></svg>
+      <svg class="p" viewBox="0 0 100 100"><use href="#p-tashahhud"/></svg>
+    </div>
+    <div class="flow" id="flow-label">
+      <p class="flow-name">{{flow.name}}</p>
+      <ol class="flow-steps">
+{{flowSteps}}
+      </ol>
+      <p class="flow-next"><svg viewBox="0 0 30 20" aria-hidden="true"><path d="M27 2 V9 Q27 15 21 15 H4 M9 10 L4 15 L9 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{flow.next}}</p>
+      <div class="flow-loop" aria-hidden="true"></div>
+      <p class="flow-sentence" aria-hidden="true">{{flow.sentence}}</p>
+    </div>
+  </figure>
+
+  <nav class="toc" id="contents" aria-label="{{contents.label}}">
+    <ol>
+{{contentsItems}}
+    </ol>
+  </nav>
+
+  <nav class="runner" id="runner" aria-label="{{runner.label}}">
+    <p class="brand" aria-hidden="true">{{brand}}</p>
+    <ol>
+{{runnerItems}}
+    </ol>
+  </nav>
+
+  <main>
+
+{{positions}}
+
+{{counts}}
+
+  </main>
+
+  <footer class="foot">
+    <p>{{footer.note}}</p>
+    <div class="share">
+      <p>{{footer.sharePrompt}}</p>
+      <button type="button" class="share-btn" id="share-btn">{{ui.share}}</button>
+      <p class="vh" id="share-status" aria-live="polite"></p>
+    </div>
+  </footer>
+
+</div>
+
+<div class="now" id="now" hidden>
+  <div class="now-in">
+    <p class="now-text" id="now-text" aria-live="polite"></p>
+    <button type="button" class="now-stop" id="now-stop"><svg aria-hidden="true"><use href="#i-stop"/></svg>{{ui.stop}}</button>
+  </div>
+</div>
+
+<script id="page-text" type="application/json">
+{{uiJson}}
+</script>
+<script src="/app.js"></script>
+</body>
+</html>

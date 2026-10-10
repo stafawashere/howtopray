@@ -1,44 +1,8 @@
 (function () {
-  const defaultText = {
-    listen: "Listen",
-    listenTo: "to",
-    loading: "loading",
-    stop: "Stop",
-    playing: "Playing",
-    playError: "Couldn't play {title}. Check your connection and try again.",
-    showFull: "Show full text",
-    hideFull: "Hide full text",
-    share: "Share this page",
-    shareText: "How to pray salah, step by step, with audio for every position.",
-    linkCopied: "Link copied",
-    linkCopiedStatus: "Link copied to the clipboard.",
-    copyPrompt: "Copy this link:"
-  };
-
-  const pageTextNode = document.getElementById("page-text");
-  const pageText = pageTextNode ? JSON.parse(pageTextNode.textContent) : {};
-  const uiText = Object.assign({}, defaultText, pageText);
+  const uiText = JSON.parse(document.getElementById("page-text").textContent);
 
   const canonicalLink = document.querySelector('link[rel="canonical"]');
   const canonicalUrl = canonicalLink ? canonicalLink.href : location.href;
-
-  const HISN = "https://www.hisnmuslim.com/audio/ar/";
-  const QURAN = "https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/";
-
-  const trackUrls = {
-    istiftah: HISN + "28.mp3",
-    fatihah: QURAN + "001.mp3",
-    ikhlas: QURAN + "112.mp3",
-    ruku: HISN + "33.mp3",
-    rising: HISN + "38.mp3",
-    rabbana: HISN + "39.mp3",
-    sujud: HISN + "41.mp3",
-    sujud2: HISN + "41.mp3",
-    jalsa: HISN + "49.mp3",
-    tashahhud: HISN + "52.mp3",
-    salawat: HISN + "53.mp3",
-    duasalam: HISN + "55.mp3"
-  };
 
   const audio = new Audio();
   audio.preload = "none";
@@ -175,7 +139,7 @@
     if (isSameButton) return;
 
     activeButton = button;
-    audio.src = trackUrls[button.dataset.track];
+    audio.src = button.dataset.src;
     paint(button, "loading");
     showNowPlaying(button);
 

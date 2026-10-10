@@ -1,15 +1,7 @@
-const CACHE = "sujood-v1";
+const CACHE = "{{cacheName}}";
 const FONT_HOSTS = ["fonts.googleapis.com", "fonts.gstatic.com"];
 
-const PRECACHE = [
-  "/",
-  "/styles.css",
-  "/app.js",
-  "/manifest.webmanifest",
-  "/img/icon-192.png",
-  "/img/icon-512.png",
-  "/img/apple-touch-icon.png"
-];
+const PRECACHE = {{precache}};
 
 self.addEventListener("install", function (event) {
   event.waitUntil(

@@ -1,0 +1,4 @@
+  body { font-family: "Amiri", "Scheherazade New", "Noto Naskh Arabic", "Geeza Pro", serif; line-height: 1.8; }
+  h1, .stage h2, .counts h2 { line-height: 1.4; }
+  th, td { text-align: right; }
+  .band, .flow { direction: ltr; }

@@ -1,0 +1,16 @@
+{
+  "name": "sujood",
+  "private": true,
+  "description": "The positions of salah in order, with what to say in each one and audio to listen along.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "serve": "node scripts/build.js && node scripts/serve.js",
+    "test": "node --test",
+    "check-audio": "node scripts/check-audio.js"
+  }
+}

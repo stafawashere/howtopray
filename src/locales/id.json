@@ -1,0 +1,374 @@
+{
+  "lang": "id",
+  "dir": "ltr",
+  "ogLocale": "id_ID",
+  "brand": "Sujood",
+  "siteName": "Sujood",
+  "appTitle": "Sujood",
+  "arabicNames": { "headings": true, "contents": true },
+  "meta": {
+    "title": "Tata Cara Shalat Lengkap dengan Bacaan dan Audio | Sujood",
+    "description": "Panduan tata cara shalat lengkap untuk pemula dan mualaf. Delapan gerakan shalat secara berurutan, bacaan Arab, latin dan artinya di setiap gerakan, serta audio untuk didengarkan.",
+    "ogTitle": "Tata cara shalat, langkah demi langkah",
+    "ogDescription": "Setiap gerakan shalat secara berurutan, bacaan di setiap gerakan, dan audio untuk didengarkan.",
+    "ogImageAlt": "Sujood. Tata cara shalat langkah demi langkah, dengan gambar delapan gerakan dalam satu rakaat."
+  },
+  "howTo": { "name": "Tata cara shalat, langkah demi langkah", "description": "Delapan gerakan dalam satu rakaat shalat secara berurutan, beserta bacaan di setiap gerakan." },
+  "mast": { "subtitle": "Shalat lima waktu", "lede": "Inilah delapan gerakan shalat, sesuai urutan yang akan kamu lakukan. Setiap gerakan menunjukkan apa yang dilakukan badanmu dan apa yang dibaca saat itu. Kedelapan gerakan ini, dari awal sampai akhir, membentuk satu <em>rakaat</em>." },
+  "flow": {
+    "name": "Satu rakaat",
+    "steps": [
+      "Berdiri",
+      "Rukuk",
+      "Berdiri",
+      "Sujud",
+      "Duduk",
+      "Sujud"
+    ],
+    "next": "Rakaat berikutnya",
+    "sentence": "Berdiri, Rukuk, Berdiri, Sujud, Duduk, Sujud"
+  },
+  "contents": { "label": "Daftar isi" },
+  "runner": { "label": "Lompat ke gerakan", "itemLabel": "{n}, {title}" },
+  "positions": {
+    "takbir": {
+      "title": "Berdiri: takbiratul ihram",
+      "short": "Takbir",
+      "says": "Allaahu akbar",
+      "caption": "Tangan diangkat, lalu bersedekap",
+      "instruction": "Berdirilah menghadap kiblat. Angkat kedua tangan setinggi bahu atau telinga, ucapkan takbir, lalu sedekapkan tangan di dada atau perut. Mulai saat ini, kamu sudah berada di dalam shalat.",
+      "say": [
+        {
+          "lines": [
+            { "arabic": "takbir" },
+            { "tr": "Allaahu akbar" },
+            { "meaning": "\"Allah Maha Besar.\" Sekali, dengan suara keras." }
+          ]
+        }
+      ],
+      "step": { "name": "Berdiri: takbiratul ihram", "text": "Berdirilah menghadap kiblat, angkat kedua tangan setinggi bahu atau telinga, ucapkan Allaahu akbar, lalu sedekapkan tangan di dada atau perut." }
+    },
+    "qiyam": {
+      "title": "Berdiri: membaca bacaan",
+      "short": "Bacaan",
+      "says": "Subhaanakallaahumma, Al-Fatihah",
+      "caption": "Pandangan ke tempat sujud",
+      "instruction": "Tetap berdiri dengan tangan bersedekap. Khusus di rakaat pertama, baca doa iftitah (doa pembuka) dengan pelan. Lalu baca ta'awudz, basmalah, dan Al-Fatihah. Al-Fatihah dibaca di setiap rakaat dan tidak bisa diganti dengan bacaan lain. Di dua rakaat pertama, tambahkan satu surah pendek setelah Al-Fatihah.",
+      "say": [
+        {
+          "lines": [
+            { "when": "Rakaat pertama saja, pelan" },
+            { "tr": "Subhaanakallaahumma wa bihamdika..." },
+            { "note": "lalu <strong>A'uudzu billaahi minasy syaithaanir rajiim</strong>" },
+            { "listen": "istiftah", "title": "Subhaanakallaahumma wa bihamdika", "more": "istiftah" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "arabicSmall": "istiftah" },
+                { "tr": "Subhaanakallaahumma wa bihamdika, wa tabaarakasmuka, wa ta'aalaa jadduka, wa laa ilaaha ghairuk." },
+                { "meaning": "\"Maha Suci Engkau, ya Allah, dan segala puji bagi-Mu. Penuh berkah nama-Mu, Maha Tinggi keagungan-Mu, dan tidak ada tuhan selain Engkau.\"" }
+              ]
+            },
+            {
+              "lines": [
+                { "when": "Lalu ta'awudz dan basmalah" },
+                { "arabicSmall": "taawwudh" },
+                { "tr": "A'uudzu billaahi minasy syaithaanir rajiim. Bismillaahir rahmaanir rahiim." },
+                { "meaning": "\"Aku berlindung kepada Allah dari setan yang terkutuk. Dengan nama Allah, Yang Maha Pengasih, Yang Maha Penyayang.\"" }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            { "when": "Setiap rakaat" },
+            { "arabicSmall": "fatihah-2" },
+            { "tr": "Al-Fatihah, lalu <em>Aamiin</em>" },
+            { "listen": "fatihah", "title": "Al-Fatihah", "more": "fatihah" }
+          ],
+          "more": [
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-1" },
+                { "tr": "Bismillaahir rahmaanir rahiim" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-2" },
+                { "tr": "Alhamdu lillaahi rabbil 'aalamiin" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-3" },
+                { "tr": "Arrahmaanir rahiim" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-4" },
+                { "tr": "Maaliki yaumid diin" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-5" },
+                { "tr": "Iyyaaka na'budu wa iyyaaka nasta'iin" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-6" },
+                { "tr": "Ihdinash shiraathal mustaqiim" }
+              ]
+            },
+            {
+              "pair": true,
+              "lines": [
+                { "arabicSmall": "fatihah-7" },
+                { "tr": "Shiraathal ladziina an'amta 'alaihim, ghairil maghdhuubi 'alaihim wa ladh dhaalliin" }
+              ]
+            },
+            {
+              "lines": [
+                { "tr": "Lalu ucapkan: <span class=\"ar-inline\" lang=\"ar\" dir=\"rtl\">آمِين</span> Aamiin" },
+                { "meaning": "\"Segala puji bagi Allah, Tuhan seluruh alam, Yang Maha Pengasih, Yang Maha Penyayang, Penguasa Hari Pembalasan. Hanya Engkau yang kami sembah, dan hanya kepada Engkau kami memohon pertolongan. Tunjukkanlah kami jalan yang lurus, jalan orang-orang yang Engkau beri nikmat, bukan jalan mereka yang mendapat murka, dan bukan pula jalan mereka yang tersesat.\"" }
+              ]
+            },
+            {
+              "lines": [
+                { "when": "Dua rakaat pertama: satu surah pendek (Al-Ikhlas)" },
+                { "arabicSmall": "ikhlas" },
+                { "tr": "Qul huwallaahu ahad. Allaahush shamad. Lam yalid wa lam yuulad. Wa lam yakul lahuu kufuwan ahad." },
+                { "meaning": "\"Katakanlah: Dialah Allah, Yang Maha Esa. Allah, tempat bergantung segala sesuatu. Dia tidak beranak dan tidak diperanakkan, dan tidak ada satu pun yang setara dengan-Nya.\"" },
+                { "listen": "ikhlas", "title": "Al-Ikhlas" }
+              ]
+            }
+          ]
+        }
+      ],
+      "step": { "name": "Berdiri: membaca bacaan", "text": "Di rakaat pertama, baca doa iftitah dengan pelan. Lalu baca ta'awudz, basmalah, dan Al-Fatihah. Di dua rakaat pertama, tambahkan satu surah pendek setelahnya." }
+    },
+    "ruku": {
+      "title": "Rukuk",
+      "short": "Rukuk",
+      "says": "Subhaana rabbiyal 'adziim",
+      "caption": "Punggung rata, tangan di lutut",
+      "instruction": "Ucapkan takbir lalu rukuk. Bungkukkan badan dari pinggul sampai punggung rata, dengan kepala lurus sejajar punggung. Letakkan tangan di lutut dengan jari-jari terbuka, luruskan lengan dan punggung, dan diamlah dengan tenang sebelum mulai membaca.",
+      "say": [
+        {
+          "lines": [
+            { "arabic": "ruku" },
+            { "tr": "Subhaana rabbiyal 'adziim" },
+            { "meaning": "\"Maha Suci Tuhanku, Yang Maha Agung.\" Tiga kali, dengan pelan." },
+            { "listen": "ruku", "title": "Subhaana rabbiyal 'adziim" }
+          ]
+        }
+      ],
+      "step": { "name": "Rukuk", "text": "Ucapkan takbir lalu membungkuk sampai punggung rata dengan kedua tangan di lutut, kemudian baca Subhaana rabbiyal 'adziim tiga kali." }
+    },
+    "itidal": {
+      "title": "I'tidal (bangun dari rukuk)",
+      "short": "I'tidal",
+      "says": "Sami'allaahu liman hamidah",
+      "caption": "Berdiri tegak, tangan di samping badan",
+      "instruction": "Bangun kembali sampai berdiri tegak sambil membaca bacaannya. Berhentilah sejenak di sini. I'tidal bukan sekadar gerakan peralihan, tetapi satu posisi tersendiri.",
+      "say": [
+        {
+          "lines": [
+            { "when": "Sambil bangun" },
+            { "arabicSmall": "rising" },
+            { "tr": "Sami'allaahu liman hamidah" },
+            { "listen": "rising", "title": "Sami'allaahu liman hamidah" }
+          ]
+        },
+        {
+          "lines": [
+            { "when": "Setelah berdiri tegak" },
+            { "arabicSmall": "rabbana" },
+            { "tr": "Rabbanaa wa lakal hamd" },
+            { "listen": "rabbana", "title": "Rabbanaa wa lakal hamd", "more": "itidal" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "when": "Bacaan yang lebih panjang, boleh ditambahkan" },
+                { "tr": "Hamdan katsiiran thayyiban mubaarakan fiih, mil'as samaawaati wa mil'al ardhi wa mil'a maa syi'ta min syai'in ba'd." },
+                { "meaning": "\"Pujian yang banyak, baik, dan penuh berkah, sepenuh langit, sepenuh bumi, dan sepenuh apa pun yang Engkau kehendaki.\"" }
+              ]
+            }
+          ]
+        }
+      ],
+      "step": { "name": "I'tidal (bangun dari rukuk)", "text": "Bangun sampai berdiri tegak sambil membaca Sami'allaahu liman hamidah, lalu baca Rabbanaa wa lakal hamd sekali saat sudah tegak." }
+    },
+    "sujud": {
+      "title": "Sujud",
+      "short": "Sujud",
+      "says": "Subhaana rabbiyal a'laa",
+      "caption": "Tujuh anggota badan menyentuh lantai",
+      "instruction": "Ucapkan takbir lalu turun untuk sujud. Dahi, hidung, kedua telapak tangan, kedua lutut, dan ujung jari kedua kaki semuanya menempel di lantai, jadi ada tujuh anggota badan. Jangan letakkan siku di lantai, dan jauhkan siku dari sisi badan.",
+      "say": [
+        {
+          "lines": [
+            { "arabic": "sujud" },
+            { "tr": "Subhaana rabbiyal a'laa" },
+            { "meaning": "\"Maha Suci Tuhanku, Yang Maha Tinggi.\" Tiga kali, dengan pelan." },
+            { "listen": "sujud", "title": "Subhaana rabbiyal a'laa", "more": "sujud" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "when": "Tambahan, boleh dibaca" },
+                { "arabicSmall": "subbuhun" },
+                { "tr": "Subbuuhun qudduusun, rabbul malaa'ikati war ruuh." },
+                { "meaning": "\"Maha Sempurna, Maha Suci, Tuhan para malaikat dan Ruh.\"" }
+              ]
+            }
+          ]
+        }
+      ],
+      "aside": "Setelah tasbih yang wajib, inilah saatnya memohon apa saja yang kamu inginkan, dalam bahasa apa pun.",
+      "step": { "name": "Sujud", "text": "Ucapkan takbir lalu turun sampai dahi, hidung, telapak tangan, lutut, dan ujung jari kaki menyentuh lantai, kemudian baca Subhaana rabbiyal a'laa tiga kali." }
+    },
+    "jalsa": {
+      "title": "Duduk di antara dua sujud",
+      "short": "Duduk",
+      "says": "Rabbighfir lii",
+      "caption": "Duduk di atas kaki yang dilipat",
+      "instruction": "Ucapkan takbir lalu bangun untuk duduk. Lipat kaki kiri ke bawah badan dan duduki, tegakkan kaki kanan dengan jari-jari kaki menghadap kiblat, dan letakkan kedua tangan di paha. Duduklah dengan tenang sebelum lanjut.",
+      "say": [
+        {
+          "lines": [
+            { "arabic": "jalsa" },
+            { "tr": "Rabbighfir lii, warhamnii, wajburnii, warfa'nii, warzuqnii, wahdinii, wa 'aafinii" },
+            { "note": "Atau cukup: <strong>Rabbighfir lii, rabbighfir lii</strong>" },
+            { "listen": "jalsa", "title": "Rabbighfir lii", "more": "jalsa" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "arabicSmall": "jalsa-long" },
+                { "meaning": "\"Ya Tuhanku, ampunilah aku, sayangilah aku, perbaikilah keadaanku, angkatlah derajatku, berilah aku rezeki, berilah aku petunjuk, dan berilah aku kesehatan dan keselamatan.\"" }
+              ]
+            }
+          ]
+        }
+      ],
+      "step": { "name": "Duduk di antara dua sujud", "text": "Ucapkan takbir lalu duduk di atas kaki kiri yang dilipat dengan kedua tangan di paha, dan baca Rabbighfir lii." }
+    },
+    "sujud-2": {
+      "title": "Sujud kedua",
+      "short": "Sujud",
+      "says": "Subhaana rabbiyal a'laa",
+      "caption": "Sama persis dengan sujud pertama",
+      "instruction": "Ucapkan takbir lalu sujud lagi persis seperti tadi, dengan tasbih yang sama. Dengan ini, satu rakaat selesai. Ucapkan takbir lalu berdiri untuk rakaat berikutnya. Setelah jumlah rakaat yang genap, tetaplah duduk untuk <a href=\"#tashahhud\">tasyahud</a>.",
+      "say": [
+        {
+          "lines": [
+            { "tr": "Subhaana rabbiyal a'laa" },
+            { "meaning": "Tiga kali, dengan pelan" },
+            { "listen": "sujud", "title": "Subhaana rabbiyal a'laa" }
+          ]
+        }
+      ],
+      "step": { "name": "Sujud kedua", "text": "Ucapkan takbir lalu sujud lagi persis seperti sebelumnya. Dengan itu, satu rakaat selesai." }
+    },
+    "tashahhud": {
+      "title": "Tasyahud akhir dan salam",
+      "short": "Salam",
+      "says": "Attahiyyaatu lillaah",
+      "caption": "Jari telunjuk diangkat saat syahadat",
+      "instruction": "Duduklah seperti pada langkah 6, lalu baca tasyahud dan angkat jari telunjuk saat mengucapkan kalimat syahadat. Di duduk terakhir, tambahkan shalawat dan doa. Lalu tolehkan kepala ke kanan dan ke kiri sambil mengucapkan salam. Selesai, shalatmu sudah tuntas.",
+      "say": [
+        {
+          "lines": [
+            { "when": "Setiap duduk tasyahud" },
+            { "tr": "Attahiyyaatu lillaahi wash shalawaatu wath thayyibaat..." },
+            { "note": "lalu, di duduk terakhir: <strong>Allaahumma shalli 'alaa Muhammad...</strong> dan doa" },
+            { "listen": "tashahhud", "title": "Attahiyyaatu lillaah", "more": "tashahhud" }
+          ],
+          "more": [
+            {
+              "lines": [
+                { "when": "Tasyahud" },
+                { "arabicSmall": "tashahhud" },
+                { "tr": "Attahiyyaatu lillaahi wash shalawaatu wath thayyibaat. Assalaamu 'alaika ayyuhan nabiyyu wa rahmatullaahi wa barakaatuh. Assalaamu 'alainaa wa 'alaa 'ibaadillaahish shaalihiin. Asyhadu allaa ilaaha illallaah, wa asyhadu anna Muhammadan 'abduhuu wa rasuuluh." },
+                { "meaning": "\"Segala penghormatan, doa, dan kebaikan adalah milik Allah. Semoga keselamatan tercurah kepadamu, wahai Nabi, beserta rahmat Allah dan berkah-Nya. Semoga keselamatan tercurah kepada kami dan kepada hamba-hamba Allah yang saleh. Aku bersaksi bahwa tidak ada tuhan selain Allah, dan aku bersaksi bahwa Muhammad adalah hamba dan utusan-Nya.\"" }
+              ]
+            },
+            {
+              "lines": [
+                { "when": "Shalawat Ibrahimiyah, di duduk terakhir saja" },
+                { "arabicSmall": "salawat" },
+                { "tr": "Allaahumma shalli 'alaa Muhammadin wa 'alaa aali Muhammad, kamaa shallaita 'alaa Ibraahiima wa 'alaa aali Ibraahiim, innaka hamiidun majiid." },
+                { "arabicSmall": "barakat" },
+                { "tr": "Allaahumma baarik 'alaa Muhammadin wa 'alaa aali Muhammad, kamaa baarakta 'alaa Ibraahiima wa 'alaa aali Ibraahiim, innaka hamiidun majiid." },
+                { "listen": "salawat", "title": "Allaahumma shalli 'alaa Muhammad" },
+                { "meaning": "\"Ya Allah, limpahkanlah shalawat kepada Muhammad dan keluarga Muhammad, sebagaimana Engkau melimpahkan shalawat kepada Ibrahim dan keluarga Ibrahim. Sungguh, Engkau Maha Terpuji, Maha Mulia. Ya Allah, limpahkanlah berkah kepada Muhammad dan keluarga Muhammad, sebagaimana Engkau melimpahkan berkah kepada Ibrahim dan keluarga Ibrahim. Sungguh, Engkau Maha Terpuji, Maha Mulia.\"" }
+              ]
+            },
+            {
+              "lines": [
+                { "when": "Doa sebelum salam" },
+                { "arabicSmall": "dua-before-salam" },
+                { "tr": "Allaahumma innii a'uudzu bika min 'adzaabi jahannam, wa min 'adzaabil qabr, wa min fitnatil mahyaa wal mamaat, wa min syarri fitnatil masiihid dajjaal." },
+                { "listen": "duasalam", "title": "Allaahumma innii a'uudzu bika" },
+                { "meaning": "\"Ya Allah, aku berlindung kepada-Mu dari siksa neraka Jahanam, dari siksa kubur, dari fitnah kehidupan dan kematian, dan dari kejahatan fitnah Al-Masih Ad-Dajjal, sang mesias palsu.\"" }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            { "arabic": "salam" },
+            { "tr": "Assalaamu 'alaikum wa rahmatullaah" },
+            { "meaning": "Dua kali: ke kanan, lalu ke kiri" }
+          ]
+        }
+      ],
+      "step": { "name": "Tasyahud akhir dan salam", "text": "Duduk dan baca tasyahud. Di duduk terakhir, tambahkan shalawat dan doa, lalu tolehkan kepala ke kanan dan ke kiri sambil mengucapkan Assalaamu 'alaikum wa rahmatullaah." }
+    }
+  },
+  "counts": {
+    "title": "Jumlah rakaat setiap shalat",
+    "says": "Subuh 2, Dzuhur 4, Ashar 4, Maghrib 3, Isya 4",
+    "short": "Jumlah rakaat",
+    "prayerColumn": "Shalat",
+    "rakahsColumn": "Rakaat",
+    "prayers": {
+      "fajr": { "name": "Subuh", "note": "Kedua rakaat dibaca dengan suara keras" },
+      "dhuhr": { "name": "Dzuhur", "note": "Semua bacaan dengan pelan" },
+      "asr": { "name": "Ashar", "note": "Semua bacaan dengan pelan" },
+      "maghrib": { "name": "Maghrib", "note": "Dua rakaat pertama keras, rakaat ketiga pelan" },
+      "isha": { "name": "Isya", "note": "Dua rakaat pertama keras, dua rakaat terakhir pelan" }
+    },
+    "aloud": "keras",
+    "quiet": "pelan",
+    "aside": "Tambahkan surah pendek setelah <a href=\"#qiyam\">Al-Fatihah</a> hanya di dua rakaat pertama. Setiap selesai dua rakaat, duduklah untuk <a href=\"#tashahhud\">tasyahud</a>. Pada shalat Subuh, duduk itu sekaligus menjadi duduk terakhir."
+  },
+  "footer": { "note": "Beberapa hal berbeda antara satu mazhab dan mazhab lain, seperti bacaan doa iftitah, mengucapkan <em>Aamiin</em> dengan keras atau pelan, dan letak doa qunut. Semuanya masih termasuk praktik yang diterima. Untuk pelafalan, dengarkan langsung bacaan seorang qari, jangan hanya mengandalkan tulisan latin.", "sharePrompt": "Kenal seseorang yang sedang belajar shalat?" },
+  "ui": {
+    "listen": "Dengarkan",
+    "listenTo": "bacaan",
+    "loading": "memuat",
+    "stop": "Berhenti",
+    "playing": "Sedang diputar",
+    "playError": "Tidak bisa memutar {title}. Periksa koneksi internet, lalu coba lagi.",
+    "showFull": "Lihat bacaan lengkap",
+    "hideFull": "Sembunyikan bacaan lengkap",
+    "share": "Bagikan halaman ini",
+    "shareText": "Tata cara shalat langkah demi langkah, dengan audio untuk setiap gerakan.",
+    "linkCopied": "Tautan disalin",
+    "linkCopiedStatus": "Tautan sudah disalin ke papan klip.",
+    "copyPrompt": "Salin tautan ini:"
+  }
+}

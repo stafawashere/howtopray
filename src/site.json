@@ -1,0 +1,26 @@
+{
+  "origin": "https://sujood.online",
+  "defaultLocale": "en",
+  "locales": ["en", "ar", "ur", "bn", "id", "tr", "fr"],
+  "fonts": [
+    "EB Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500",
+    "Amiri:ital,wght@0,400;0,700;1,400"
+  ],
+  "positions": [
+    { "id": "takbir", "figure": "takbir", "brief": false },
+    { "id": "qiyam", "figure": "qiyam", "brief": false },
+    { "id": "ruku", "figure": "ruku", "brief": true },
+    { "id": "itidal", "figure": "itidal", "brief": false },
+    { "id": "sujud", "figure": "sujud", "brief": false },
+    { "id": "jalsa", "figure": "jalsa", "brief": false },
+    { "id": "sujud-2", "figure": "sujud", "brief": true },
+    { "id": "tashahhud", "figure": "tashahhud", "brief": false }
+  ],
+  "prayers": [
+    { "id": "fajr", "rakahs": 2, "aloud": 2 },
+    { "id": "dhuhr", "rakahs": 4, "aloud": 0 },
+    { "id": "asr", "rakahs": 4, "aloud": 0 },
+    { "id": "maghrib", "rakahs": 3, "aloud": 2 },
+    { "id": "isha", "rakahs": 4, "aloud": 2 }
+  ]
+}

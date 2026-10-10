@@ -1,0 +1,7 @@
+  body { font-family: "Noto Nastaliq Urdu", "EB Garamond", serif; line-height: 2.2; }
+  h1, .stage h2, .counts h2 { line-height: 1.8; }
+  .flow, .flow-name, .flow-next, .toc-name, .toc-says, .cap, .when, .tr, .en, .c-note, .now-text { line-height: 2; }
+  .listen, .more-btn, .share-btn { line-height: 1.6; }
+  .tr[dir="ltr"] { font-family: "EB Garamond", serif; line-height: 1.45; text-align: left; }
+  th, td { text-align: start; }
+  .band, .flow { direction: ltr; }

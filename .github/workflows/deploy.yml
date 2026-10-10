@@ -1,9 +1,8 @@
-# Deploys the site to GitHub Pages on every push.
+# Builds the site and deploys it to GitHub Pages on every push to main.
 #
-# ONE-TIME SETUP: in the repo, go to Settings -> Pages -> "Build and deployment"
-# and set Source to "GitHub Actions". (CNAME + .nojekyll are served as normal
-# because the whole repo root is uploaded as the artifact.)
-name: Deploy to GitHub Pages
+# One-time setup: in the repo, go to Settings, then Pages, and set the source
+# under "Build and deployment" to GitHub Actions.
+name: Deploy
 
 on:
   push:
@@ -29,13 +28,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build
+        run: npm run build
+
+      - name: Test
+        run: npm test
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy
         id: deployment
