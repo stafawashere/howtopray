@@ -8,781 +8,2060 @@
 <meta property="og:title" content="Salah | How to pray step by step">
 <meta property="og:description" content="The eight positions of salah in the order they happen, with the words said in each one, transliteration and audio.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0b0f0e">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#x1F54C;</text></svg>">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0f1512" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f4ecdc" media="(prefers-color-scheme: light)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%231f6b5a'/%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='11' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M86 84 L81 74 L62 80 L68 52 L40 66'/%3E%3C/g%3E%3Ccircle cx='27' cy='74' r='9' fill='%23ffffff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
+  :root {
+    --bg: #0f1512;
+    --bg-2: #141b17;
+    --panel: #1a221d;
+    --panel-2: #222c26;
+    --panel-3: #2c3730;
+    --wash: #1d2f2b;
+    --line: #28332c;
+    --floor: #3d4d43;
+    --text: #ece6d6;
+    --text-2: #aaa799;
+    --accent: #d4b06a;
+    --accent-fill: #1f6b5a;
+    --accent-fill-hover: #277b68;
+    --on-accent: #f6f1e4;
+    --live: #8fcfae;
+    --ornament: rgba(212, 176, 106, 0.09);
+    --nav-hover: #1a221d;
+    --nav-current: #222c26;
+
+    --gutter: 20px;
+    --measure: 36rem;
+    --runner-h: 56px;
+
+    --star-8: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon fill='black' points='100,50 85.36,64.64 85.36,85.36 64.64,85.36 50,100 35.36,85.36 14.64,85.36 14.64,64.64 0,50 14.64,35.36 14.64,14.64 35.36,14.64 50,0 64.64,14.64 85.36,14.64 85.36,35.36'/%3E%3C/svg%3E");
+    --girih: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='black' stroke-width='1.2'%3E%3Cpolygon points='78,48 69.2,56.8 69.2,69.2 56.8,69.2 48,78 39.2,69.2 26.8,69.2 26.8,56.8 18,48 26.8,39.2 26.8,26.8 39.2,26.8 48,18 56.8,26.8 69.2,26.8 69.2,39.2'/%3E%3Cpath d='M0 48 L18 48 M78 48 L96 48 M48 0 L48 18 M48 78 L48 96'/%3E%3Cpath d='M0 0 L10 0 L0 10 Z M96 0 L86 0 L96 10 Z M0 96 L10 96 L0 86 Z M96 96 L86 96 L96 86 Z' fill='black' stroke='none'/%3E%3C/g%3E%3C/svg%3E");
+
+    color-scheme: dark;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f4ecdc;
+      --bg-2: #ede3cf;
+      --panel: #faf5ea;
+      --panel-2: #f0e7d4;
+      --panel-3: #e3d8c0;
+      --wash: #e2ebe3;
+      --line: #dacdb1;
+      --floor: #b9a98a;
+      --text: #1e2922;
+      --text-2: #5f665d;
+      --accent: #8a6a1e;
+      --accent-fill: #1f6b5a;
+      --accent-fill-hover: #185a4a;
+      --on-accent: #faf5ea;
+      --live: #2d8a62;
+      --ornament: rgba(138, 106, 30, 0.1);
+      --nav-hover: #f0e7d4;
+      --nav-current: #fcf8ef;
+
+      color-scheme: light;
+    }
+  }
+
   * { box-sizing: border-box; }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    background: var(--bg);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
 
   body {
     margin: 0;
-    background: #0b0f0e;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "EB Garamond", "Iowan Old Style", Palatino, Georgia, serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body { padding-top: var(--runner-h); }
+  body.has-player { padding-bottom: 96px; }
+
+  [lang="ar"] {
+    font-family: "Amiri", "Scheherazade New", "Noto Naskh Arabic", "Geeza Pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-feature-settings: "liga", "calt";
+  }
+
+  p { margin: 0; }
+  a { color: inherit; }
+
+  .instr a,
+  .aside a {
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  .instr a:hover,
+  .aside a:hover { color: var(--accent); }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  .vh {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .sprite {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
   }
 
   .page {
-    background: #0b0f0e;
-    background-image: radial-gradient(1100px 620px at 50% -260px, #16231f 0%, rgba(11,15,14,0) 72%);
-    color: #e9e5d9;
-    font-family: 'Inter Tight', system-ui, sans-serif;
-    font-size: 16px;
-    line-height: 1.65;
-    padding: 0 30px 140px;
-    text-rendering: optimizeLegibility;
-  }
-
-  .wrap {
-    max-width: 1060px;
+    max-width: 64rem;
     margin: 0 auto;
+    padding: 0 var(--gutter);
   }
 
-  .rule { border: 0; border-top: 1px solid #1d2b28; margin: 0; }
+  /* pictograms */
 
-  .hero { padding: 116px 0 66px; }
+  .body-ink { fill: none; stroke: currentColor; stroke-width: var(--ink-w, 9); stroke-linecap: round; stroke-linejoin: round; }
+  .knock { fill: none; stroke: var(--knock, var(--bg)); stroke-width: calc(var(--ink-w, 9) + 7); stroke-linecap: round; stroke-linejoin: round; }
+  .halo { fill: var(--halo, none); }
+  .cue { visibility: var(--cue-visibility, visible); fill: none; stroke: var(--accent); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+  .cue-dots { visibility: var(--cue-visibility, visible); fill: none; stroke: var(--accent); stroke-width: 2.6; stroke-linecap: round; stroke-dasharray: 0.1 5.5; }
+  .finger { fill: none; stroke: var(--accent); stroke-width: 3.6; stroke-linecap: round; }
 
-  .eyebrow {
-    font-size: 11px;
-    letter-spacing: .34em;
-    text-transform: uppercase;
-    color: #c8983f;
+  /* opening */
+
+  .mast {
+    position: relative;
+    isolation: isolate;
+    padding: 40px 0 4px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .mast::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0 calc(var(--gutter) * -1) 0 auto;
+    width: min(100%, 36rem);
+    background: var(--ornament);
+    -webkit-mask-image: var(--girih), linear-gradient(to left, rgba(0, 0, 0, 0.9), transparent);
+    -webkit-mask-size: 96px 96px, 100% 100%;
+    -webkit-mask-repeat: repeat, no-repeat;
+    -webkit-mask-composite: source-in;
+    mask-image: var(--girih), linear-gradient(to left, rgba(0, 0, 0, 0.9), transparent);
+    mask-size: 96px 96px, 100% 100%;
+    mask-repeat: repeat, no-repeat;
+    mask-composite: intersect;
+    pointer-events: none;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2.625rem;
+    line-height: 1.05;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    text-wrap: balance;
+  }
+
+  .mast-ar {
+    margin-top: 8px;
+    font-size: 2.375rem;
+    line-height: 1.6;
+    text-align: right;
+    color: var(--accent);
+  }
+
+  .sub {
+    margin-top: 8px;
+    font-size: 1.1875rem;
     font-weight: 500;
-  }
-
-  .title {
-    font-family: 'Instrument Serif', serif;
-    font-weight: 400;
-    font-size: clamp(54px, 9.4vw, 108px);
-    line-height: .92;
-    letter-spacing: -.015em;
-    margin: 24px 0 0;
-  }
-
-  .titleAr {
-    font-family: 'Noto Naskh Arabic', serif;
-    font-size: clamp(26px, 4vw, 40px);
-    color: #6f9d8b;
-    direction: rtl;
-    margin-top: 18px;
-    line-height: 1.8;
+    font-style: italic;
+    color: var(--text-2);
   }
 
   .lede {
-    margin: 30px 0 0;
-    max-width: 58ch;
-    font-size: 18px;
-    color: #9aa8a2;
+    margin-top: 18px;
+    max-width: 32rem;
+    font-size: 1.125rem;
+    color: var(--text-2);
   }
 
-  .lede em { color: #e2bd74; font-style: italic; }
+  .lede em { color: var(--text); }
+
+  /* the shape of a rak'ah */
+
+  .profile {
+    margin: 32px calc(var(--gutter) * -1) 0;
+    padding: 26px var(--gutter) 20px;
+    background: var(--bg-2);
+    --knock: var(--bg-2);
+    --halo: var(--bg-2);
+    --rule: color-mix(in srgb, var(--accent) 55%, transparent);
+  }
+
+  .band {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    padding: 0 2%;
+    border-bottom: 2px solid var(--floor);
+    --cue-visibility: hidden;
+    --ink-w: 6.5;
+  }
+
+  .band svg.p {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    color: var(--text);
+  }
+
+  .trail {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2%;
+    right: 2%;
+    width: 96%;
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+  }
+
+  .trail path {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 1.75;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 0.1 5;
+    vector-effect: non-scaling-stroke;
+  }
 
   .flow {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    padding: 26px 0;
-    font-size: 11px;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-    color: #8d9b95;
-  }
-
-  .flowLabel { color: #c8983f; }
-  .chev { color: #3a4a46; }
-  .flowEnd { color: #0b0f0e; background: #c8983f; padding: 5px 12px; }
-
-  .step {
     display: grid;
-    grid-template-columns: 78px 200px minmax(0, 1fr);
-    grid-template-areas: "num fig main";
-    gap: 40px;
-    padding: 66px 0;
-    border-top: 1px solid #1d2b28;
-    align-items: start;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    padding: 0 2%;
+    font-size: 0.8125rem;
+    line-height: 1.25;
+    color: var(--text-2);
   }
 
-  .num {
-    grid-area: num;
-    font-family: 'Instrument Serif', serif;
-    font-size: 58px;
-    line-height: .78;
-    color: #c8983f;
+  .flow-steps {
+    grid-column: 2 / 8;
+    grid-row: 1;
+    list-style: none;
+    margin: 14px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    border-top: 1px solid var(--rule);
+    position: relative;
   }
 
-  .figure {
-    grid-area: fig;
-    position: sticky;
-    top: 34px;
+  .flow-steps::before,
+  .flow-steps::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    height: 9px;
+    border-left: 1px solid var(--rule);
+  }
+
+  .flow-steps::before { left: 0; }
+  .flow-steps::after { right: -1px; }
+
+  .flow-steps li {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .flow-name {
+    grid-column: 2 / 8;
+    grid-row: 2;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+    margin-top: 8px;
+  }
+
+  .flow-next {
+    grid-column: 7 / 9;
+    grid-row: 1 / 3;
+    justify-self: end;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 16px;
+    align-items: flex-end;
+    gap: 2px;
+    padding-top: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+    text-align: right;
   }
 
-  .figure svg { width: 100%; max-width: 200px; height: auto; }
+  .flow-next svg { width: 26px; height: 18px; }
+
+  .flow-loop { display: none; }
+
+  .flow-sentence {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    margin-top: 12px;
+    font-size: 0.875rem;
+    color: var(--text-2);
+    text-align: center;
+  }
+
+  .toc {
+    margin-top: 28px;
+    padding: 20px 0 36px;
+    border-top: 1px solid var(--line);
+  }
+
+  .toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 2px;
+  }
+
+  .toc a {
+    display: grid;
+    grid-template-columns: 1.5rem minmax(0, 1fr);
+    column-gap: 10px;
+    padding: 10px 12px;
+    margin: 0 -12px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .toc a:hover { background: var(--panel); }
+
+  .toc .toc-extra {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+  }
+
+  .toc-extra .toc-n {
+    align-self: start;
+    margin-top: 0.45em;
+    width: 11px;
+    height: 11px;
+    background: var(--accent);
+    -webkit-mask: var(--star-8) center / contain no-repeat;
+    mask: var(--star-8) center / contain no-repeat;
+  }
+
+  .toc-n {
+    font-weight: 600;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .toc-name {
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .toc-says {
+    grid-column: 2;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    color: var(--text-2);
+  }
+
+  .toc-ar { display: none; }
+
+  /* position nav: a fixed top bar, icons only on phones, names on wide screens */
+
+  .runner {
+    position: fixed;
+    z-index: 20;
+    inset: 0 0 auto 0;
+    height: var(--runner-h);
+    background: var(--bg-2);
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    --knock: var(--bg-2);
+  }
+
+  .brand { display: none; }
+
+  .runner ol {
+    flex: 1;
+    min-width: 0;
+    list-style: none;
+    margin: 0;
+    padding: 4px 8px;
+    height: 100%;
+    display: flex;
+    gap: 0;
+  }
+
+  .runner li { flex: 1 1 0; display: flex; min-width: 0; }
+  .runner .r-extra { display: none; }
+
+  .runner a {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-2);
+  }
+
+  .runner svg {
+    width: 32px;
+    height: 32px;
+    flex: none;
+    color: var(--text-2);
+  }
+
+  .runner .r-n {
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .runner .r-name { display: none; }
+
+  .runner a:hover { background: var(--nav-hover); --knock: var(--nav-hover); }
+  .runner a:hover svg { color: var(--text); }
+
+  .runner a[aria-current] {
+    background: var(--nav-current);
+    color: var(--text);
+    --knock: var(--nav-current);
+  }
+
+  .runner a[aria-current] svg { color: var(--text); }
+  .runner a[aria-current] .r-n { color: var(--accent); }
+  .runner a[aria-current]::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--accent);
+  }
+  .runner a:focus-visible { outline-offset: -2px; }
+
+  /* positions */
+
+  .pos {
+    position: relative;
+    padding: 44px 0 48px;
+    scroll-margin-top: calc(var(--runner-h) + 16px);
+  }
+
+  .pos + .pos { border-top: 1px solid var(--line); }
+
+  /* an eight-point star sitting on the rule between positions */
+  .pos + .pos::before,
+  .counts::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    margin-left: -7.5px;
+    background: var(--accent);
+    box-shadow: 0 0 0 6px var(--bg);
+    -webkit-mask: var(--star-8) center / contain no-repeat;
+    mask: var(--star-8) center / contain no-repeat;
+  }
+
+  .pos.is-brief { padding-bottom: 36px; }
+
+  .stage {
+    display: flex;
+    align-items: flex-end;
+    gap: 14px;
+    background: linear-gradient(var(--floor), var(--floor)) left bottom / 92px 2px no-repeat;
+  }
+
+  .stage .fig {
+    width: 92px;
+    height: 92px;
+    flex: none;
+    color: var(--text);
+    display: block;
+  }
+
+  .is-brief .stage { background-size: 76px 2px; }
+  .is-brief .stage .fig { width: 76px; height: 76px; }
+
+  .stage h2 {
+    margin: 0;
+    padding-bottom: 4px;
+    font-size: 1.625rem;
+    line-height: 1.15;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+
+  .stage .n { color: var(--accent); }
+
+  .h-ar {
+    display: inline-block;
+    font-size: 1.3em;
+    line-height: 1;
+    color: var(--accent);
+    opacity: 0.85;
+    margin-left: 0.2em;
+  }
 
   .cap {
-    font-size: 10.5px;
-    letter-spacing: .18em;
+    margin-top: 16px;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #64736e;
-    text-align: center;
-    line-height: 1.7;
+    color: var(--accent);
   }
 
-  .main { grid-area: main; }
-
-  .head {
-    display: flex;
-    align-items: baseline;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-bottom: 16px;
+  .instr {
+    margin-top: 6px;
+    max-width: var(--measure);
+    color: var(--text);
   }
 
-  .h2 {
-    font-family: 'Instrument Serif', serif;
-    font-weight: 400;
-    font-size: 38px;
-    letter-spacing: -.01em;
-    margin: 0;
+  .aside {
+    max-width: var(--measure);
+    font-size: 0.9375rem;
+    color: var(--text-2);
   }
 
-  .ar { font-family: 'Noto Naskh Arabic', serif; font-size: 24px; color: #6f9d8b; }
+  /* the words */
 
-  .body { margin: 0; max-width: 62ch; color: #9aa8a2; }
-
-  .aside { margin-top: 18px; font-size: 14px; color: #7f8e88; max-width: 60ch; }
-
-  .duaRow { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 26px; }
-  .duaRow .dua { flex: 1 1 280px; margin-top: 0; }
-
-  .dua {
-    margin-top: 26px;
-    background: #111917;
-    border: 1px solid #1d2b28;
-    border-top: 2px solid #c8983f;
-    padding: 22px 24px 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+  .say-col {
+    margin: 22px calc(var(--gutter) * -1 + 8px) 0;
+    padding: 4px 16px;
+    display: grid;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
   }
 
-  .duaAlt { border-top-color: #6f9d8b; }
+  .say-col > .aside { padding: 2px 0 18px; }
 
-  .duaAr {
-    font-family: 'Noto Naskh Arabic', serif;
-    font-size: 25px;
-    line-height: 2.05;
-    direction: rtl;
+  .say {
+    position: relative;
+    display: grid;
+    gap: 8px;
+    justify-items: start;
+    padding: 16px 16px 18px;
+    margin: 0 -16px;
+    border-radius: 12px;
+  }
+
+  .verse {
+    position: relative;
+    display: grid;
+    gap: 6px;
+    justify-items: start;
+    padding: 14px 16px;
+    margin: 0 -16px;
+    border-radius: 10px;
+  }
+
+  .say + .say::before,
+  .verse + .verse::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 16px;
+    right: 16px;
+    border-top: 1px solid var(--line);
+  }
+
+  .verse.pair { padding-top: 4px; padding-bottom: 6px; gap: 0; }
+  .verse.pair + .verse.pair::before { display: none; }
+
+  .say.is-playing,
+  .verse.is-playing { background: var(--wash); }
+
+  .say.is-playing::before,
+  .say.is-playing + .say::before,
+  .verse.is-playing::before,
+  .verse.is-playing + .verse::before { opacity: 0; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .say, .verse { transition: background-color 0.25s ease; }
+  }
+
+  .when {
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-2);
+  }
+
+  .ar {
+    justify-self: stretch;
     text-align: right;
-    color: #f2eee3;
-    align-self: stretch;
+    text-wrap: balance;
+    font-size: 2.375rem;
+    line-height: 1.95;
+    padding: 0 0 4px;
   }
 
-  .duaArSm { font-size: 21px; }
+  .ar.sm { font-size: 2rem; line-height: 2; }
 
-  .tr { font-size: 15px; font-weight: 500; line-height: 1.7; color: #e9e5d9; }
-  .gloss { font-size: 14px; font-style: italic; line-height: 1.7; color: #7f8e88; }
-  .note { font-size: 14px; color: #8d9b95; }
-  .note strong { color: #e2bd74; font-weight: 500; }
-
-  .tag {
-    font-size: 10.5px;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-    color: #64736e;
+  .ar-wrap {
+    justify-self: stretch;
+    display: grid;
   }
 
-  .row { display: flex; flex-wrap: wrap; gap: 10px; }
-
-  .more {
-    align-self: stretch;
-    border-top: 1px solid #1d2b28;
-    padding-top: 18px;
-    margin-top: 4px;
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-  }
-
-  .verse { display: flex; flex-direction: column; gap: 4px; }
-
-  .btn {
-    appearance: none;
-    background: none;
-    border: 1px solid #2b3c38;
+  .ar-progress {
+    height: 2px;
     border-radius: 2px;
-    color: #cdd7d3;
-    font-family: 'Inter Tight', sans-serif;
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: .18em;
-    text-transform: uppercase;
-    padding: 9px 16px;
-    cursor: pointer;
-    transition: background .15s, color .15s, border-color .15s;
+    background: var(--live);
+    transform-origin: right;
+    transform: scaleX(0);
+    visibility: hidden;
   }
 
-  .btn:hover { background: #1a2624; color: #e9e5d9; border-color: #3d524d; }
+  .is-reading .ar-progress {
+    visibility: visible;
+    transform: scaleX(var(--p, 0));
+  }
 
-  .btnPlay { border-color: #6d5426; color: #e2bd74; }
-  .btnPlay:hover { background: #c8983f; border-color: #c8983f; color: #0b0f0e; }
+  .tr {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.45;
+    max-width: 40rem;
+  }
 
-  .stepFinal { background: linear-gradient(180deg, rgba(200,152,63,.05), rgba(11,15,14,0)); }
-  .stepFinal .dua { background: #14201c; }
+  .tr .ar-inline {
+    font-size: 1.5em;
+    line-height: 1;
+    padding: 0 0.12em;
+  }
+
+  .tr em { font-style: italic; }
+
+  .en {
+    color: var(--text-2);
+    line-height: 1.55;
+    max-width: var(--measure);
+  }
+
+  .note { color: var(--text-2); max-width: 40rem; }
+  .note strong { color: var(--text); font-weight: 600; }
+
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+  }
+
+  button { font: inherit; color: inherit; }
+
+  .listen,
+  .more-btn {
+    appearance: none;
+    border: 0;
+    height: 44px;
+    padding: 0 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .listen {
+    position: relative;
+    overflow: hidden;
+    padding-left: 14px;
+    min-width: 6.75rem;
+    background: var(--accent-fill);
+    color: var(--on-accent);
+  }
+
+  .listen:hover { background: var(--accent-fill-hover); }
+
+  .listen .glyph { width: 12px; height: 12px; flex: none; }
+  .listen .i-stop { display: none; }
+
+  .listen[data-state="loading"],
+  .listen[data-state="playing"] {
+    background: var(--panel-3);
+    color: var(--text);
+  }
+
+  .listen[data-state="loading"] .i-play,
+  .listen[data-state="playing"] .i-play { display: none; }
+
+  .listen[data-state="loading"] .i-stop,
+  .listen[data-state="playing"] .i-stop { display: block; color: var(--live); }
+
+  .listen .elapsed {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--live);
+    transform-origin: left;
+    transform: scaleX(var(--p, 0));
+    display: none;
+  }
+
+  .listen[data-state="playing"] .elapsed { display: block; }
+
+  .listen .state-note { display: none; font-weight: 400; color: var(--text-2); }
+  .listen[data-state="loading"] .state-note { display: inline; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .listen, .more-btn { transition: background-color 0.15s ease; }
+    .listen[data-state="loading"] .state-note { animation: breathe 1.2s ease-in-out infinite; }
+  }
+
+  @keyframes breathe {
+    50% { opacity: 0.4; }
+  }
+
+  .more-btn {
+    background: var(--panel-2);
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  .more-btn:hover { background: var(--panel-3); }
+
+  .more-btn svg { width: 11px; height: 11px; flex: none; color: var(--text-2); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .more-btn svg { transition: transform 0.2s ease; }
+  }
+
+  .more-btn[aria-expanded="true"] svg { transform: rotate(45deg); }
+
+  .more { justify-self: stretch; }
+
+  .more-in {
+    display: grid;
+    margin-top: 10px;
+    padding-top: 4px;
+    border-top: 1px solid var(--line);
+  }
+
+  /* rak'ah counts */
 
   .counts {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(154px, 1fr));
-    margin-top: 26px;
+    position: relative;
+    padding: 48px 0 40px;
+    border-top: 1px solid var(--line);
+    scroll-margin-top: calc(var(--runner-h) + 16px);
   }
 
-  .count { padding: 4px 20px 26px; border-left: 1px solid #1d2b28; }
-  .count:first-child { padding-left: 0; border-left: 0; }
-  .countName { font-family: 'Instrument Serif', serif; font-size: 23px; }
-  .countNum {
-    font-family: 'Instrument Serif', serif;
-    font-size: 58px;
+  .counts h2 {
+    margin: 0 0 14px;
+    font-size: 1.625rem;
+    line-height: 1.15;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+
+  .counts-panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 6px 16px 14px;
+    margin: 0 calc(var(--gutter) * -1 + 8px);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: 14px 10px 14px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  tbody tr:last-child th,
+  tbody tr:last-child td { border-bottom: 0; }
+
+  thead th {
+    padding: 10px 10px 8px 0;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-2);
+  }
+
+  tbody th { font-weight: 600; white-space: nowrap; }
+
+  .c-num {
+    font-size: 1.75rem;
+    font-weight: 600;
     line-height: 1;
-    color: #c8983f;
-    margin: 6px 0 10px;
+    color: var(--accent);
+    width: 2.25rem;
+    padding-top: 12px;
   }
-  .countNote { font-size: 13px; line-height: 1.55; color: #7f8e88; }
 
-  .section { padding: 70px 0 0; border-top: 1px solid #1d2b28; }
-  .sectionTitle { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 38px; margin: 0; }
+  .c-note { display: block; color: var(--text-2); line-height: 1.4; }
+
+  .marks {
+    display: flex;
+    gap: 5px;
+    margin-top: 8px;
+  }
+
+  .marks i {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 2px solid var(--text-2);
+  }
+
+  .marks i.aloud { background: var(--accent); border-color: var(--accent); }
+  .marks i.sit { margin-right: 9px; }
+
+  .marks-key {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 22px;
+    font-size: 0.875rem;
+    color: var(--text-2);
+  }
+
+  .marks-key > span { display: inline-flex; align-items: center; gap: 7px; }
+  .marks-key .marks { margin: 0; }
+
+  .counts .aside { margin-top: 18px; }
 
   .foot {
-    margin-top: 76px;
-    padding-top: 28px;
-    border-top: 1px solid #1d2b28;
-    max-width: 64ch;
-    font-size: 14px;
-    line-height: 1.75;
-    color: #64736e;
+    padding: 24px 0 64px;
+    border-top: 1px solid var(--line);
+    max-width: var(--measure);
+    font-size: 1rem;
+    color: var(--text-2);
   }
 
-  @media (max-width: 900px) {
-    .page { padding: 0 22px 100px; }
-    .hero { padding: 76px 0 48px; }
-    .step {
-      grid-template-columns: 54px minmax(0, 1fr);
-      grid-template-areas: "num fig" "main main";
-      gap: 20px 22px;
-      padding: 48px 0;
+  .foot::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    margin: 0 0 18px;
+    background: var(--accent);
+    -webkit-mask: var(--star-8) center / contain no-repeat;
+    mask: var(--star-8) center / contain no-repeat;
+  }
+
+  /* now playing */
+
+  .now {
+    position: fixed;
+    z-index: 30;
+    inset: auto 10px calc(10px + env(safe-area-inset-bottom)) 10px;
+    max-width: 30rem;
+    margin: 0 auto;
+    background: var(--panel-2);
+    color: var(--text);
+    border: 1px solid var(--panel-3);
+    border-radius: 14px;
+    padding: 0 10px 0 16px;
+  }
+
+  .now[hidden] { display: none; }
+
+  .now-in {
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .now-text {
+    flex: 1;
+    min-width: 0;
+    font-size: 0.9375rem;
+    line-height: 1.35;
+    color: var(--text-2);
+  }
+
+  .now-text b { font-weight: 600; color: var(--text); }
+
+  .now-where {
+    display: inline-block;
+    padding: 6px 0;
+    margin: -6px 0;
+    color: var(--text-2);
+    text-decoration-color: var(--accent);
+    text-underline-offset: 3px;
+  }
+
+  .now-where:hover { color: var(--text); }
+
+  .now-stop {
+    appearance: none;
+    height: 44px;
+    padding: 0 16px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--accent-fill);
+    color: var(--on-accent);
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .now-stop:hover { background: var(--accent-fill-hover); }
+  .now-stop[hidden] { display: none; }
+  .now-stop svg { width: 11px; height: 11px; }
+
+  /* wider */
+
+  @media (min-width: 600px) {
+    :root { --gutter: 32px; }
+
+    .runner ol { justify-content: center; gap: 4px; }
+    .runner li { flex: 0 1 64px; }
+
+    .profile { margin-left: 0; margin-right: 0; border-radius: 16px; }
+    .toc ol { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 24px; }
+    .toc .toc-extra { grid-column: 1 / -1; }
+    .say-col, .counts-panel { margin-left: 0; margin-right: 0; padding-left: 24px; padding-right: 24px; }
+    .say, .verse { margin: 0 -24px; padding-left: 24px; padding-right: 24px; }
+    .say + .say::before, .verse + .verse::before { left: 24px; right: 24px; }
+  }
+
+  @media (min-width: 900px) {
+    .mast {
+      padding: 64px 0 4px;
+      grid-template-columns: minmax(0, 1fr) auto;
+      column-gap: 40px;
+      align-items: baseline;
     }
-    .num { font-size: 40px; }
-    .figure { position: static; align-items: flex-start; max-width: 190px; }
-    .cap { text-align: left; }
-    .h2, .sectionTitle { font-size: 30px; }
-    .count { padding: 4px 0 24px; border-left: 0; border-top: 1px solid #1d2b28; }
-    .count:first-child { border-top: 1px solid #1d2b28; }
+
+    h1 { grid-column: 1; grid-row: 1; font-size: 3.5rem; }
+
+    .mast-ar {
+      grid-column: 2;
+      grid-row: 1;
+      font-size: 3.5rem;
+      line-height: 1.4;
+    }
+
+    .sub, .lede { grid-column: 1 / -1; }
+    .sub { font-size: 1.25rem; }
+    .lede { font-size: 1.125rem; }
+
+    .profile { margin-top: 40px; padding: 34px 40px 26px; }
+
+    .flow { font-size: 0.875rem; }
+
+    .flow-steps li {
+      position: static;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      clip-path: none;
+      white-space: normal;
+      text-align: center;
+      padding-top: 12px;
+      font-size: 0.6875rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-2);
+    }
+
+    .flow-steps { margin-top: 26px; }
+    .flow-steps::before, .flow-steps::after { top: -5px; height: 9px; }
+
+    .flow-name {
+      grid-row: 1;
+      align-self: start;
+      justify-self: center;
+      margin-top: 16px;
+      padding: 0 12px;
+      line-height: 20px;
+      background: var(--bg-2);
+      position: relative;
+      z-index: 1;
+    }
+
+    .flow-next {
+      grid-column: 8;
+      grid-row: 1;
+      align-self: start;
+      justify-self: center;
+      flex-direction: row;
+      align-items: center;
+      gap: 0;
+      margin-top: 16px;
+      padding: 0;
+      line-height: 20px;
+      white-space: nowrap;
+      background: var(--bg-2);
+      position: relative;
+      z-index: 1;
+    }
+
+    .flow-next svg { display: none; }
+
+    .flow-loop {
+      display: block;
+      grid-column: 2 / 9;
+      grid-row: 2 / 4;
+      position: relative;
+      margin: 2px calc(100% / 14) 0;
+      min-height: 30px;
+      border-right: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      border-radius: 0 0 12px 12px;
+      pointer-events: none;
+    }
+
+    .flow-loop::before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      bottom: 0;
+      height: 12px;
+      border-left: 1px solid var(--rule);
+    }
+
+    .flow-loop::after {
+      content: "";
+      position: absolute;
+      left: -4px;
+      bottom: 9px;
+      width: 6px;
+      height: 6px;
+      border-left: 1px solid var(--accent);
+      border-top: 1px solid var(--accent);
+      transform: rotate(45deg);
+    }
+
+    .flow-sentence { display: none; }
+
+    .pos {
+      display: grid;
+      grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+      column-gap: 48px;
+      padding: 56px 0 64px;
+    }
+
+    .pos.is-brief { padding-bottom: 48px; }
+
+    .do {
+      position: sticky;
+      top: calc(var(--runner-h) + 28px);
+      align-self: start;
+    }
+
+    .stage { grid-column: 1 / -1; gap: 20px; background-size: 132px 2px; }
+    .stage .fig { width: 132px; height: 132px; }
+    .is-brief .stage { background-size: 104px 2px; }
+    .is-brief .stage .fig { width: 104px; height: 104px; }
+    .stage h2 { font-size: 1.875rem; padding-bottom: 6px; }
+
+    .say-col { margin-top: 20px; align-self: start; }
+
+    .ar { font-size: 2.75rem; }
+    .ar.sm { font-size: 2.25rem; }
+    .tr { font-size: 1.3125rem; }
+
+    .counts { padding-top: 56px; }
+    .counts h2 { font-size: 1.875rem; }
+  }
+
+  @media (min-width: 1100px) {
+    .page {
+      max-width: none;
+      padding: 0 clamp(40px, 4vw, 88px);
+    }
+
+    .band, .flow { max-width: 68rem; margin-left: auto; margin-right: auto; }
+
+    .toc { display: none; }
+
+    .counts table,
+    .counts tbody,
+    .counts tr,
+    .counts th,
+    .counts td { display: block; }
+
+    .counts thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+    }
+
+    .counts tbody {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      padding: 8px 0 4px;
+    }
+
+    .counts tbody tr {
+      padding: 14px 24px 18px;
+      border-left: 1px solid var(--line);
+    }
+
+    .counts tbody tr:first-child { border-left: 0; padding-left: 0; }
+
+    .counts th,
+    .counts td { padding: 0; border: 0; width: auto; }
+
+    .counts tbody th { font-size: 1.0625rem; }
+
+    .counts .c-num {
+      font-size: 3rem;
+      padding: 10px 0 6px;
+      line-height: 1;
+    }
+
+    .counts .marks { margin-top: 12px; }
+    .counts .marks-key .marks { margin: 0; }
+
+    .runner { padding: 0 clamp(40px, 4vw, 88px); }
+    .runner ol { padding: 6px 0; justify-content: flex-start; }
+    .runner li { flex: 1 1 0; }
+
+    .runner a {
+      justify-content: flex-start;
+      gap: 8px;
+      padding: 0 10px 0 6px;
+    }
+
+    .runner svg { width: 36px; height: 36px; }
+
+    .runner .r-n {
+      position: static;
+      font-size: 0.8125rem;
+    }
+
+    .runner .r-extra { display: flex; flex: 0 1 9.5rem; margin-left: auto; }
+    .runner .r-extra .r-name { display: block; font-size: 0.875rem; font-weight: 500; white-space: nowrap; }
+    .runner .r-extra a { padding-left: 12px; border-left: 1px solid var(--line); border-radius: 0; }
+    .runner .r-extra a:hover { border-radius: 8px; }
+  }
+
+  @media (min-width: 1500px) {
+    body { font-size: 1.1875rem; }
+
+    .mast { padding-top: 80px; }
+    h1 { font-size: 4.25rem; }
+    .mast-ar { font-size: 4.25rem; }
+    .lede { font-size: 1.1875rem; max-width: 36rem; }
+
+    .profile { padding: 44px 60px 32px; }
+    .flow { font-size: 0.9375rem; }
+
+    .pos {
+      grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
+      column-gap: clamp(56px, 5vw, 112px);
+      padding: 72px 0 80px;
+    }
+
+    .stage { background-size: 156px 2px; }
+    .stage .fig { width: 156px; height: 156px; }
+    .is-brief .stage { background-size: 120px 2px; }
+    .is-brief .stage .fig { width: 120px; height: 120px; }
+    .stage h2 { font-size: 2.25rem; }
+
+    .say-col, .counts-panel { padding-left: 32px; padding-right: 32px; }
+    .say, .verse { margin: 0 -32px; padding-left: 32px; padding-right: 32px; }
+    .say + .say::before, .verse + .verse::before { left: 32px; right: 32px; }
+
+    .ar { font-size: 3.25rem; }
+    .ar.sm { font-size: 2.625rem; }
+    .tr { font-size: 1.4375rem; }
+
+    .counts h2 { font-size: 2.25rem; }
+    th, td { padding-top: 18px; padding-bottom: 18px; }
+
+    .brand {
+      display: none;
+      align-items: center;
+      padding-right: 28px;
+      margin-right: 12px;
+      border-right: 1px solid var(--line);
+      font-weight: 600;
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+
+    .say:has(> .ar, > .ar-wrap),
+    .verse:not(.pair):has(> .ar, > .ar-wrap):not(:has(> .ar ~ .ar)) {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+      column-gap: 48px;
+      align-items: start;
+    }
+
+    .say:has(> .ar, > .ar-wrap) > *,
+    .verse:not(.pair):has(> .ar, > .ar-wrap):not(:has(> .ar ~ .ar)) > * { grid-column: 1; }
+
+    .say > .ar,
+    .say > .ar-wrap,
+    .verse:not(.pair):not(:has(> .ar ~ .ar)) > .ar,
+    .verse:not(.pair):not(:has(> .ar ~ .ar)) > .ar-wrap {
+      grid-column: 2;
+      grid-row: 1 / span 4;
+      align-self: center;
+    }
+
+    .say > .more { grid-column: 1 / -1; }
+  }
+
+  @media (min-width: 1280px) {
+    .runner .r-name {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .runner a[aria-current] .r-name { color: var(--text); }
+  }
+
+  @media (min-width: 1800px) {
+    .brand { display: flex; }
+  }
+
+  @media (min-width: 1240px) {
+    .verse.pair {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+      column-gap: 28px;
+      align-items: center;
+    }
+
+    .verse.pair .ar { grid-column: 2; grid-row: 1; }
+    .verse.pair .tr { grid-column: 1; grid-row: 1; }
   }
 </style>
-</helmet>
+</head>
+<body>
+
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="p-takbir" viewBox="0 0 100 100">
+    <path class="body-ink" d="M50 31 V95 H41"/>
+    <path class="knock" d="M50 35 L41 46 L38 23"/>
+    <path class="body-ink" d="M50 35 L41 46 L38 23"/>
+    <circle class="halo" cx="51" cy="17" r="13"/>
+    <circle cx="51" cy="17" r="8.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="p-qiyam" viewBox="0 0 100 100">
+    <path class="cue-dots" d="M42 22 L13 95"/>
+    <path class="body-ink" d="M50 31 V95 H41"/>
+    <path class="knock" d="M50 35 L54 52 L40 45"/>
+    <path class="body-ink" d="M50 35 L54 52 L40 45"/>
+    <circle class="halo" cx="49" cy="18" r="13"/>
+    <circle cx="49" cy="18" r="8.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="p-ruku" viewBox="0 0 100 100">
+    <path class="cue" d="M20 44 H74" stroke-dasharray="3 4"/>
+    <path class="body-ink" d="M33 57 H67 V95 H58"/>
+    <path class="knock" d="M37 59 L64 77"/>
+    <path class="body-ink" d="M37 59 L64 77"/>
+    <circle class="halo" cx="19" cy="58" r="13"/>
+    <circle cx="19" cy="58" r="8.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="p-itidal" viewBox="0 0 100 100">
+    <path class="cue" d="M80 72 V32 M74 39 L80 32 L86 39"/>
+    <path class="body-ink" d="M50 31 V95 H41"/>
+    <path class="knock" d="M51 35 L55 50 L56 64"/>
+    <path class="body-ink" d="M51 35 L55 50 L56 64"/>
+    <circle class="halo" cx="51" cy="17" r="13"/>
+    <circle cx="51" cy="17" r="8.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="p-sujud" viewBox="0 0 100 100">
+    <path class="body-ink" d="M87 95 L81 86 L63 92 L68 63 L40 79"/>
+    <path class="knock" d="M41 80 L46 91 L34 95"/>
+    <path class="body-ink" d="M41 80 L46 91 L34 95"/>
+    <circle class="halo" cx="25" cy="86.5" r="13"/>
+    <circle cx="25" cy="86.5" r="8.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="p-jalsa" viewBox="0 0 100 100">
+    <path class="body-ink" d="M63 51 L66 80 L33 89 L35 95 L70 95"/>
+    <path class="knock" d="M63 55 L60 70 L44 81"/>
+    <path class="body-ink" d="M63 55 L60 70 L44 81"/>
+    <circle class="halo" cx="61" cy="36" r="13"/>
+    <circle cx="61" cy="36" r="8.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="p-tashahhud" viewBox="0 0 100 100">
+    <path class="body-ink" d="M63 51 L66 80 L33 89 L35 95 L70 95"/>
+    <path class="knock" d="M63 55 L60 70 L44 81"/>
+    <path class="body-ink" d="M63 55 L60 70 L44 81"/>
+    <path class="finger" d="M41 80 L30 76"/>
+    <circle class="halo" cx="61" cy="36" r="13"/>
+    <circle cx="61" cy="36" r="8.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="i-play" viewBox="0 0 12 12"><path d="M1.5 0.8v10.4L11 6z" fill="currentColor"/></symbol>
+  <symbol id="i-stop" viewBox="0 0 12 12"><rect x="1" y="1" width="10" height="10" rx="1" fill="currentColor"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+</svg>
 
 <div class="page">
-<div class="wrap">
 
-  <header class="hero">
-    <div class="eyebrow">Your five daily prayers</div>
-    <h1 class="title">Salah</h1>
-    <div class="titleAr">كَيْفِيَّةُ الصَّلَاة</div>
+  <header class="mast">
+    <h1>Salah</h1>
+    <p class="mast-ar" lang="ar" dir="rtl">كَيْفِيَّةُ الصَّلَاة</p>
+    <p class="sub">Your five daily prayers</p>
     <p class="lede">Here are the eight positions of salah, in the order you'll do them. Each one shows what your body should be doing and what to say while you're there. Going through all eight makes one <em>rak'ah</em>.</p>
   </header>
 
-  <hr class="rule">
-
-  <div class="flow">
-    <span class="flowLabel">One rak'ah</span>
-    <span class="chev">›</span><span>Stand</span>
-    <span class="chev">›</span><span>Bow</span>
-    <span class="chev">›</span><span>Stand</span>
-    <span class="chev">›</span><span>Prostrate</span>
-    <span class="chev">›</span><span>Sit</span>
-    <span class="chev">›</span><span>Prostrate</span>
-    <span class="chev">›</span><span class="flowEnd">Next rak'ah</span>
-  </div>
-
-  <div class="step">
-    <div class="num">01</div>
-    <div class="figure">
-      <svg viewBox="0 0 200 170">
-        <line x1="14" y1="152" x2="186" y2="152" stroke="#253431" stroke-width="4" stroke-linecap="round"></line>
-        <g stroke="#e6e1d5" stroke-width="10" stroke-linecap="round" fill="none">
-          <line x1="100" y1="44" x2="100" y2="96"></line>
-          <line x1="100" y1="96" x2="92" y2="150"></line>
-          <line x1="100" y1="96" x2="110" y2="150"></line>
-        </g>
-        <g stroke="#c8983f" stroke-width="8" stroke-linecap="round" fill="none">
-          <polyline points="100,52 78,66 100,80"></polyline>
-        </g>
-        <circle cx="100" cy="30" r="13" fill="#e6e1d5"></circle>
-        <g stroke="#c8983f" stroke-width="6" stroke-linecap="round">
-          <line x1="126" y1="34" x2="140" y2="26"></line>
-          <line x1="74" y1="34" x2="60" y2="26"></line>
-        </g>
-      </svg>
-      <div class="cap">Hands raised, then folded</div>
+  <figure class="profile" aria-labelledby="flow-label">
+    <div class="band" aria-hidden="true">
+      <svg class="trail" viewBox="0 0 800 100" preserveAspectRatio="none"><path d="M51 17 C100 17 100 18 149 18 C184 18 184 58 219 58 C285 58 285 17 351 17 C388 17 388 86.5 425 86.5 C493 86.5 493 36 561 36 C593 36 593 86.5 625 86.5 C693 86.5 693 36 761 36"/></svg>
+      <svg class="p" viewBox="0 0 100 100"><use href="#p-takbir"/></svg>
+      <svg class="p" viewBox="0 0 100 100"><use href="#p-qiyam"/></svg>
+      <svg class="p" viewBox="0 0 100 100"><use href="#p-ruku"/></svg>
+      <svg class="p" viewBox="0 0 100 100"><use href="#p-itidal"/></svg>
+      <svg class="p" viewBox="0 0 100 100"><use href="#p-sujud"/></svg>
+      <svg class="p" viewBox="0 0 100 100"><use href="#p-jalsa"/></svg>
+      <svg class="p" viewBox="0 0 100 100"><use href="#p-sujud"/></svg>
+      <svg class="p" viewBox="0 0 100 100"><use href="#p-tashahhud"/></svg>
     </div>
-    <div class="main">
-      <div class="head">
-        <h2 class="h2">Standing: takbir</h2>
-        <span class="ar">تكبيرة الإحرام</span>
-      </div>
-      <p class="body">Stand facing the qiblah. Raise your hands to shoulder height or ear level, say the takbir, then fold your hands on your chest or stomach. From here, you're in prayer.</p>
-      <div class="dua">
-        <div class="duaAr">اللهُ أَكْبَر</div>
-        <div class="tr">Allahu akbar</div>
-        <div class="gloss">"Allah is the greatest." Once, aloud.</div>
-      </div>
+    <div class="flow" id="flow-label">
+      <p class="flow-name">One rak'ah</p>
+      <ol class="flow-steps">
+        <li>Stand</li>
+        <li>Bow</li>
+        <li>Stand</li>
+        <li>Prostrate</li>
+        <li>Sit</li>
+        <li>Prostrate</li>
+      </ol>
+      <p class="flow-next"><svg viewBox="0 0 30 20" aria-hidden="true"><path d="M27 2 V9 Q27 15 21 15 H4 M9 10 L4 15 L9 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Next rak'ah</p>
+      <div class="flow-loop" aria-hidden="true"></div>
+      <p class="flow-sentence" aria-hidden="true">Stand, Bow, Stand, Prostrate, Sit, Prostrate</p>
     </div>
-  </div>
+  </figure>
 
-  <div class="step">
-    <div class="num">02</div>
-    <div class="figure">
-      <svg viewBox="0 0 200 170">
-        <line x1="14" y1="152" x2="186" y2="152" stroke="#253431" stroke-width="4" stroke-linecap="round"></line>
-        <g stroke="#e6e1d5" stroke-width="10" stroke-linecap="round" fill="none">
-          <line x1="100" y1="44" x2="100" y2="96"></line>
-          <line x1="100" y1="96" x2="92" y2="150"></line>
-          <line x1="100" y1="96" x2="110" y2="150"></line>
-        </g>
-        <g stroke="#c8983f" stroke-width="8" stroke-linecap="round" fill="none">
-          <polyline points="100,52 78,66 100,80"></polyline>
-        </g>
-        <circle cx="100" cy="30" r="13" fill="#e6e1d5"></circle>
-        <g fill="#c8983f">
-          <circle cx="136" cy="52" r="3"></circle>
-          <circle cx="146" cy="40" r="2.4"></circle>
-          <circle cx="152" cy="28" r="1.8"></circle>
-        </g>
-      </svg>
-      <div class="cap">Eyes to the place of sujud</div>
-    </div>
-    <div class="main">
-      <div class="head">
-        <h2 class="h2">Standing: recitation</h2>
-        <span class="ar">القيام</span>
+  <nav class="toc" id="contents" aria-label="Contents">
+    <ol>
+      <li><a href="#takbir"><span class="toc-n">1</span><span class="toc-name">Standing: takbir</span><span class="toc-says">Allahu akbar</span><span class="toc-ar" lang="ar" dir="rtl" aria-hidden="true">تكبيرة الإحرام</span></a></li>
+      <li><a href="#qiyam"><span class="toc-n">2</span><span class="toc-name">Standing: recitation</span><span class="toc-says">Subhanaka Allahumma, Al-Fatihah</span><span class="toc-ar" lang="ar" dir="rtl" aria-hidden="true">القيام</span></a></li>
+      <li><a href="#ruku"><span class="toc-n">3</span><span class="toc-name">Bowing</span><span class="toc-says">Subhana Rabbiya-l-'Adhim</span><span class="toc-ar" lang="ar" dir="rtl" aria-hidden="true">الرُّكوع</span></a></li>
+      <li><a href="#itidal"><span class="toc-n">4</span><span class="toc-name">Rising from the bow</span><span class="toc-says">Sami'a Allahu liman hamidah</span><span class="toc-ar" lang="ar" dir="rtl" aria-hidden="true">الاعتدال</span></a></li>
+      <li><a href="#sujud"><span class="toc-n">5</span><span class="toc-name">Prostration</span><span class="toc-says">Subhana Rabbiya-l-A'la</span><span class="toc-ar" lang="ar" dir="rtl" aria-hidden="true">السُّجود</span></a></li>
+      <li><a href="#jalsa"><span class="toc-n">6</span><span class="toc-name">Sitting between prostrations</span><span class="toc-says">Rabbi-ghfir li</span><span class="toc-ar" lang="ar" dir="rtl" aria-hidden="true">الجلسة</span></a></li>
+      <li><a href="#sujud-2"><span class="toc-n">7</span><span class="toc-name">Second prostration</span><span class="toc-says">Subhana Rabbiya-l-A'la</span><span class="toc-ar" lang="ar" dir="rtl" aria-hidden="true">السجود الثاني</span></a></li>
+      <li><a href="#tashahhud"><span class="toc-n">8</span><span class="toc-name">Final sitting and salam</span><span class="toc-says">At-tahiyyatu lillahi</span><span class="toc-ar" lang="ar" dir="rtl" aria-hidden="true">التشهد والسلام</span></a></li>
+      <li class="toc-extra"><a href="#counts"><span class="toc-n" aria-hidden="true"></span><span class="toc-name">How many rak'ahs in each prayer</span><span class="toc-says">Fajr 2, Dhuhr 4, 'Asr 4, Maghrib 3, 'Isha 4</span></a></li>
+    </ol>
+  </nav>
+
+  <nav class="runner" id="runner" aria-label="Jump to a position">
+    <p class="brand" aria-hidden="true">Salah</p>
+    <ol>
+      <li><a href="#takbir" aria-label="1, Standing: takbir"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#p-takbir"/></svg><span class="r-n">1</span><span class="r-name" aria-hidden="true">Takbir</span></a></li>
+      <li><a href="#qiyam" aria-label="2, Standing: recitation"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#p-qiyam"/></svg><span class="r-n">2</span><span class="r-name" aria-hidden="true">Recitation</span></a></li>
+      <li><a href="#ruku" aria-label="3, Bowing"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#p-ruku"/></svg><span class="r-n">3</span><span class="r-name" aria-hidden="true">Bowing</span></a></li>
+      <li><a href="#itidal" aria-label="4, Rising from the bow"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#p-itidal"/></svg><span class="r-n">4</span><span class="r-name" aria-hidden="true">Rising</span></a></li>
+      <li><a href="#sujud" aria-label="5, Prostration"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#p-sujud"/></svg><span class="r-n">5</span><span class="r-name" aria-hidden="true">Prostration</span></a></li>
+      <li><a href="#jalsa" aria-label="6, Sitting between prostrations"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#p-jalsa"/></svg><span class="r-n">6</span><span class="r-name" aria-hidden="true">Sitting</span></a></li>
+      <li><a href="#sujud-2" aria-label="7, Second prostration"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#p-sujud"/></svg><span class="r-n">7</span><span class="r-name" aria-hidden="true">Prostration</span></a></li>
+      <li><a href="#tashahhud" aria-label="8, Final sitting and salam"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#p-tashahhud"/></svg><span class="r-n">8</span><span class="r-name" aria-hidden="true">Salam</span></a></li>
+      <li class="r-extra"><a href="#counts" aria-label="How many rak'ahs in each prayer"><span class="r-name">Rak'ah counts</span></a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section class="pos" id="takbir" aria-labelledby="takbir-h">
+      <header class="stage">
+        <svg class="fig" viewBox="0 0 100 100" aria-hidden="true"><use href="#p-takbir"/></svg>
+        <h2 id="takbir-h"><span class="n">1</span> <span class="h-en">Standing: takbir</span> <span class="h-ar" lang="ar" dir="rtl">تكبيرة الإحرام</span></h2>
+      </header>
+      <div class="do">
+        <p class="cap">Hands raised, then folded</p>
+        <p class="instr">Stand facing the qiblah. Raise your hands to shoulder height or ear level, say the takbir, then fold your hands on your chest or stomach. From here, you're in prayer.</p>
       </div>
-      <p class="body">Keep standing with your hands folded. In the first rak'ah only, say the opening supplication quietly. Then seek refuge, say the basmalah, and recite Al-Fatihah. You do this in every rak'ah, and nothing else takes its place. In the first two rak'ahs, add a short surah after Al-Fatihah.</p>
-      <div class="duaRow">
-        <div class="dua">
-          <div class="tag">First rak'ah only, silent</div>
-          <div class="tr">Subhanaka Allahumma wa bihamdika...</div>
-          <div class="note">then <strong>A'udhu billahi mina-sh-shaytani-r-rajim</strong></div>
-          <div class="row">
-            <button type="button" class="btn btnPlay" onClick="{{ play_istiftah }}">{{ plabel_istiftah }}</button>
-            <button type="button" class="btn" onClick="{{ toggle_istiftah }}">{{ label_istiftah }}</button>
+      <div class="say-col">
+        <div class="say">
+          <p class="ar" lang="ar" dir="rtl">اللهُ أَكْبَر</p>
+          <p class="tr">Allahu akbar</p>
+          <p class="en">"Allah is the greatest." Once, aloud.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pos" id="qiyam" aria-labelledby="qiyam-h">
+      <header class="stage">
+        <svg class="fig" viewBox="0 0 100 100" aria-hidden="true"><use href="#p-qiyam"/></svg>
+        <h2 id="qiyam-h"><span class="n">2</span> <span class="h-en">Standing: recitation</span> <span class="h-ar" lang="ar" dir="rtl">القيام</span></h2>
+      </header>
+      <div class="do">
+        <p class="cap">Eyes to the place of sujud</p>
+        <p class="instr">Keep standing with your hands folded. In the first rak'ah only, say the opening supplication quietly. Then seek refuge, say the basmalah, and recite Al-Fatihah. You do this in every rak'ah, and nothing else takes its place. In the first two rak'ahs, add a short surah after Al-Fatihah.</p>
+      </div>
+      <div class="say-col">
+        <div class="say">
+          <p class="when">First rak'ah only, silent</p>
+          <p class="tr">Subhanaka Allahumma wa bihamdika...</p>
+          <p class="note">then <strong>A'udhu billahi mina-sh-shaytani-r-rajim</strong></p>
+          <div class="controls">
+            <button type="button" class="listen" data-track="istiftah" data-title="Subhanaka Allahumma wa bihamdika"></button>
+            <button type="button" class="more-btn" aria-controls="more-istiftah"></button>
           </div>
-          <sc-if value="{{ open_istiftah }}" hint-placeholder-val="{{ false }}">
-            <div class="more">
+          <div class="more" id="more-istiftah">
+            <div class="more-in">
               <div class="verse">
-                <div class="duaAr duaArSm">سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَٰهَ غَيْرُكَ</div>
-                <div class="tr">Subhanaka Allahumma wa bihamdika, wa tabaraka-smuka, wa ta'ala jadduka, wa la ilaha ghayruk.</div>
-                <div class="gloss">"Glory be to You, O Allah, and praise. Blessed is Your name, exalted is Your majesty, and there is no god but You."</div>
+                <p class="ar sm" lang="ar" dir="rtl">سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَٰهَ غَيْرُكَ</p>
+                <p class="tr">Subhanaka Allahumma wa bihamdika, wa tabaraka-smuka, wa ta'ala jadduka, wa la ilaha ghayruk.</p>
+                <p class="en">"Glory be to You, O Allah, and praise. Blessed is Your name, exalted is Your majesty, and there is no god but You."</p>
               </div>
               <div class="verse">
-                <div class="tag">Then seeking refuge and the basmalah</div>
-                <div class="duaAr duaArSm">أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ · بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-                <div class="tr">A'udhu billahi mina-sh-shaytani-r-rajim. Bismillahi-r-Rahmani-r-Rahim.</div>
-                <div class="gloss">"I seek refuge in Allah from Satan, the accursed. In the name of Allah, the Most Merciful, the Especially Merciful."</div>
+                <p class="when">Then seeking refuge and the basmalah</p>
+                <p class="ar sm" lang="ar" dir="rtl">أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ · بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+                <p class="tr">A'udhu billahi mina-sh-shaytani-r-rajim. Bismillahi-r-Rahmani-r-Rahim.</p>
+                <p class="en">"I seek refuge in Allah from Satan, the accursed. In the name of Allah, the Most Merciful, the Especially Merciful."</p>
               </div>
             </div>
-          </sc-if>
-        </div>
-        <div class="dua duaAlt">
-          <div class="tag">Every rak'ah</div>
-          <div class="duaAr duaArSm">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</div>
-          <div class="tr">Al-Fatihah, then <em>Amin</em></div>
-          <div class="row">
-            <button type="button" class="btn btnPlay" onClick="{{ play_fatihah }}">{{ plabel_fatihah }}</button>
-            <button type="button" class="btn" onClick="{{ toggle_fatihah }}">{{ label_fatihah }}</button>
           </div>
-          <sc-if value="{{ open_fatihah }}" hint-placeholder-val="{{ false }}">
-            <div class="more">
-              <div class="verse"><div class="duaAr duaArSm">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div><div class="tr">Bismillahi-r-Rahmani-r-Rahim</div></div>
-              <div class="verse"><div class="duaAr duaArSm">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</div><div class="tr">Al-hamdu lillahi Rabbi-l-'alamin</div></div>
-              <div class="verse"><div class="duaAr duaArSm">الرَّحْمَٰنِ الرَّحِيمِ</div><div class="tr">Ar-Rahmani-r-Rahim</div></div>
-              <div class="verse"><div class="duaAr duaArSm">مَالِكِ يَوْمِ الدِّينِ</div><div class="tr">Maliki yawmi-d-din</div></div>
-              <div class="verse"><div class="duaAr duaArSm">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</div><div class="tr">Iyyaka na'budu wa iyyaka nasta'in</div></div>
-              <div class="verse"><div class="duaAr duaArSm">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</div><div class="tr">Ihdina-s-sirata-l-mustaqim</div></div>
-              <div class="verse"><div class="duaAr duaArSm">صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</div><div class="tr">Sirata-lladhina an'amta 'alayhim, ghayri-l-maghdubi 'alayhim wa la-d-dallin</div></div>
+        </div>
+
+        <div class="say">
+          <p class="when">Every rak'ah</p>
+          <p class="ar sm" lang="ar" dir="rtl">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</p>
+          <p class="tr">Al-Fatihah, then <em>Amin</em></p>
+          <div class="controls">
+            <button type="button" class="listen" data-track="fatihah" data-title="Al-Fatihah"></button>
+            <button type="button" class="more-btn" aria-controls="more-fatihah"></button>
+          </div>
+          <div class="more" id="more-fatihah">
+            <div class="more-in">
+              <div class="verse pair"><p class="ar sm" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p><p class="tr">Bismillahi-r-Rahmani-r-Rahim</p></div>
+              <div class="verse pair"><p class="ar sm" lang="ar" dir="rtl">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</p><p class="tr">Al-hamdu lillahi Rabbi-l-'alamin</p></div>
+              <div class="verse pair"><p class="ar sm" lang="ar" dir="rtl">الرَّحْمَٰنِ الرَّحِيمِ</p><p class="tr">Ar-Rahmani-r-Rahim</p></div>
+              <div class="verse pair"><p class="ar sm" lang="ar" dir="rtl">مَالِكِ يَوْمِ الدِّينِ</p><p class="tr">Maliki yawmi-d-din</p></div>
+              <div class="verse pair"><p class="ar sm" lang="ar" dir="rtl">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</p><p class="tr">Iyyaka na'budu wa iyyaka nasta'in</p></div>
+              <div class="verse pair"><p class="ar sm" lang="ar" dir="rtl">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</p><p class="tr">Ihdina-s-sirata-l-mustaqim</p></div>
+              <div class="verse pair"><p class="ar sm" lang="ar" dir="rtl">صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</p><p class="tr">Sirata-lladhina an'amta 'alayhim, ghayri-l-maghdubi 'alayhim wa la-d-dallin</p></div>
               <div class="verse">
-                <div class="tr">Then say: <span class="ar">آمِين</span> Amin</div>
-                <div class="gloss">"All praise is for Allah, Lord of all worlds, the Most Merciful, the Especially Merciful, Master of the Day of Judgement. You alone we worship, and You alone we ask for help. Guide us to the straight path, the path of those You have blessed, not of those who earned anger, nor of those who went astray."</div>
+                <p class="tr">Then say: <span class="ar-inline" lang="ar" dir="rtl">آمِين</span> Amin</p>
+                <p class="en">"All praise is for Allah, Lord of all worlds, the Most Merciful, the Especially Merciful, Master of the Day of Judgement. You alone we worship, and You alone we ask for help. Guide us to the straight path, the path of those You have blessed, not of those who earned anger, nor of those who went astray."</p>
               </div>
               <div class="verse">
-                <div class="tag">First two rak'ahs: a short surah (Al-Ikhlas)</div>
-                <div class="duaAr duaArSm">قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ</div>
-                <div class="tr">Qul huwa Allahu ahad. Allahu-s-samad. Lam yalid wa lam yulad. Wa lam yakun lahu kufuwan ahad.</div>
-                <div class="gloss">"Say: He is Allah, One. Allah, the Eternal Refuge. He neither begets nor is born, and there is none comparable to Him."</div>
-                <div class="row"><button type="button" class="btn btnPlay" onClick="{{ play_ikhlas }}">{{ plabel_ikhlas }}</button></div>
+                <p class="when">First two rak'ahs: a short surah (Al-Ikhlas)</p>
+                <p class="ar sm" lang="ar" dir="rtl">قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ</p>
+                <p class="tr">Qul huwa Allahu ahad. Allahu-s-samad. Lam yalid wa lam yulad. Wa lam yakun lahu kufuwan ahad.</p>
+                <p class="en">"Say: He is Allah, One. Allah, the Eternal Refuge. He neither begets nor is born, and there is none comparable to Him."</p>
+                <div class="controls">
+                  <button type="button" class="listen" data-track="ikhlas" data-title="Al-Ikhlas"></button>
+                </div>
               </div>
             </div>
-          </sc-if>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="step">
-    <div class="num">03</div>
-    <div class="figure">
-      <svg viewBox="0 0 200 170">
-        <line x1="14" y1="152" x2="186" y2="152" stroke="#253431" stroke-width="4" stroke-linecap="round"></line>
-        <g stroke="#e6e1d5" stroke-width="10" stroke-linecap="round" fill="none">
-          <line x1="128" y1="74" x2="74" y2="72"></line>
-          <line x1="128" y1="74" x2="126" y2="150"></line>
-        </g>
-        <g stroke="#c8983f" stroke-width="8" stroke-linecap="round" fill="none">
-          <line x1="80" y1="76" x2="84" y2="112"></line>
-        </g>
-        <circle cx="58" cy="76" r="13" fill="#e6e1d5"></circle>
-        <path d="M74 72 L128 74" stroke="#e6e1d5" stroke-width="10" stroke-linecap="round"></path>
-        <line x1="70" y1="96" x2="132" y2="96" stroke="#3a4a46" stroke-width="2" stroke-dasharray="4 5"></line>
-      </svg>
-      <div class="cap">Back flat, hands on knees</div>
-    </div>
-    <div class="main">
-      <div class="head">
-        <h2 class="h2">Bowing</h2>
-        <span class="ar">الرُّكوع</span>
-      </div>
-      <p class="body">Say the takbir and bow. Bend from your hips until your back is flat, with your head in line with it. Spread your fingers on your knees, keep your arms and back straight, and get still before you speak.</p>
-      <div class="dua">
-        <div class="duaAr">سُبْحَانَ رَبِّيَ الْعَظِيمِ</div>
-        <div class="tr">Subhana Rabbiya-l-'Adhim</div>
-        <div class="gloss">"Glory to my Lord, the Most Great." Three times, quietly.</div>
-        <div class="row"><button type="button" class="btn btnPlay" onClick="{{ play_ruku }}">{{ plabel_ruku }}</button></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="step">
-    <div class="num">04</div>
-    <div class="figure">
-      <svg viewBox="0 0 200 170">
-        <line x1="14" y1="152" x2="186" y2="152" stroke="#253431" stroke-width="4" stroke-linecap="round"></line>
-        <g stroke="#e6e1d5" stroke-width="10" stroke-linecap="round" fill="none">
-          <line x1="100" y1="44" x2="100" y2="96"></line>
-          <line x1="100" y1="96" x2="92" y2="150"></line>
-          <line x1="100" y1="96" x2="110" y2="150"></line>
-        </g>
-        <g stroke="#c8983f" stroke-width="8" stroke-linecap="round" fill="none">
-          <line x1="100" y1="52" x2="88" y2="92"></line>
-        </g>
-        <circle cx="100" cy="30" r="13" fill="#e6e1d5"></circle>
-        <path d="M138 96 C138 72 138 66 138 52" stroke="#3a4a46" stroke-width="2" fill="none"></path>
-        <polyline points="133,58 138,48 143,58" stroke="#3a4a46" stroke-width="2" fill="none"></polyline>
-      </svg>
-      <div class="cap">Upright, arms at the sides</div>
-    </div>
-    <div class="main">
-      <div class="head">
-        <h2 class="h2">Rising from the bow</h2>
-        <span class="ar">الاعتدال</span>
-      </div>
-      <p class="body">Stand back up fully, saying the words as you rise. Pause here. This isn't just a movement, it's a position on its own.</p>
-      <div class="duaRow">
-        <div class="dua">
-          <div class="tag">While rising</div>
-          <div class="duaAr duaArSm">سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ</div>
-          <div class="tr">Sami'a Allahu liman hamidah</div>
-          <div class="row"><button type="button" class="btn btnPlay" onClick="{{ play_rising }}">{{ plabel_rising }}</button></div>
-        </div>
-        <div class="dua duaAlt">
-          <div class="tag">Once upright</div>
-          <div class="duaAr duaArSm">رَبَّنَا وَلَكَ الْحَمْدُ</div>
-          <div class="tr">Rabbana wa laka-l-hamd</div>
-          <div class="row">
-            <button type="button" class="btn btnPlay" onClick="{{ play_rabbana }}">{{ plabel_rabbana }}</button>
-            <button type="button" class="btn" onClick="{{ toggle_itidal }}">{{ label_itidal }}</button>
           </div>
-          <sc-if value="{{ open_itidal }}" hint-placeholder-val="{{ false }}">
-            <div class="more">
+        </div>
+      </div>
+    </section>
+
+    <section class="pos is-brief" id="ruku" aria-labelledby="ruku-h">
+      <header class="stage">
+        <svg class="fig" viewBox="0 0 100 100" aria-hidden="true"><use href="#p-ruku"/></svg>
+        <h2 id="ruku-h"><span class="n">3</span> <span class="h-en">Bowing</span> <span class="h-ar" lang="ar" dir="rtl">الرُّكوع</span></h2>
+      </header>
+      <div class="do">
+        <p class="cap">Back flat, hands on knees</p>
+        <p class="instr">Say the takbir and bow. Bend from your hips until your back is flat, with your head in line with it. Spread your fingers on your knees, keep your arms and back straight, and get still before you speak.</p>
+      </div>
+      <div class="say-col">
+        <div class="say">
+          <p class="ar" lang="ar" dir="rtl">سُبْحَانَ رَبِّيَ الْعَظِيمِ</p>
+          <p class="tr">Subhana Rabbiya-l-'Adhim</p>
+          <p class="en">"Glory to my Lord, the Most Great." Three times, quietly.</p>
+          <div class="controls">
+            <button type="button" class="listen" data-track="ruku" data-title="Subhana Rabbiya-l-'Adhim"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pos" id="itidal" aria-labelledby="itidal-h">
+      <header class="stage">
+        <svg class="fig" viewBox="0 0 100 100" aria-hidden="true"><use href="#p-itidal"/></svg>
+        <h2 id="itidal-h"><span class="n">4</span> <span class="h-en">Rising from the bow</span> <span class="h-ar" lang="ar" dir="rtl">الاعتدال</span></h2>
+      </header>
+      <div class="do">
+        <p class="cap">Upright, arms at the sides</p>
+        <p class="instr">Stand back up fully, saying the words as you rise. Pause here. This isn't just a movement, it's a position on its own.</p>
+      </div>
+      <div class="say-col">
+        <div class="say">
+          <p class="when">While rising</p>
+          <p class="ar sm" lang="ar" dir="rtl">سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ</p>
+          <p class="tr">Sami'a Allahu liman hamidah</p>
+          <div class="controls">
+            <button type="button" class="listen" data-track="rising" data-title="Sami'a Allahu liman hamidah"></button>
+          </div>
+        </div>
+        <div class="say">
+          <p class="when">Once upright</p>
+          <p class="ar sm" lang="ar" dir="rtl">رَبَّنَا وَلَكَ الْحَمْدُ</p>
+          <p class="tr">Rabbana wa laka-l-hamd</p>
+          <div class="controls">
+            <button type="button" class="listen" data-track="rabbana" data-title="Rabbana wa laka-l-hamd"></button>
+            <button type="button" class="more-btn" aria-controls="more-itidal"></button>
+          </div>
+          <div class="more" id="more-itidal">
+            <div class="more-in">
               <div class="verse">
-                <div class="tag">Optional longer form</div>
-                <div class="tr">Hamdan kathiran tayyiban mubarakan fih, mil'a-s-samawati wa mil'a-l-ardi wa mil'a ma shi'ta min shay'in ba'd.</div>
-                <div class="gloss">"Abundant, pure, blessed praise, filling the heavens, filling the earth, and filling whatever else You will."</div>
+                <p class="when">Optional longer form</p>
+                <p class="tr">Hamdan kathiran tayyiban mubarakan fih, mil'a-s-samawati wa mil'a-l-ardi wa mil'a ma shi'ta min shay'in ba'd.</p>
+                <p class="en">"Abundant, pure, blessed praise, filling the heavens, filling the earth, and filling whatever else You will."</p>
               </div>
             </div>
-          </sc-if>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="step">
-    <div class="num">05</div>
-    <div class="figure">
-      <svg viewBox="0 0 200 170">
-        <line x1="14" y1="152" x2="186" y2="152" stroke="#253431" stroke-width="4" stroke-linecap="round"></line>
-        <g stroke="#e6e1d5" stroke-width="10" stroke-linecap="round" fill="none">
-          <line x1="132" y1="100" x2="82" y2="132"></line>
-          <line x1="132" y1="100" x2="132" y2="146"></line>
-          <line x1="132" y1="146" x2="160" y2="150"></line>
-        </g>
-        <g stroke="#c8983f" stroke-width="8" stroke-linecap="round" fill="none">
-          <polyline points="84,132 68,146 48,148"></polyline>
-        </g>
-        <circle cx="60" cy="136" r="12" fill="#e6e1d5"></circle>
-      </svg>
-      <div class="cap">Seven points touch the ground</div>
-    </div>
-    <div class="main">
-      <div class="head">
-        <h2 class="h2">Prostration</h2>
-        <span class="ar">السُّجود</span>
+    <section class="pos" id="sujud" aria-labelledby="sujud-h">
+      <header class="stage">
+        <svg class="fig" viewBox="0 0 100 100" aria-hidden="true"><use href="#p-sujud"/></svg>
+        <h2 id="sujud-h"><span class="n">5</span> <span class="h-en">Prostration</span> <span class="h-ar" lang="ar" dir="rtl">السُّجود</span></h2>
+      </header>
+      <div class="do">
+        <p class="cap">Seven points touch the ground</p>
+        <p class="instr">Say the takbir and go down. Your forehead, nose, both palms, both knees, and the toes of both feet should all be on the ground, seven points in all. Keep your elbows off the floor and away from your sides.</p>
       </div>
-      <p class="body">Say the takbir and go down. Your forehead, nose, both palms, both knees, and the toes of both feet should all be on the ground, seven points in all. Keep your elbows off the floor and away from your sides.</p>
-      <div class="dua">
-        <div class="duaAr">سُبْحَانَ رَبِّيَ الْأَعْلَى</div>
-        <div class="tr">Subhana Rabbiya-l-A'la</div>
-        <div class="gloss">"Glory to my Lord, the Most High." Three times, quietly.</div>
-        <div class="row">
-          <button type="button" class="btn btnPlay" onClick="{{ play_sujud }}">{{ plabel_sujud }}</button>
-          <button type="button" class="btn" onClick="{{ toggle_sujud }}">{{ label_sujud }}</button>
-        </div>
-        <sc-if value="{{ open_sujud }}" hint-placeholder-val="{{ false }}">
-          <div class="more">
-            <div class="verse">
-              <div class="tag">Optional addition</div>
-              <div class="duaAr duaArSm">سُبُّوحٌ قُدُّوسٌ رَبُّ الْمَلَائِكَةِ وَالرُّوحِ</div>
-              <div class="tr">Subbuhun Quddusun, Rabbu-l-mala'ikati wa-r-ruh.</div>
-              <div class="gloss">"Perfect, Holy, Lord of the angels and the Spirit."</div>
+      <div class="say-col">
+        <div class="say">
+          <p class="ar" lang="ar" dir="rtl">سُبْحَانَ رَبِّيَ الْأَعْلَى</p>
+          <p class="tr">Subhana Rabbiya-l-A'la</p>
+          <p class="en">"Glory to my Lord, the Most High." Three times, quietly.</p>
+          <div class="controls">
+            <button type="button" class="listen" data-track="sujud" data-title="Subhana Rabbiya-l-A'la"></button>
+            <button type="button" class="more-btn" aria-controls="more-sujud"></button>
+          </div>
+          <div class="more" id="more-sujud">
+            <div class="more-in">
+              <div class="verse">
+                <p class="when">Optional addition</p>
+                <p class="ar sm" lang="ar" dir="rtl">سُبُّوحٌ قُدُّوسٌ رَبُّ الْمَلَائِكَةِ وَالرُّوحِ</p>
+                <p class="tr">Subbuhun Quddusun, Rabbu-l-mala'ikati wa-r-ruh.</p>
+                <p class="en">"Perfect, Holy, Lord of the angels and the Spirit."</p>
+              </div>
             </div>
           </div>
-        </sc-if>
-      </div>
-      <div class="aside">After the required tasbih, this is the place to ask for whatever you want, in any language.</div>
-    </div>
-  </div>
-
-  <div class="step">
-    <div class="num">06</div>
-    <div class="figure">
-      <svg viewBox="0 0 200 170">
-        <line x1="14" y1="152" x2="186" y2="152" stroke="#253431" stroke-width="4" stroke-linecap="round"></line>
-        <path d="M94 60 C90 72 88 86 90 98 L52 100 C46 101 44 108 44 116 L46 148 L52 150 L142 150 C142 132 138 114 130 100 C138 84 130 68 114 60 C107 56 98 57 94 60 Z" fill="#e6e1d5"></path>
-        <circle cx="94" cy="44" r="13" fill="#e6e1d5"></circle>
-        <path d="M102 72 C98 84 86 92 68 95" stroke="#c8983f" stroke-width="8" stroke-linecap="round" fill="none"></path>
-      </svg>
-      <div class="cap">Sitting back on the folded feet</div>
-    </div>
-    <div class="main">
-      <div class="head">
-        <h2 class="h2">Sitting between prostrations</h2>
-        <span class="ar">الجلسة</span>
-      </div>
-      <p class="body">Say the takbir and sit up. Fold your left foot under you and sit on it, keep your right foot upright with toes pointing toward the qiblah, and rest your hands on your thighs. Get settled before moving on.</p>
-      <div class="dua">
-        <div class="duaAr">رَبِّ اغْفِرْ لِي، وَارْحَمْنِي</div>
-        <div class="tr">Rabbi-ghfir li, warhamni, wajburni, warfa'ni, warzuqni, wahdini, wa 'afini</div>
-        <div class="note">Or simply: <strong>Rabbi-ghfir li, Rabbi-ghfir li</strong></div>
-        <div class="row">
-          <button type="button" class="btn btnPlay" onClick="{{ play_jalsa }}">{{ plabel_jalsa }}</button>
-          <button type="button" class="btn" onClick="{{ toggle_jalsa }}">{{ label_jalsa }}</button>
         </div>
-        <sc-if value="{{ open_jalsa }}" hint-placeholder-val="{{ false }}">
-          <div class="more">
-            <div class="verse">
-              <div class="duaAr duaArSm">رَبِّ اغْفِرْ لِي، وَارْحَمْنِي، وَاجْبُرْنِي، وَارْفَعْنِي، وَارْزُقْنِي، وَاهْدِنِي، وَعَافِنِي</div>
-              <div class="gloss">"My Lord, forgive me, have mercy on me, mend me, raise me, provide for me, guide me, and grant me wellbeing."</div>
+        <p class="aside">After the required tasbih, this is the place to ask for whatever you want, in any language.</p>
+      </div>
+    </section>
+
+    <section class="pos" id="jalsa" aria-labelledby="jalsa-h">
+      <header class="stage">
+        <svg class="fig" viewBox="0 0 100 100" aria-hidden="true"><use href="#p-jalsa"/></svg>
+        <h2 id="jalsa-h"><span class="n">6</span> <span class="h-en">Sitting between prostrations</span> <span class="h-ar" lang="ar" dir="rtl">الجلسة</span></h2>
+      </header>
+      <div class="do">
+        <p class="cap">Sitting back on the folded feet</p>
+        <p class="instr">Say the takbir and sit up. Fold your left foot under you and sit on it, keep your right foot upright with toes pointing toward the qiblah, and rest your hands on your thighs. Get settled before moving on.</p>
+      </div>
+      <div class="say-col">
+        <div class="say">
+          <p class="ar" lang="ar" dir="rtl">رَبِّ اغْفِرْ لِي، وَارْحَمْنِي</p>
+          <p class="tr">Rabbi-ghfir li, warhamni, wajburni, warfa'ni, warzuqni, wahdini, wa 'afini</p>
+          <p class="note">Or simply: <strong>Rabbi-ghfir li, Rabbi-ghfir li</strong></p>
+          <div class="controls">
+            <button type="button" class="listen" data-track="jalsa" data-title="Rabbi-ghfir li"></button>
+            <button type="button" class="more-btn" aria-controls="more-jalsa"></button>
+          </div>
+          <div class="more" id="more-jalsa">
+            <div class="more-in">
+              <div class="verse">
+                <p class="ar sm" lang="ar" dir="rtl">رَبِّ اغْفِرْ لِي، وَارْحَمْنِي، وَاجْبُرْنِي، وَارْفَعْنِي، وَارْزُقْنِي، وَاهْدِنِي، وَعَافِنِي</p>
+                <p class="en">"My Lord, forgive me, have mercy on me, mend me, raise me, provide for me, guide me, and grant me wellbeing."</p>
+              </div>
             </div>
           </div>
-        </sc-if>
-      </div>
-    </div>
-  </div>
-
-  <div class="step">
-    <div class="num">07</div>
-    <div class="figure">
-      <svg viewBox="0 0 200 170">
-        <line x1="14" y1="152" x2="186" y2="152" stroke="#253431" stroke-width="4" stroke-linecap="round"></line>
-        <g stroke="#e6e1d5" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.92">
-          <line x1="132" y1="100" x2="82" y2="132"></line>
-          <line x1="132" y1="100" x2="132" y2="146"></line>
-          <line x1="132" y1="146" x2="160" y2="150"></line>
-        </g>
-        <g stroke="#c8983f" stroke-width="8" stroke-linecap="round" fill="none">
-          <polyline points="84,132 68,146 48,148"></polyline>
-        </g>
-        <circle cx="60" cy="136" r="12" fill="#e6e1d5"></circle>
-        <text x="150" y="40" text-anchor="middle" font-family="'Instrument Serif', serif" font-size="32" fill="#3f4d49">×2</text>
-      </svg>
-      <div class="cap">Identical to the first</div>
-    </div>
-    <div class="main">
-      <div class="head">
-        <h2 class="h2">Second prostration</h2>
-        <span class="ar">السجود الثاني</span>
-      </div>
-      <p class="body">Say the takbir and prostrate again exactly as before, with the same tasbih. That completes one rak'ah. Say the takbir and stand for the next one. After an even number of rak'ahs, stay seated for the tashahhud instead.</p>
-      <div class="dua">
-        <div class="tr">Subhana Rabbiya-l-A'la</div>
-        <div class="gloss">Three times, quietly</div>
-        <div class="row"><button type="button" class="btn btnPlay" onClick="{{ play_sujud2 }}">{{ plabel_sujud2 }}</button></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="step stepFinal">
-    <div class="num">08</div>
-    <div class="figure">
-      <svg viewBox="0 0 200 170">
-        <line x1="14" y1="152" x2="186" y2="152" stroke="#253431" stroke-width="4" stroke-linecap="round"></line>
-        <path d="M94 60 C90 72 88 86 90 98 L52 100 C46 101 44 108 44 116 L46 148 L52 150 L142 150 C142 132 138 114 130 100 C138 84 130 68 114 60 C107 56 98 57 94 60 Z" fill="#f2eee3"></path>
-        <circle cx="94" cy="44" r="13" fill="#f2eee3"></circle>
-        <path d="M102 72 C98 84 86 92 68 95" stroke="#e2bd74" stroke-width="8" stroke-linecap="round" fill="none"></path>
-        <line x1="66" y1="94" x2="54" y2="84" stroke="#e2bd74" stroke-width="6" stroke-linecap="round"></line>
-      </svg>
-      <div class="cap">Index finger raised at the shahadah</div>
-    </div>
-    <div class="main">
-      <div class="head">
-        <h2 class="h2">Final sitting and salam</h2>
-        <span class="ar">التشهد والسلام</span>
-      </div>
-      <p class="body">Sit like you did in stage 6 and recite the tashahhud, raising your index finger when you say the testimony of faith. In the last sitting, add the durood and a du'a. Then turn your head right and left with the salam. That's it, your prayer is done.</p>
-      <div class="dua">
-        <div class="tag">Every sitting</div>
-        <div class="tr">At-tahiyyatu lillahi wa-s-salawatu wa-t-tayyibat...</div>
-        <div class="note">then, in the final sitting: <strong>Allahumma salli 'ala Muhammad...</strong> and a du'a</div>
-        <div class="row">
-          <button type="button" class="btn btnPlay" onClick="{{ play_tashahhud }}">{{ plabel_tashahhud }}</button>
-          <button type="button" class="btn" onClick="{{ toggle_tashahhud }}">{{ label_tashahhud }}</button>
         </div>
-        <sc-if value="{{ open_tashahhud }}" hint-placeholder-val="{{ false }}">
-          <div class="more">
-            <div class="verse">
-              <div class="tag">Tashahhud</div>
-              <div class="duaAr duaArSm">التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ</div>
-              <div class="tr">At-tahiyyatu lillahi wa-s-salawatu wa-t-tayyibat. As-salamu 'alayka ayyuha-n-Nabiyyu wa rahmatullahi wa barakatuh. As-salamu 'alayna wa 'ala 'ibadillahi-s-salihin. Ashhadu an la ilaha illa Allah, wa ashhadu anna Muhammadan 'abduhu wa rasuluh.</div>
-              <div class="gloss">"All greetings, prayers, and good things are for Allah. Peace be upon you, O Prophet, and Allah's mercy and blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no god but Allah, and I bear witness that Muhammad is His servant and messenger."</div>
-            </div>
-            <div class="verse">
-              <div class="tag">Salat Ibrahimiyyah, final sitting only</div>
-              <div class="duaAr duaArSm">اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ</div>
-              <div class="tr">Allahumma salli 'ala Muhammadin wa 'ala ali Muhammad, kama sallayta 'ala Ibrahima wa 'ala ali Ibrahim, innaka Hamidun Majid.</div>
-              <div class="duaAr duaArSm">اللَّهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ</div>
-              <div class="tr">Allahumma barik 'ala Muhammadin wa 'ala ali Muhammad, kama barakta 'ala Ibrahima wa 'ala ali Ibrahim, innaka Hamidun Majid.</div>
-              <div class="row"><button type="button" class="btn btnPlay" onClick="{{ play_salawat }}">{{ plabel_salawat }}</button></div>
-              <div class="gloss">"O Allah, send prayers upon Muhammad and the family of Muhammad, as You sent prayers upon Ibrahim and the family of Ibrahim. Indeed You are Praiseworthy, Glorious. O Allah, bless Muhammad and the family of Muhammad, as You blessed Ibrahim and the family of Ibrahim. Indeed You are Praiseworthy, Glorious."</div>
-            </div>
-            <div class="verse">
-              <div class="tag">Du'a before the salam</div>
-              <div class="duaAr duaArSm">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ</div>
-              <div class="tr">Allahumma inni a'udhu bika min 'adhabi jahannam, wa min 'adhabi-l-qabr, wa min fitnati-l-mahya wa-l-mamat, wa min sharri fitnati-l-Masihi-d-Dajjal.</div>
-              <div class="row"><button type="button" class="btn btnPlay" onClick="{{ play_duasalam }}">{{ plabel_duasalam }}</button></div>
-              <div class="gloss">"O Allah, I seek refuge in You from the punishment of Hell, from the punishment of the grave, from the trials of life and death, and from the evil of the trial of the false messiah."</div>
+      </div>
+    </section>
+
+    <section class="pos is-brief" id="sujud-2" aria-labelledby="sujud-2-h">
+      <header class="stage">
+        <svg class="fig" viewBox="0 0 100 100" aria-hidden="true"><use href="#p-sujud"/></svg>
+        <h2 id="sujud-2-h"><span class="n">7</span> <span class="h-en">Second prostration</span> <span class="h-ar" lang="ar" dir="rtl">السجود الثاني</span></h2>
+      </header>
+      <div class="do">
+        <p class="cap">Identical to the first</p>
+        <p class="instr">Say the takbir and prostrate again exactly as before, with the same tasbih. That completes one rak'ah. Say the takbir and stand for the next one. After an even number of rak'ahs, stay seated for <a href="#tashahhud">the tashahhud</a> instead.</p>
+      </div>
+      <div class="say-col">
+        <div class="say">
+          <p class="tr">Subhana Rabbiya-l-A'la</p>
+          <p class="en">Three times, quietly</p>
+          <div class="controls">
+            <button type="button" class="listen" data-track="sujud2" data-title="Subhana Rabbiya-l-A'la"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pos" id="tashahhud" aria-labelledby="tashahhud-h">
+      <header class="stage">
+        <svg class="fig" viewBox="0 0 100 100" aria-hidden="true"><use href="#p-tashahhud"/></svg>
+        <h2 id="tashahhud-h"><span class="n">8</span> <span class="h-en">Final sitting and salam</span> <span class="h-ar" lang="ar" dir="rtl">التشهد والسلام</span></h2>
+      </header>
+      <div class="do">
+        <p class="cap">Index finger raised at the shahadah</p>
+        <p class="instr">Sit like you did in stage 6 and recite the tashahhud, raising your index finger when you say the testimony of faith. In the last sitting, add the durood and a du'a. Then turn your head right and left with the salam. That's it, your prayer is done.</p>
+      </div>
+      <div class="say-col">
+        <div class="say">
+          <p class="when">Every sitting</p>
+          <p class="tr">At-tahiyyatu lillahi wa-s-salawatu wa-t-tayyibat...</p>
+          <p class="note">then, in the final sitting: <strong>Allahumma salli 'ala Muhammad...</strong> and a du'a</p>
+          <div class="controls">
+            <button type="button" class="listen" data-track="tashahhud" data-title="At-tahiyyatu lillahi"></button>
+            <button type="button" class="more-btn" aria-controls="more-tashahhud"></button>
+          </div>
+          <div class="more" id="more-tashahhud">
+            <div class="more-in">
+              <div class="verse">
+                <p class="when">Tashahhud</p>
+                <p class="ar sm" lang="ar" dir="rtl">التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ</p>
+                <p class="tr">At-tahiyyatu lillahi wa-s-salawatu wa-t-tayyibat. As-salamu 'alayka ayyuha-n-Nabiyyu wa rahmatullahi wa barakatuh. As-salamu 'alayna wa 'ala 'ibadillahi-s-salihin. Ashhadu an la ilaha illa Allah, wa ashhadu anna Muhammadan 'abduhu wa rasuluh.</p>
+                <p class="en">"All greetings, prayers, and good things are for Allah. Peace be upon you, O Prophet, and Allah's mercy and blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no god but Allah, and I bear witness that Muhammad is His servant and messenger."</p>
+              </div>
+              <div class="verse">
+                <p class="when">Salat Ibrahimiyyah, final sitting only</p>
+                <p class="ar sm" lang="ar" dir="rtl">اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ</p>
+                <p class="tr">Allahumma salli 'ala Muhammadin wa 'ala ali Muhammad, kama sallayta 'ala Ibrahima wa 'ala ali Ibrahim, innaka Hamidun Majid.</p>
+                <p class="ar sm" lang="ar" dir="rtl">اللَّهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ</p>
+                <p class="tr">Allahumma barik 'ala Muhammadin wa 'ala ali Muhammad, kama barakta 'ala Ibrahima wa 'ala ali Ibrahim, innaka Hamidun Majid.</p>
+                <div class="controls">
+                  <button type="button" class="listen" data-track="salawat" data-title="Allahumma salli 'ala Muhammad"></button>
+                </div>
+                <p class="en">"O Allah, send prayers upon Muhammad and the family of Muhammad, as You sent prayers upon Ibrahim and the family of Ibrahim. Indeed You are Praiseworthy, Glorious. O Allah, bless Muhammad and the family of Muhammad, as You blessed Ibrahim and the family of Ibrahim. Indeed You are Praiseworthy, Glorious."</p>
+              </div>
+              <div class="verse">
+                <p class="when">Du'a before the salam</p>
+                <p class="ar sm" lang="ar" dir="rtl">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ</p>
+                <p class="tr">Allahumma inni a'udhu bika min 'adhabi jahannam, wa min 'adhabi-l-qabr, wa min fitnati-l-mahya wa-l-mamat, wa min sharri fitnati-l-Masihi-d-Dajjal.</p>
+                <div class="controls">
+                  <button type="button" class="listen" data-track="duasalam" data-title="Allahumma inni a'udhu bika"></button>
+                </div>
+                <p class="en">"O Allah, I seek refuge in You from the punishment of Hell, from the punishment of the grave, from the trials of life and death, and from the evil of the trial of the false messiah."</p>
+              </div>
             </div>
           </div>
-        </sc-if>
+        </div>
+        <div class="say">
+          <p class="ar" lang="ar" dir="rtl">السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ</p>
+          <p class="tr">As-salamu 'alaykum wa rahmatullah</p>
+          <p class="en">Twice: to the right, then to the left</p>
+        </div>
       </div>
-      <div class="dua duaAlt">
-        <div class="duaAr">السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ</div>
-        <div class="tr">As-salamu 'alaykum wa rahmatullah</div>
-        <div class="gloss">Twice: to the right, then to the left</div>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <section class="section">
-    <h2 class="sectionTitle">How many rak'ahs in each prayer</h2>
-    <div class="counts">
-      <div class="count">
-        <div class="countName">Fajr</div>
-        <div class="countNum">2</div>
-        <div class="countNote">Both rak'ahs are recited aloud</div>
+    <section class="counts" id="counts" aria-labelledby="counts-h">
+      <h2 id="counts-h">How many rak'ahs in each prayer</h2>
+      <div class="counts-panel">
+        <table role="table">
+          <thead role="rowgroup">
+            <tr role="row"><th scope="col" role="columnheader">Prayer</th><th scope="col" colspan="2" role="columnheader">Rak'ahs</th></tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row">
+              <th scope="row" role="rowheader">Fajr</th>
+              <td class="c-num" role="cell">2</td>
+              <td role="cell"><span class="c-note">Both rak'ahs are recited aloud</span><span class="marks" aria-hidden="true"><i class="aloud"></i><i class="aloud"></i></span></td>
+            </tr>
+            <tr role="row">
+              <th scope="row" role="rowheader">Dhuhr</th>
+              <td class="c-num" role="cell">4</td>
+              <td role="cell"><span class="c-note">Everything is said quietly</span><span class="marks" aria-hidden="true"><i></i><i class="sit"></i><i></i><i></i></span></td>
+            </tr>
+            <tr role="row">
+              <th scope="row" role="rowheader">'Asr</th>
+              <td class="c-num" role="cell">4</td>
+              <td role="cell"><span class="c-note">Everything is said quietly</span><span class="marks" aria-hidden="true"><i></i><i class="sit"></i><i></i><i></i></span></td>
+            </tr>
+            <tr role="row">
+              <th scope="row" role="rowheader">Maghrib</th>
+              <td class="c-num" role="cell">3</td>
+              <td role="cell"><span class="c-note">First two rak'ahs aloud, third quiet</span><span class="marks" aria-hidden="true"><i class="aloud"></i><i class="aloud sit"></i><i></i></span></td>
+            </tr>
+            <tr role="row">
+              <th scope="row" role="rowheader">'Isha</th>
+              <td class="c-num" role="cell">4</td>
+              <td role="cell"><span class="c-note">First two rak'ahs aloud, last two quiet</span><span class="marks" aria-hidden="true"><i class="aloud"></i><i class="aloud sit"></i><i></i><i></i></span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="marks-key" aria-hidden="true"><span><span class="marks"><i class="aloud"></i></span>aloud</span><span><span class="marks"><i></i></span>quiet</span></p>
       </div>
-      <div class="count">
-        <div class="countName">Dhuhr</div>
-        <div class="countNum">4</div>
-        <div class="countNote">Everything is said quietly</div>
-      </div>
-      <div class="count">
-        <div class="countName">'Asr</div>
-        <div class="countNum">4</div>
-        <div class="countNote">Everything is said quietly</div>
-      </div>
-      <div class="count">
-        <div class="countName">Maghrib</div>
-        <div class="countNum">3</div>
-        <div class="countNote">First two rak'ahs aloud, third quiet</div>
-      </div>
-      <div class="count">
-        <div class="countName">'Isha</div>
-        <div class="countNum">4</div>
-        <div class="countNote">First two rak'ahs aloud, last two quiet</div>
-      </div>
-    </div>
-    <p class="aside">Add a short surah after Al-Fatihah in the first two rak'ahs only. After every two rak'ahs, sit for the tashahhud. In Fajr, that sitting is also the final one.</p>
-  </section>
+      <p class="aside">Add a short surah after <a href="#qiyam">Al-Fatihah</a> in the first two rak'ahs only. After every two rak'ahs, sit for <a href="#tashahhud">the tashahhud</a>. In Fajr, that sitting is also the final one.</p>
+    </section>
+
+  </main>
 
   <footer class="foot">
-    Some details vary between schools, like the opening supplication, saying <em>Amin</em> aloud or quietly, and where qunut fits in. All of these are within accepted practice. For pronunciation, listen to a reciter rather than relying on transliteration alone.
+    <p>Some details vary between schools, like the opening supplication, saying <em>Amin</em> aloud or quietly, and where qunut fits in. All of these are within accepted practice. For pronunciation, listen to a reciter rather than relying on transliteration alone.</p>
   </footer>
 
 </div>
+
+<div class="now" id="now" hidden>
+  <div class="now-in">
+    <p class="now-text" id="now-text" aria-live="polite"></p>
+    <button type="button" class="now-stop" id="now-stop"><svg aria-hidden="true"><use href="#i-stop"/></svg>Stop</button>
+  </div>
 </div>
-</x-dc>
-<script type="text/x-dc" data-dc-script>
-class Component extends DCLogic {
-  state = { open: {}, playing: null };
-  componentWillUnmount() { if (this._audio) this._audio.pause(); }
-  _play(key, url) {
-    if (this.state.playing === key) {
-      this._audio.pause();
-      this.setState({ playing: null });
-      return;
-    }
-    if (this._audio) this._audio.pause();
-    const a = new Audio(url);
-    this._audio = a;
-    a.onended = () => this.setState({ playing: null });
-    a.onerror = () => this.setState({ playing: null });
-    a.play().catch(() => this.setState({ playing: null }));
-    this.setState({ playing: key });
-  }
-  renderVals() {
-    const HM = "https://www.hisnmuslim.com/audio/ar/";
-    const QA = "https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/";
-    const tracks = {
-      istiftah: HM + "28.mp3", fatihah: QA + "001.mp3", ikhlas: QA + "112.mp3",
-      ruku: HM + "33.mp3", rising: HM + "38.mp3", rabbana: HM + "39.mp3",
-      sujud: HM + "41.mp3", sujud2: HM + "41.mp3", jalsa: HM + "49.mp3", tashahhud: HM + "52.mp3",
-      salawat: HM + "53.mp3", duasalam: HM + "55.mp3"
+
+<script>
+  (function () {
+    const HISN = "https://www.hisnmuslim.com/audio/ar/";
+    const QURAN = "https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/";
+
+    const trackUrls = {
+      istiftah: HISN + "28.mp3",
+      fatihah: QURAN + "001.mp3",
+      ikhlas: QURAN + "112.mp3",
+      ruku: HISN + "33.mp3",
+      rising: HISN + "38.mp3",
+      rabbana: HISN + "39.mp3",
+      sujud: HISN + "41.mp3",
+      sujud2: HISN + "41.mp3",
+      jalsa: HISN + "49.mp3",
+      tashahhud: HISN + "52.mp3",
+      salawat: HISN + "53.mp3",
+      duasalam: HISN + "55.mp3"
     };
-    const av = {};
-    Object.keys(tracks).forEach(k => {
-      av["play_" + k] = () => this._play(k, tracks[k]);
-      av["plabel_" + k] = this.state.playing === k ? "◼ Stop" : "▶ Listen";
+
+    const audio = new Audio();
+    audio.preload = "none";
+
+    const nowBar = document.getElementById("now");
+    const nowText = document.getElementById("now-text");
+    const nowStop = document.getElementById("now-stop");
+
+    let activeButton = null;
+    let errorTimer = null;
+
+    function buildListenButton(button) {
+      button.innerHTML =
+        '<svg class="glyph i-play" aria-hidden="true"><use href="#i-play"/></svg>' +
+        '<svg class="glyph i-stop" aria-hidden="true"><use href="#i-stop"/></svg>' +
+        '<span class="elapsed" aria-hidden="true"></span>';
+
+      const label = document.createElement("span");
+      label.className = "listen-label";
+      label.textContent = "Listen";
+
+      const target = document.createElement("span");
+      target.className = "vh";
+      target.textContent = " to " + button.dataset.title;
+
+      const loadingNote = document.createElement("span");
+      loadingNote.className = "state-note";
+      loadingNote.setAttribute("aria-hidden", "true");
+      loadingNote.textContent = "loading";
+
+      button.append(label, target, loadingNote);
+      button.dataset.state = "idle";
+    }
+
+    function blockFor(button) {
+      return button.closest(".verse") || button.closest(".say");
+    }
+
+    function arabicLineFor(block) {
+      return block.querySelector(".ar-wrap");
+    }
+
+    function wrapArabicLines() {
+      document.querySelectorAll(".say, .verse").forEach(function (block) {
+        const hasButton = block.querySelector(":scope > .controls .listen");
+        const firstArabic = block.querySelector(":scope > .ar");
+
+        if (!hasButton || !firstArabic) return;
+
+        const wrap = document.createElement("div");
+        wrap.className = "ar-wrap";
+
+        const progress = document.createElement("span");
+        progress.className = "ar-progress";
+        progress.setAttribute("aria-hidden", "true");
+
+        firstArabic.replaceWith(wrap);
+        wrap.append(firstArabic, progress);
+      });
+    }
+
+    function paint(button, state) {
+      const block = blockFor(button);
+      const arabicLine = arabicLineFor(block);
+      const isActive = state !== "idle";
+
+      button.dataset.state = state;
+      button.querySelector(".listen-label").textContent = isActive ? "Stop" : "Listen";
+      block.classList.toggle("is-playing", isActive);
+
+      if (arabicLine) arabicLine.classList.toggle("is-reading", isActive);
+
+      if (!isActive) {
+        button.style.removeProperty("--p");
+        if (arabicLine) arabicLine.style.removeProperty("--p");
+      }
+    }
+
+    function showBar() {
+      nowBar.hidden = false;
+      document.body.classList.add("has-player");
+    }
+
+    function hideBar() {
+      nowBar.hidden = true;
+      document.body.classList.remove("has-player");
+    }
+
+    function showNowPlaying(button) {
+      const section = button.closest("section");
+      const sectionName = section.querySelector(".h-en").textContent;
+
+      clearTimeout(errorTimer);
+      nowText.textContent = "";
+
+      const name = document.createElement("b");
+      name.textContent = button.dataset.title;
+
+      const where = document.createElement("a");
+      where.className = "now-where";
+      where.href = "#" + section.id;
+      where.textContent = sectionName;
+
+      nowText.append("Playing ", name, document.createElement("br"), where);
+      nowStop.hidden = false;
+      showBar();
+    }
+
+    function showError(title) {
+      clearTimeout(errorTimer);
+      nowText.textContent = "Couldn't play " + title + ". Check your connection and try again.";
+      nowStop.hidden = true;
+      showBar();
+      errorTimer = setTimeout(hideBar, 6000);
+    }
+
+    function stop() {
+      if (!activeButton) return;
+
+      const stoppedButton = activeButton;
+      activeButton = null;
+      audio.pause();
+      audio.removeAttribute("src");
+      audio.load();
+      paint(stoppedButton, "idle");
+      hideBar();
+    }
+
+    function play(button) {
+      const isSameButton = activeButton === button;
+
+      stop();
+
+      if (isSameButton) return;
+
+      activeButton = button;
+      audio.src = trackUrls[button.dataset.track];
+      paint(button, "loading");
+      showNowPlaying(button);
+
+      if ("mediaSession" in navigator && "MediaMetadata" in window) {
+        navigator.mediaSession.metadata = new MediaMetadata({ title: button.dataset.title, album: "Salah" });
+      }
+
+      audio.play().catch(function (error) {
+        const isStillWanted = activeButton === button;
+        const wasInterrupted = error && error.name === "AbortError";
+
+        if (!isStillWanted || wasInterrupted) return;
+
+        stop();
+        showError(button.dataset.title);
+      });
+    }
+
+    audio.addEventListener("playing", function () {
+      if (activeButton) paint(activeButton, "playing");
     });
-    const o = this.state.open;
-    const t = k => () => this.setState(s => ({ open: { ...s.open, [k]: !s.open[k] } }));
-    const lbl = k => o[k] ? "Hide full text" : "Show full text";
-    const keys = ["istiftah", "fatihah", "itidal", "jalsa", "tashahhud", "sujud"];
-    const out = {};
-    keys.forEach(k => {
-      out["open_" + k] = !!o[k];
-      out["toggle_" + k] = t(k);
-      out["label_" + k] = lbl(k);
+
+    audio.addEventListener("timeupdate", function () {
+      const hasDuration = activeButton && isFinite(audio.duration) && audio.duration > 0;
+
+      if (!hasDuration) return;
+
+      const fraction = (audio.currentTime / audio.duration).toFixed(4);
+      const arabicLine = arabicLineFor(blockFor(activeButton));
+
+      activeButton.style.setProperty("--p", fraction);
+      if (arabicLine) arabicLine.style.setProperty("--p", fraction);
     });
-    Object.assign(out, av);
-    return out;
-  }
-}
+
+    audio.addEventListener("ended", stop);
+
+    audio.addEventListener("error", function () {
+      const failedButton = activeButton;
+      const hasSource = audio.hasAttribute("src");
+
+      if (!failedButton || !hasSource) return;
+
+      stop();
+      showError(failedButton.dataset.title);
+    });
+
+    if ("mediaSession" in navigator) {
+      try {
+        navigator.mediaSession.setActionHandler("pause", stop);
+        navigator.mediaSession.setActionHandler("stop", stop);
+      } catch (unsupportedAction) {}
+    }
+
+    wrapArabicLines();
+
+    document.querySelectorAll(".listen").forEach(function (button) {
+      buildListenButton(button);
+      button.addEventListener("click", function () { play(button); });
+    });
+
+    nowStop.addEventListener("click", stop);
+
+    document.querySelectorAll(".more-btn").forEach(function (toggle) {
+      const panel = document.getElementById(toggle.getAttribute("aria-controls"));
+
+      toggle.innerHTML = '<svg aria-hidden="true"><use href="#i-plus"/></svg><span class="more-label"></span>';
+
+      function setOpen(isOpen) {
+        toggle.setAttribute("aria-expanded", String(isOpen));
+        toggle.querySelector(".more-label").textContent = isOpen ? "Hide full text" : "Show full text";
+
+        if (isOpen) {
+          panel.removeAttribute("hidden");
+        } else {
+          panel.setAttribute("hidden", "until-found");
+        }
+      }
+
+      setOpen(false);
+      toggle.addEventListener("click", function () {
+        setOpen(toggle.getAttribute("aria-expanded") !== "true");
+      });
+      panel.addEventListener("beforematch", function () { setOpen(true); });
+    });
+
+    const runnerLinks = document.getElementById("runner").querySelectorAll("a");
+
+    if (!("IntersectionObserver" in window)) return;
+
+    function markCurrent(sectionId) {
+      runnerLinks.forEach(function (link) {
+        const isCurrent = sectionId !== null && link.getAttribute("href") === "#" + sectionId;
+
+        if (isCurrent) {
+          link.setAttribute("aria-current", "location");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+    }
+
+    const sectionsInBand = new Set();
+
+    const sectionWatcher = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          sectionsInBand.add(entry.target.id);
+        } else {
+          sectionsInBand.delete(entry.target.id);
+        }
+      });
+
+      const newest = Array.from(sectionsInBand).pop();
+
+      markCurrent(newest === undefined ? null : newest);
+    }, { rootMargin: "-40% 0px -55% 0px" });
+
+    document.querySelectorAll(".pos, .counts").forEach(function (section) {
+      sectionWatcher.observe(section);
+    });
+  })();
 </script>
 </body>
 </html>
