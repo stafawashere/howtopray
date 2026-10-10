@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /support.js
+
+Sitemap: https://sujood.online/sitemap.xml

@@ -1,0 +1,17 @@
+{
+  "name": "Sujood: How to pray salah",
+  "short_name": "Sujood",
+  "description": "The eight positions of salah in order, with what to say in each one and audio to listen along.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f1512",
+  "theme_color": "#0f1512",
+  "lang": "en",
+  "categories": ["education", "lifestyle"],
+  "icons": [
+    { "src": "/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/img/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/img/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
