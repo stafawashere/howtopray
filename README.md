@@ -22,7 +22,7 @@ The Share button in the footer opens the phone's share sheet where the browser s
 
 None of the audio lives in this repo. When you press Listen, the page makes an `Audio` object pointed at an MP3 and the browser streams it straight from the source. Al-Fatihah and Al-Ikhlas are Mishary Rashid Alafasy's recitation from quranicaudio.com, and the other lines (the opening dua, what you say in ruku and sujud, the tashahhud, the salawat and the rest) come from hisnmuslim.com. Only one track plays at a time, and pressing the button again stops it.
 
-Every push to `main` deploys the repo to GitHub Pages through `.github/workflows/deploy.yml`, and `CNAME` points the subdomain at it.
+Every push to `main` deploys the repo to GitHub Pages through `.github/workflows/deploy.yml`, and `CNAME` points sujood.online at it.
 
 ## Running it locally
 
