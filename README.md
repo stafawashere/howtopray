@@ -1,4 +1,4 @@
-# Salah
+# Sujood
 
 A one-page guide to the eight positions of salah, in the order you do them. Each position has a simple figure of the body and the words you say there, in Arabic, transliteration and English. The recitations have a Listen button so you can hear the line instead of guessing at it from the spelling. At the bottom there's a table of how many rak'ahs each of the five prayers has.
 
