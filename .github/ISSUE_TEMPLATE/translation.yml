@@ -1,0 +1,18 @@
+name: Translation
+description: A translation reads wrong, or you'd like to check or add one.
+labels: [translation]
+body:
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      placeholder: Urdu
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What's wrong, or what you'd like to do
+      description: Quote the text from the page if it's about a specific line. If you're offering to check a whole language, say how you'd like to be credited.
+    validations:
+      required: true
